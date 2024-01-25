@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>三岁豆Er</title>
+  <title>SansuidouEr Blog</title>
   
   <subtitle>欢迎来到我的博客</subtitle>
   <link href="https://sansuidouer.github.io/atom.xml" rel="self"/>
   
   <link href="https://sansuidouer.github.io/"/>
-  <updated>2024-01-25T13:48:02.106Z</updated>
+  <updated>2024-01-24T15:28:58.847Z</updated>
   <id>https://sansuidouer.github.io/</id>
   
   <author>
@@ -17,29 +17,9 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Hello World</title>
-    <link href="https://sansuidouer.github.io/2024/01/25/hello-world/"/>
-    <id>https://sansuidouer.github.io/2024/01/25/hello-world/</id>
-    <published>2024-01-25T13:48:02.106Z</published>
-    <updated>2024-01-25T13:48:02.106Z</updated>
-    
-    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot;&gt;documentation&lt;/a&gt; for</summary>
-      
-    
-    
-    
-    
-  </entry>
-  
-  <entry>
     <title>Maya病毒查杀工具</title>
-    <link href="https://sansuidouer.github.io/2024/01/21/%E7%97%85%E6%AF%92%E6%9F%A5%E6%9D%80%E5%B7%A5%E5%85%B7/"/>
-    <id>https://sansuidouer.github.io/2024/01/21/%E7%97%85%E6%AF%92%E6%9F%A5%E6%9D%80%E5%B7%A5%E5%85%B7/</id>
+    <link href="https://sansuidouer.github.io/17404/"/>
+    <id>https://sansuidouer.github.io/17404/</id>
     <published>2024-01-21T10:02:59.000Z</published>
     <updated>2024-01-24T15:28:58.847Z</updated>
     
@@ -59,8 +39,8 @@
   
   <entry>
     <title>UV集检查修复工具</title>
-    <link href="https://sansuidouer.github.io/2024/01/21/UV%E9%9B%86%E6%A3%80%E6%9F%A5%E4%BF%AE%E5%A4%8D%E5%B7%A5%E5%85%B7/"/>
-    <id>https://sansuidouer.github.io/2024/01/21/UV%E9%9B%86%E6%A3%80%E6%9F%A5%E4%BF%AE%E5%A4%8D%E5%B7%A5%E5%85%B7/</id>
+    <link href="https://sansuidouer.github.io/56425/"/>
+    <id>https://sansuidouer.github.io/56425/</id>
     <published>2024-01-21T09:37:59.000Z</published>
     <updated>2024-01-24T14:20:41.229Z</updated>
     
@@ -80,8 +60,8 @@
   
   <entry>
     <title>鼠标右键发送到</title>
-    <link href="https://sansuidouer.github.io/2023/12/27/%E9%BC%A0%E6%A0%87%E5%8F%B3%E9%94%AE%E5%8F%91%E9%80%81%E5%88%B0/"/>
-    <id>https://sansuidouer.github.io/2023/12/27/%E9%BC%A0%E6%A0%87%E5%8F%B3%E9%94%AE%E5%8F%91%E9%80%81%E5%88%B0/</id>
+    <link href="https://sansuidouer.github.io/45700/"/>
+    <id>https://sansuidouer.github.io/45700/</id>
     <published>2023-12-27T12:53:52.000Z</published>
     <updated>2024-01-24T14:20:41.283Z</updated>
     
@@ -101,8 +81,8 @@
   
   <entry>
     <title>PixPin</title>
-    <link href="https://sansuidouer.github.io/2023/12/06/PixPin/"/>
-    <id>https://sansuidouer.github.io/2023/12/06/PixPin/</id>
+    <link href="https://sansuidouer.github.io/21735/"/>
+    <id>https://sansuidouer.github.io/21735/</id>
     <published>2023-12-06T12:57:46.000Z</published>
     <updated>2024-01-24T14:20:41.183Z</updated>
     
@@ -122,8 +102,8 @@
   
   <entry>
     <title>Vray 在线资源库无法正常打开</title>
-    <link href="https://sansuidouer.github.io/2023/12/03/Vray%E5%9C%A8%E7%BA%BF%E8%B5%84%E6%BA%90%E5%BA%93%E6%97%A0%E6%B3%95%E6%AD%A3%E5%B8%B8%E6%89%93%E5%BC%80/"/>
-    <id>https://sansuidouer.github.io/2023/12/03/Vray%E5%9C%A8%E7%BA%BF%E8%B5%84%E6%BA%90%E5%BA%93%E6%97%A0%E6%B3%95%E6%AD%A3%E5%B8%B8%E6%89%93%E5%BC%80/</id>
+    <link href="https://sansuidouer.github.io/39509/"/>
+    <id>https://sansuidouer.github.io/39509/</id>
     <published>2023-12-03T08:26:29.000Z</published>
     <updated>2024-01-24T14:20:41.248Z</updated>
     
@@ -145,8 +125,8 @@
   
   <entry>
     <title>Ps 盗版弹窗提示</title>
-    <link href="https://sansuidouer.github.io/2023/11/19/Ps%E7%9B%97%E7%89%88%E5%BC%B9%E7%AA%97%E6%8F%90%E7%A4%BA/"/>
-    <id>https://sansuidouer.github.io/2023/11/19/Ps%E7%9B%97%E7%89%88%E5%BC%B9%E7%AA%97%E6%8F%90%E7%A4%BA/</id>
+    <link href="https://sansuidouer.github.io/25656/"/>
+    <id>https://sansuidouer.github.io/25656/</id>
     <published>2023-11-19T12:09:45.000Z</published>
     <updated>2024-01-24T14:20:41.236Z</updated>
     
@@ -166,8 +146,8 @@
   
   <entry>
     <title>Windows10 超级资源管理器 Clover</title>
-    <link href="https://sansuidouer.github.io/2023/11/18/%E8%B6%85%E7%BA%A7%E8%B5%84%E6%BA%90%E7%AE%A1%E7%90%86%E5%99%A8Clover/"/>
-    <id>https://sansuidouer.github.io/2023/11/18/%E8%B6%85%E7%BA%A7%E8%B5%84%E6%BA%90%E7%AE%A1%E7%90%86%E5%99%A8Clover/</id>
+    <link href="https://sansuidouer.github.io/8090/"/>
+    <id>https://sansuidouer.github.io/8090/</id>
     <published>2023-11-18T12:39:51.000Z</published>
     <updated>2024-01-24T14:20:41.297Z</updated>
     
@@ -187,8 +167,8 @@
   
   <entry>
     <title>啥是ACES？</title>
-    <link href="https://sansuidouer.github.io/2023/11/18/%E5%95%A5%E6%98%AFACES%EF%BC%9F/"/>
-    <id>https://sansuidouer.github.io/2023/11/18/%E5%95%A5%E6%98%AFACES%EF%BC%9F/</id>
+    <link href="https://sansuidouer.github.io/45385/"/>
+    <id>https://sansuidouer.github.io/45385/</id>
     <published>2023-11-18T12:37:43.000Z</published>
     <updated>2024-01-24T14:20:41.266Z</updated>
     
@@ -208,8 +188,8 @@
   
   <entry>
     <title>Ps图层批量重命名 2.0</title>
-    <link href="https://sansuidouer.github.io/2023/11/18/Ps%E5%9B%BE%E5%B1%82%E6%89%B9%E9%87%8F%E9%87%8D%E5%91%BD%E5%90%8D2/"/>
-    <id>https://sansuidouer.github.io/2023/11/18/Ps%E5%9B%BE%E5%B1%82%E6%89%B9%E9%87%8F%E9%87%8D%E5%91%BD%E5%90%8D2/</id>
+    <link href="https://sansuidouer.github.io/46573/"/>
+    <id>https://sansuidouer.github.io/46573/</id>
     <published>2023-11-18T12:02:35.000Z</published>
     <updated>2024-01-24T14:20:41.231Z</updated>
     
@@ -231,8 +211,8 @@
   
   <entry>
     <title>李跳跳自定义规则</title>
-    <link href="https://sansuidouer.github.io/2023/11/12/%E6%9D%8E%E8%B7%B3%E8%B7%B3/"/>
-    <id>https://sansuidouer.github.io/2023/11/12/%E6%9D%8E%E8%B7%B3%E8%B7%B3/</id>
+    <link href="https://sansuidouer.github.io/24119/"/>
+    <id>https://sansuidouer.github.io/24119/</id>
     <published>2023-11-12T10:29:14.000Z</published>
     <updated>2024-01-24T14:20:41.285Z</updated>
     
@@ -252,8 +232,8 @@
   
   <entry>
     <title>NekoBox</title>
-    <link href="https://sansuidouer.github.io/2023/11/12/NekoBox/"/>
-    <id>https://sansuidouer.github.io/2023/11/12/NekoBox/</id>
+    <link href="https://sansuidouer.github.io/59922/"/>
+    <id>https://sansuidouer.github.io/59922/</id>
     <published>2023-11-12T09:25:50.000Z</published>
     <updated>2024-01-24T14:20:41.205Z</updated>
     
@@ -273,8 +253,8 @@
   
   <entry>
     <title>Vray for Maya</title>
-    <link href="https://sansuidouer.github.io/2023/11/05/VrayforMaya/"/>
-    <id>https://sansuidouer.github.io/2023/11/05/VrayforMaya/</id>
+    <link href="https://sansuidouer.github.io/52726/"/>
+    <id>https://sansuidouer.github.io/52726/</id>
     <published>2023-11-05T09:01:31.000Z</published>
     <updated>2024-01-24T14:20:41.241Z</updated>
     
@@ -294,8 +274,8 @@
   
   <entry>
     <title>尝试保存时出现致命错误...</title>
-    <link href="https://sansuidouer.github.io/2023/11/05/%E5%B0%9D%E8%AF%95%E4%BF%9D%E5%AD%98%E6%97%B6%E5%87%BA%E7%8E%B0%E8%87%B4%E5%91%BD%E9%94%99%E8%AF%AF/"/>
-    <id>https://sansuidouer.github.io/2023/11/05/%E5%B0%9D%E8%AF%95%E4%BF%9D%E5%AD%98%E6%97%B6%E5%87%BA%E7%8E%B0%E8%87%B4%E5%91%BD%E9%94%99%E8%AF%AF/</id>
+    <link href="https://sansuidouer.github.io/32820/"/>
+    <id>https://sansuidouer.github.io/32820/</id>
     <published>2023-11-05T07:39:43.000Z</published>
     <updated>2024-01-24T14:20:41.264Z</updated>
     
@@ -319,8 +299,8 @@
   
   <entry>
     <title>Vray 代理设置工具</title>
-    <link href="https://sansuidouer.github.io/2023/11/03/Vray%E4%BB%A3%E7%90%86%E8%AE%BE%E7%BD%AE%E5%B7%A5%E5%85%B7/"/>
-    <id>https://sansuidouer.github.io/2023/11/03/Vray%E4%BB%A3%E7%90%86%E8%AE%BE%E7%BD%AE%E5%B7%A5%E5%85%B7/</id>
+    <link href="https://sansuidouer.github.io/4804/"/>
+    <id>https://sansuidouer.github.io/4804/</id>
     <published>2023-11-03T12:58:52.000Z</published>
     <updated>2024-01-24T14:20:41.227Z</updated>
     
@@ -342,8 +322,8 @@
   
   <entry>
     <title>Round Inset</title>
-    <link href="https://sansuidouer.github.io/2023/11/02/RoundInset/"/>
-    <id>https://sansuidouer.github.io/2023/11/02/RoundInset/</id>
+    <link href="https://sansuidouer.github.io/11742/"/>
+    <id>https://sansuidouer.github.io/11742/</id>
     <published>2023-11-02T13:23:52.000Z</published>
     <updated>2024-01-24T14:20:41.246Z</updated>
     
@@ -363,8 +343,8 @@
   
   <entry>
     <title>人这种动物为什么要喝牛那种动物的奶——《警惕科学（完整版）》</title>
-    <link href="https://sansuidouer.github.io/2023/10/29/%E4%BA%BA%E8%BF%99%E7%A7%8D%E5%8A%A8%E7%89%A9%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E5%96%9D%E7%89%9B%E9%82%A3%E7%A7%8D%E5%8A%A8%E7%89%A9%E7%9A%84%E5%A5%B6%E2%80%94%E2%80%94%E3%80%8A%E8%AD%A6%E6%83%95%E7%A7%91%E5%AD%A6%EF%BC%88%E5%AE%8C%E6%95%B4%E7%89%88%EF%BC%89%E3%80%8B/"/>
-    <id>https://sansuidouer.github.io/2023/10/29/%E4%BA%BA%E8%BF%99%E7%A7%8D%E5%8A%A8%E7%89%A9%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E5%96%9D%E7%89%9B%E9%82%A3%E7%A7%8D%E5%8A%A8%E7%89%A9%E7%9A%84%E5%A5%B6%E2%80%94%E2%80%94%E3%80%8A%E8%AD%A6%E6%83%95%E7%A7%91%E5%AD%A6%EF%BC%88%E5%AE%8C%E6%95%B4%E7%89%88%EF%BC%89%E3%80%8B/</id>
+    <link href="https://sansuidouer.github.io/52048/"/>
+    <id>https://sansuidouer.github.io/52048/</id>
     <published>2023-10-29T09:42:56.000Z</published>
     <updated>2024-01-24T14:20:41.252Z</updated>
     
@@ -382,8 +362,8 @@
   
   <entry>
     <title>Maya有什么命名规范？</title>
-    <link href="https://sansuidouer.github.io/2023/10/28/Maya%E6%9C%89%E4%BB%80%E4%B9%88%E5%91%BD%E5%90%8D%E8%A7%84%E8%8C%83%EF%BC%9F/"/>
-    <id>https://sansuidouer.github.io/2023/10/28/Maya%E6%9C%89%E4%BB%80%E4%B9%88%E5%91%BD%E5%90%8D%E8%A7%84%E8%8C%83%EF%BC%9F/</id>
+    <link href="https://sansuidouer.github.io/16940/"/>
+    <id>https://sansuidouer.github.io/16940/</id>
     <published>2023-10-28T08:04:31.000Z</published>
     <updated>2024-01-24T14:20:41.169Z</updated>
     
@@ -407,8 +387,8 @@
   
   <entry>
     <title>嵌入iframe播放器</title>
-    <link href="https://sansuidouer.github.io/2023/10/22/%E5%B5%8C%E5%85%A5iframe%E6%92%AD%E6%94%BE%E5%99%A8/"/>
-    <id>https://sansuidouer.github.io/2023/10/22/%E5%B5%8C%E5%85%A5iframe%E6%92%AD%E6%94%BE%E5%99%A8/</id>
+    <link href="https://sansuidouer.github.io/59730/"/>
+    <id>https://sansuidouer.github.io/59730/</id>
     <published>2023-10-22T15:20:00.000Z</published>
     <updated>2024-01-24T14:20:41.262Z</updated>
     
@@ -432,8 +412,8 @@
   
   <entry>
     <title>Maya为什么不能使用 Ctrl+C / Ctrl+V</title>
-    <link href="https://sansuidouer.github.io/2023/10/22/Maya%E4%B8%BA%E4%BB%80%E4%B9%88%E4%B8%8D%E8%83%BD%E4%BD%BF%E7%94%A8Ctrl-C-V/"/>
-    <id>https://sansuidouer.github.io/2023/10/22/Maya%E4%B8%BA%E4%BB%80%E4%B9%88%E4%B8%8D%E8%83%BD%E4%BD%BF%E7%94%A8Ctrl-C-V/</id>
+    <link href="https://sansuidouer.github.io/7640/"/>
+    <id>https://sansuidouer.github.io/7640/</id>
     <published>2023-10-22T11:23:53.000Z</published>
     <updated>2024-01-24T14:20:41.203Z</updated>
     
@@ -443,6 +423,30 @@
       
       
     <summary type="html">&lt;h1 id=&quot;Maya为什么不能使用-Ctrl-C-Ctrl-V&quot;&gt;&lt;a href=&quot;#Maya为什么不能使用-Ctrl-C-Ctrl-V&quot; class=&quot;headerlink&quot; title=&quot;Maya为什么不能使用 Ctrl+C &amp;#x2F; Ctrl+V&quot;&gt;&lt;/a&gt;Maya</summary>
+      
+    
+    
+    
+    <category term="Maya" scheme="https://sansuidouer.github.io/categories/Maya/"/>
+    
+    
+    <category term="Maya" scheme="https://sansuidouer.github.io/tags/Maya/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>传递顶点顺序</title>
+    <link href="https://sansuidouer.github.io/57164/"/>
+    <id>https://sansuidouer.github.io/57164/</id>
+    <published>2023-10-20T13:22:07.000Z</published>
+    <updated>2024-01-24T14:20:41.254Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="顶点ID"><a href="#顶点ID" class="headerlink" title="顶点ID"></a>顶点ID</h1><p>官方帮助：<a href="https://help.autodesk.com/view/MAYAUL/2023/CHS/?guid=GUID-8CF82D97-203C-4056-BEF2-EA0CD27336ED">https://help.autodesk.com/view/MAYAUL/2023/CHS/?guid=GUID-8CF82D97-203C-4056-BEF2-EA0CD27336ED</a></p><p>如果两个物体布线形状完全相同但是传递UV就会碎掉多半是因为顶点ID顺序不同。我在<a href="/63197">传递UV插件</a>一篇文章提到过，这里具体的说明一下这个问题。顶点ID顺序相同后就会正常传递UV。</p><h2 id="显示顶点ID的方法"><a href="#显示顶点ID的方法" class="headerlink" title="显示顶点ID的方法"></a>显示顶点ID的方法</h2><p><img src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/image-20231020212234126.png" alt="image-20231020220644750"></p><h2 id="对顶点重新排序"><a href="#对顶点重新排序" class="headerlink" title="对顶点重新排序"></a>对顶点重新排序</h2><p>编辑网格 —&gt;对顶点重新排序</p><p>创建多边形对象时，Maya 会自动为其指定顶点 ID。您可以使用“对顶点重新排序”(Reorder Vertices)命令更改顶点顺序。</p><p>使用方法就是执行该工具后选择同一个面上面的三个相邻顶点。即可重新排序顶点ID。可能描述的不太清楚，可以看官方帮助。</p><p><img src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/image-20231020220644750.png" alt="image-20231020220644750"></p><h2 id="传递顶点顺序"><a href="#传递顶点顺序" class="headerlink" title="传递顶点顺序"></a>传递顶点顺序</h2><p>网格  —&gt; 传递顶点顺序</p><p>在源对象上，单击三个相邻的顶点</p><p>在目标对象上，单击与源对象上选择的三个顶点相关的三个相邻顶点</p><p>Maya 会将其余顶点重新排序，使之相对于三个选定的基础节点与源对象匹配</p><p>先选择的顶点顺序会被传递到后选择的多边形上</p><p><img src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/image-20231020222317574.png" alt="image-20231020222317574"></p><p><img src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/image-20231020212253062.png" alt="image-20231020212253062"></p><hr><p><img src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/END_02.svg"></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;顶点ID&quot;&gt;&lt;a href=&quot;#顶点ID&quot; class=&quot;headerlink&quot; title=&quot;顶点ID&quot;&gt;&lt;/a&gt;顶点ID&lt;/h1&gt;&lt;p&gt;官方帮助：&lt;a href=&quot;https://help.autodesk.com/view/MAYAUL/2023/CHS/?</summary>
       
     
     
