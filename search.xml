@@ -8,7 +8,7 @@
       <link href="/26404/"/>
       <url>/26404/</url>
       
-        <content type="html"><![CDATA[<p>大概是1月24号晚上十一点半左右，访问了一下博客，所有图片全部都404了。</p><p>原本以为Github的问题，但是Github访问一切正常</p><p>又访问了以下图片直链，结果404</p><p>后来发现是图片上面挂的CDN挂了，我用搜索工具替换了新的CDN</p><p>本地部署访问正常。</p><p>正当我部署到服务器的时候。</p><p>Hexo出现了报错</p><p><strong><code>ssh: connect to host github.com port 22: Connection refused</code></strong></p>]]></content>
+        <content type="html"><![CDATA[<p>大概是1月24号晚上十一点半左右，访问了一下博客，所有图片全部都404了。</p><p>原本以为Github的问题，但是Github访问一切正常</p><p>又访问了以下图片直链，结果404</p><p>后来发现是图片直链上面CDN挂了，我用搜索工具替换了新的CDN</p><p>本地部署访问正常。</p><p>正当我部署到服务器的时候。</p><p>Hexo出现了报错</p><p><img src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/image-20240128170024711.png" alt="image-20240128170024711"></p><p>然后我就照着这个错误各种搜索，参考了Hexo官方的帮助。和各种博客上面的解决办法。</p><p>其实我在开始的时候没认为是Github的问题，因为前面我已经排查了一下Github，结果可以正常访问。</p><p>然后就各种搜各种解决，删除.deploy_git，什么回滚怎么这么……</p><p>甚至我重新部署了Github端的SSH公钥，问题依旧存在</p><p>然后我看到有人说是网络问题，我从浏览器访问了Github，都很正常</p><p>然后我就看到了给git设置代理的方法，是不是git没用走代理</p><p>配置http代理</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --global http.proxy 127.0.0.1:10809</span><br><span class="line">git config --global https.proxy 127.0.0.1:10809</span><br></pre></td></tr></table></figure><p>查看代理是否设置成功</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">git config --global --get http.proxy</span><br><span class="line">git config --global --get https.proxy</span><br></pre></td></tr></table></figure><p>设置完以后还是没用解决问题。</p><p>再后来我尝试直接通过git访问Github</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh -T git@github.com</span><br></pre></td></tr></table></figure><p>结果直接报错，其实已经开始气馁了</p><p><strong><code>ssh: connect to host github.com port 22: Connection refused</code></strong></p><p>翻译一下</p><p><strong><code>ssh:连接到主机github.com端口22:连接被拒绝</code></strong></p><p>但是后来按照这个解决方向继续搜索解决方法就明确了很多。</p><p>终于终于，我明白了问题所在</p><p>默认ssh默认使用的是22端口，报错就意味着22端口无法访问到Github</p><p>浏览器是能够正常访问Github，但是浏览器默认不是以22号端口访问</p><p>解决办法就变得简单了</p><p>在用户文件夹下的.ssh文件夹下新建一个文本文档</p><p>写入如下信息,意思就是SSH直接走443端口，保存为config，注意，就是这个文件名，没用后缀。</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Host github.com</span><br><span class="line">  Hostname ssh.github.com</span><br><span class="line">  Port 443</span><br></pre></td></tr></table></figure><p>然后继续通过git访问一下Github</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh -T git@github.com</span><br></pre></td></tr></table></figure><p>很快返回信息</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Hi SansuidouEr! You&#x27;ve successfully authenticated, but GitHub does not provide shell access.</span><br><span class="line">翻译一下：</span><br><span class="line">嗨，SansuidouEr! 您已成功通过身份验证，但GitHub不提供shell访问。</span><br></pre></td></tr></table></figure><p><img src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/image-20240128171238978.png" alt="image-20240128171238978"></p><p>这时候再来一套三连</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo cl &amp;&amp; hexo g &amp;&amp; hexo d</span><br></pre></td></tr></table></figure><p>成功解决！</p><p><img src="https://file.crazywong.com/gh/SansuidouEr/images@main/img/END_02.svg"></p>]]></content>
       
       
       <categories>
@@ -170,9 +170,9 @@
       
         <tags>
             
-            <tag> Mel </tag>
-            
             <tag> Vray </tag>
+            
+            <tag> Mel </tag>
             
         </tags>
       
@@ -399,9 +399,9 @@
       
         <tags>
             
-            <tag> Mel </tag>
-            
             <tag> Vray </tag>
+            
+            <tag> Mel </tag>
             
         </tags>
       
@@ -1284,9 +1284,9 @@
       
         <tags>
             
-            <tag> Mel </tag>
-            
             <tag> Vray </tag>
+            
+            <tag> Mel </tag>
             
         </tags>
       
