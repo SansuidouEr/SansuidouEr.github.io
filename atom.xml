@@ -6,7 +6,7 @@
   <link href="https://sansuidouer.github.io/atom.xml" rel="self"/>
   
   <link href="https://sansuidouer.github.io/"/>
-  <updated>2024-01-24T15:28:58.847Z</updated>
+  <updated>2024-01-28T08:58:25.427Z</updated>
   <id>https://sansuidouer.github.io/</id>
   
   <author>
@@ -15,6 +15,48 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>关于Github的22端口被占用</title>
+    <link href="https://sansuidouer.github.io/26404/"/>
+    <id>https://sansuidouer.github.io/26404/</id>
+    <published>2024-01-28T08:45:08.000Z</published>
+    <updated>2024-01-28T08:58:25.427Z</updated>
+    
+    <content type="html"><![CDATA[<p>大概是1月24号晚上十一点半左右，访问了一下博客，所有图片全部都404了。</p><p>原本以为Github的问题，但是Github访问一切正常</p><p>又访问了以下图片直链，结果404</p><p>后来发现是图片上面挂的CDN挂了，我用搜索工具替换了新的CDN</p><p>本地部署访问正常。</p><p>正当我部署到服务器的时候。</p><p>Hexo出现了报错</p><p><strong><code>ssh: connect to host github.com port 22: Connection refused</code></strong></p>]]></content>
+    
+    
+    <summary type="html">博客折腾日志之端口被封</summary>
+    
+    
+    
+    <category term="Hexo" scheme="https://sansuidouer.github.io/categories/Hexo/"/>
+    
+    
+    <category term="Hexo" scheme="https://sansuidouer.github.io/tags/Hexo/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>搜索类工具</title>
+    <link href="https://sansuidouer.github.io/32104/"/>
+    <id>https://sansuidouer.github.io/32104/</id>
+    <published>2024-01-27T10:41:59.000Z</published>
+    <updated>2024-01-28T08:40:14.968Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="Everything"><a href="#Everything" class="headerlink" title="Everything"></a>Everything</h1><p>官网：<a href="https://www.voidtools.com/zh-cn/">Everything</a> </p><ul><li>免费 </li><li>搜索速度快</li></ul><p>界面长的平平无奇，里面有很多高级功能，支持正则表达式搜索。可以通过<a href="https://www.voidtools.com/zh-cn/support/everything/">官方帮助</a>了解更多，写的很详细。</p><p><img src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/image-20240128161917436.png" alt="image-20240128161917436"></p><h1 id="FileLocator-Pro"><a href="#FileLocator-Pro" class="headerlink" title="FileLocator Pro"></a>FileLocator Pro</h1><p>官网：<a href="https://www.mythicsoft.com/">Mythicsoft – 专业人士的搜索软件</a></p><p>在线简体中文帮助：<a href="https://help.mythicsoft.com/filelocatorpro/v9/cn/index.html">FileLocator Pro - 介绍 (mythicsoft.com)</a></p><p>Pro解锁版下载：<a href="https://zhangzhilong.lanzv.com/iotUg1m73rkb">FileLocator Pro</a></p><ul><li>支持搜索文件内容，虽然比较慢，</li><li>支持保存搜索结果</li><li>支持带出搜索报告</li></ul><p><img src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/image-20240128155714846.png" alt="image-20240128155714846"></p><h1 id="dnGREP"><a href="#dnGREP" class="headerlink" title="dnGREP"></a>dnGREP</h1><p>官网：<a href="https://dngrep.github.io/">https://dngrep.github.io/</a></p><ul><li>开源免费</li><li>支持搜索文件内容</li><li>支持正则表达式和替换</li><li>搜索速度比FileLocator Pro快</li></ul><p>按F8可以设置简体中文<br><img src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/image-20240128162939602.png" alt="image-20240128162939602"></p><p><img src="https://file.crazywong.com/gh/SansuidouEr/images@main/img/END_02.svg"></p>]]></content>
+    
+    
+    <summary type="html">搜索类软件汇总</summary>
+    
+    
+    
+    <category term="软件" scheme="https://sansuidouer.github.io/categories/%E8%BD%AF%E4%BB%B6/"/>
+    
+    
+    <category term="软件分享" scheme="https://sansuidouer.github.io/tags/%E8%BD%AF%E4%BB%B6%E5%88%86%E4%BA%AB/"/>
+    
+  </entry>
   
   <entry>
     <title>Maya病毒查杀工具</title>
@@ -407,54 +449,6 @@
     
     
     <category term="Hexo" scheme="https://sansuidouer.github.io/tags/Hexo/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Maya为什么不能使用 Ctrl+C / Ctrl+V</title>
-    <link href="https://sansuidouer.github.io/7640/"/>
-    <id>https://sansuidouer.github.io/7640/</id>
-    <published>2023-10-22T11:23:53.000Z</published>
-    <updated>2024-01-24T14:20:41.203Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="Maya为什么不能使用-Ctrl-C-Ctrl-V"><a href="#Maya为什么不能使用-Ctrl-C-Ctrl-V" class="headerlink" title="Maya为什么不能使用 Ctrl+C &#x2F; Ctrl+V"></a>Maya为什么不能使用 Ctrl+C &#x2F; Ctrl+V</h1><p>我在上学的时候接触Maya就有见到这个熟悉的字符 “pasted__”，当时我也不知道这个东西怎么产生的。后来在实习的时候知道了这玩意是Ctrl + C &#x2F; V 产生的。一开始我也没觉得有什么影响，但是我记得好像是有一个场景有很多这个字符，灯光链接出现了问题，怎么也链接不到。最后给那个模型修改了命名解决了问题。我是不会使用C V复制粘贴模型的，后来工作以后我发现还是有人使用这种方法复制粘贴模型的，可能是为了方便？快捷？ 我表示很不理解。后来我发现有问题后只要到我手里的场景文件我发现 pasted 就会进行清理，以避免不必要的麻烦。 我在<a href="/54222/">Maya重命名工具：ig_EzRename</a>一文中介绍过一键干掉pasted的功能，可以通过这个功能干掉pasted。</p><blockquote><h2 id="为什么不能用【Ctrl】-【C】-【Ctrl】-【V】替代【Ctrl】-【D】操作？"><a href="#为什么不能用【Ctrl】-【C】-【Ctrl】-【V】替代【Ctrl】-【D】操作？" class="headerlink" title="为什么不能用【Ctrl】+【C】&#x2F;【Ctrl】+【V】替代【Ctrl】+【D】操作？"></a>为什么不能用【Ctrl】+【C】&#x2F;【Ctrl】+【V】替代【Ctrl】+【D】操作？</h2><p>大家平时使用Window操作系统都习惯用【Ctrl】+【C】&#x2F;【Ctrl】+【V】来拷贝&#x2F;粘贴对象，再Maya里使用【Ctrl】+【C】&#x2F;【Ctrl】+【V】也能实现复制对象的操作，但其复制结果与【Ctrl】+【D】完全不同。</p><p>还是以小球pSphere1为例，用【Ctrl】+【C】&#x2F;【Ctrl】+【V】复制出一个新的小球，名称自动命名为pasted__pSphere1，pasted__pSphere1在上一层级还自动产生一个空的组节点作为父节点。新小球将原小球的所有节点网络完整复制了一套，新节点的命名都是在原节点前加“pasted__”。</p><p>笔者不推荐使用【Ctrl】+【C】&#x2F;【Ctrl】+【V】这种复制方式，因为它的命名方式不简洁，经过多次复制后会产生一长串的前缀字符，还形成了多层级的空组，在Hypeshade（材质编辑器）里也会出现许多一模一样的节点，导致整个场景文件凌乱不堪，整理起来非常麻烦。所以，如果想要复制完整的节点网络，就用Duplicate Special（特殊复制）；如果只想复制单独一个节点，就用Duplicate（复制）热键【Ctrl】+【D】。</p><p>（以上内容摘抄自，《三维建模与渲染：Maya建模与Arnold渲染百问》 第 19 问 ）</p></blockquote><hr><p>羊盒在2021年1月25号发布的4.2.27版本中提到Ctrl+V对场景的污染。</p><p>如果您有Ctrl+V的习惯请尽早改正。避免不必要的麻烦。</p><blockquote><p>禁用经常导致误操作的 Ctrl+V [ 不会影响复制关键帧，重启maya后生效 ]<br>(由于maya中的 Ctrl+v 粘贴出来的节点无法撒回，很容易造成场景污染，*强烈推荐勾选 *)<br>—- 我不装了，我摊牌了，这恶心玩意儿必须得勾，<br>用脚后眼想想，弄出一大堆”pasted__”节点名是人干的事儿？<br>可长点心叭，复制粘贴节点给老子死—-</p></blockquote><p><img src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/image-20231022202512067.png" alt="暴力羊"></p><p><img src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/END_01.svg"></p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;h1 id=&quot;Maya为什么不能使用-Ctrl-C-Ctrl-V&quot;&gt;&lt;a href=&quot;#Maya为什么不能使用-Ctrl-C-Ctrl-V&quot; class=&quot;headerlink&quot; title=&quot;Maya为什么不能使用 Ctrl+C &amp;#x2F; Ctrl+V&quot;&gt;&lt;/a&gt;Maya</summary>
-      
-    
-    
-    
-    <category term="Maya" scheme="https://sansuidouer.github.io/categories/Maya/"/>
-    
-    
-    <category term="Maya" scheme="https://sansuidouer.github.io/tags/Maya/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>传递顶点顺序</title>
-    <link href="https://sansuidouer.github.io/57164/"/>
-    <id>https://sansuidouer.github.io/57164/</id>
-    <published>2023-10-20T13:22:07.000Z</published>
-    <updated>2024-01-24T14:20:41.254Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="顶点ID"><a href="#顶点ID" class="headerlink" title="顶点ID"></a>顶点ID</h1><p>官方帮助：<a href="https://help.autodesk.com/view/MAYAUL/2023/CHS/?guid=GUID-8CF82D97-203C-4056-BEF2-EA0CD27336ED">https://help.autodesk.com/view/MAYAUL/2023/CHS/?guid=GUID-8CF82D97-203C-4056-BEF2-EA0CD27336ED</a></p><p>如果两个物体布线形状完全相同但是传递UV就会碎掉多半是因为顶点ID顺序不同。我在<a href="/63197">传递UV插件</a>一篇文章提到过，这里具体的说明一下这个问题。顶点ID顺序相同后就会正常传递UV。</p><h2 id="显示顶点ID的方法"><a href="#显示顶点ID的方法" class="headerlink" title="显示顶点ID的方法"></a>显示顶点ID的方法</h2><p><img src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/image-20231020212234126.png" alt="image-20231020220644750"></p><h2 id="对顶点重新排序"><a href="#对顶点重新排序" class="headerlink" title="对顶点重新排序"></a>对顶点重新排序</h2><p>编辑网格 —&gt;对顶点重新排序</p><p>创建多边形对象时，Maya 会自动为其指定顶点 ID。您可以使用“对顶点重新排序”(Reorder Vertices)命令更改顶点顺序。</p><p>使用方法就是执行该工具后选择同一个面上面的三个相邻顶点。即可重新排序顶点ID。可能描述的不太清楚，可以看官方帮助。</p><p><img src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/image-20231020220644750.png" alt="image-20231020220644750"></p><h2 id="传递顶点顺序"><a href="#传递顶点顺序" class="headerlink" title="传递顶点顺序"></a>传递顶点顺序</h2><p>网格  —&gt; 传递顶点顺序</p><p>在源对象上，单击三个相邻的顶点</p><p>在目标对象上，单击与源对象上选择的三个顶点相关的三个相邻顶点</p><p>Maya 会将其余顶点重新排序，使之相对于三个选定的基础节点与源对象匹配</p><p>先选择的顶点顺序会被传递到后选择的多边形上</p><p><img src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/image-20231020222317574.png" alt="image-20231020222317574"></p><p><img src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/image-20231020212253062.png" alt="image-20231020212253062"></p><hr><p><img src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/END_02.svg"></p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;h1 id=&quot;顶点ID&quot;&gt;&lt;a href=&quot;#顶点ID&quot; class=&quot;headerlink&quot; title=&quot;顶点ID&quot;&gt;&lt;/a&gt;顶点ID&lt;/h1&gt;&lt;p&gt;官方帮助：&lt;a href=&quot;https://help.autodesk.com/view/MAYAUL/2023/CHS/?</summary>
-      
-    
-    
-    
-    <category term="Maya" scheme="https://sansuidouer.github.io/categories/Maya/"/>
-    
-    
-    <category term="Maya" scheme="https://sansuidouer.github.io/tags/Maya/"/>
     
   </entry>
   

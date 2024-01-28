@@ -4,6 +4,56 @@
   
     
     <entry>
+      <title>关于Github的22端口被占用</title>
+      <link href="/26404/"/>
+      <url>/26404/</url>
+      
+        <content type="html"><![CDATA[<p>大概是1月24号晚上十一点半左右，访问了一下博客，所有图片全部都404了。</p><p>原本以为Github的问题，但是Github访问一切正常</p><p>又访问了以下图片直链，结果404</p><p>后来发现是图片上面挂的CDN挂了，我用搜索工具替换了新的CDN</p><p>本地部署访问正常。</p><p>正当我部署到服务器的时候。</p><p>Hexo出现了报错</p><p><strong><code>ssh: connect to host github.com port 22: Connection refused</code></strong></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Hexo </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Hexo </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>搜索类工具</title>
+      <link href="/32104/"/>
+      <url>/32104/</url>
+      
+        <content type="html"><![CDATA[<h1 id="Everything"><a href="#Everything" class="headerlink" title="Everything"></a>Everything</h1><p>官网：<a href="https://www.voidtools.com/zh-cn/">Everything</a> </p><ul><li>免费 </li><li>搜索速度快</li></ul><p>界面长的平平无奇，里面有很多高级功能，支持正则表达式搜索。可以通过<a href="https://www.voidtools.com/zh-cn/support/everything/">官方帮助</a>了解更多，写的很详细。</p><p><img src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/image-20240128161917436.png" alt="image-20240128161917436"></p><h1 id="FileLocator-Pro"><a href="#FileLocator-Pro" class="headerlink" title="FileLocator Pro"></a>FileLocator Pro</h1><p>官网：<a href="https://www.mythicsoft.com/">Mythicsoft – 专业人士的搜索软件</a></p><p>在线简体中文帮助：<a href="https://help.mythicsoft.com/filelocatorpro/v9/cn/index.html">FileLocator Pro - 介绍 (mythicsoft.com)</a></p><p>Pro解锁版下载：<a href="https://zhangzhilong.lanzv.com/iotUg1m73rkb">FileLocator Pro</a></p><ul><li>支持搜索文件内容，虽然比较慢，</li><li>支持保存搜索结果</li><li>支持带出搜索报告</li></ul><p><img src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/image-20240128155714846.png" alt="image-20240128155714846"></p><h1 id="dnGREP"><a href="#dnGREP" class="headerlink" title="dnGREP"></a>dnGREP</h1><p>官网：<a href="https://dngrep.github.io/">https://dngrep.github.io/</a></p><ul><li>开源免费</li><li>支持搜索文件内容</li><li>支持正则表达式和替换</li><li>搜索速度比FileLocator Pro快</li></ul><p>按F8可以设置简体中文<br><img src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/image-20240128162939602.png" alt="image-20240128162939602"></p><p><img src="https://file.crazywong.com/gh/SansuidouEr/images@main/img/END_02.svg"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 软件 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 软件分享 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Maya病毒查杀工具</title>
       <link href="/17404/"/>
       <url>/17404/</url>
