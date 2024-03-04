@@ -6,7 +6,7 @@
   <link href="https://sansuidouer.github.io/atom.xml" rel="self"/>
   
   <link href="https://sansuidouer.github.io/"/>
-  <updated>2024-01-28T10:16:28.424Z</updated>
+  <updated>2024-03-04T13:33:44.073Z</updated>
   <id>https://sansuidouer.github.io/</id>
   
   <author>
@@ -15,6 +15,48 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Maya解锁默认纹理列表</title>
+    <link href="https://sansuidouer.github.io/25007/"/>
+    <id>https://sansuidouer.github.io/25007/</id>
+    <published>2024-03-04T13:17:41.000Z</published>
+    <updated>2024-03-04T13:33:44.073Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="解决“defaultTextureList1-textures-1-”-目标被锁定问题！"><a href="#解决“defaultTextureList1-textures-1-”-目标被锁定问题！" class="headerlink" title="解决“defaultTextureList1.textures[-1]” 目标被锁定问题！"></a>解决“defaultTextureList1.textures[-1]” 目标被锁定问题！</h1><p><img src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/image-20240304212956221.png" alt="image-20240304212956221"></p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> maya.cmds <span class="keyword">as</span> cmds</span><br><span class="line">cmds.lockNode(<span class="string">&#x27;defaultTextureList1&#x27;</span>, l=<span class="literal">False</span>, lockUnpublished=<span class="literal">False</span>)</span><br></pre></td></tr></table></figure><p><img src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/END_02.svg"></p>]]></content>
+    
+    
+    <summary type="html">解决“defaultTextureList1.textures[-1]” 目标被锁定问题！</summary>
+    
+    
+    
+    <category term="Maya" scheme="https://sansuidouer.github.io/categories/Maya/"/>
+    
+    
+    <category term="Maya" scheme="https://sansuidouer.github.io/tags/Maya/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Maya的几个环境变量</title>
+    <link href="https://sansuidouer.github.io/64941/"/>
+    <id>https://sansuidouer.github.io/64941/</id>
+    <published>2024-03-04T13:00:02.000Z</published>
+    <updated>2024-03-04T13:28:15.898Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="登陆选项"><a href="#登陆选项" class="headerlink" title="登陆选项"></a>登陆选项</h2><p><img src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/image-20240304210347997.png" alt="image-20240304210347997"></p><p>禁用许可证，在启动Maya时跳过网络验证。</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">MAYA_DISABLE_CLIC_IPM</span><br></pre></td></tr></table></figure><p>变量值为1</p><p><img src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/image-20240304210626485.png" alt="image-20240304210626485"></p><h2 id="关闭Maya的Output窗口"><a href="#关闭Maya的Output窗口" class="headerlink" title="关闭Maya的Output窗口"></a>关闭Maya的Output窗口</h2><p>变量值依然为1，在启动Maya2022以下版本的Maya不会有Output窗口随之启动</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">MAYA_NO_CONSOLE_WINDOW</span><br></pre></td></tr></table></figure><p><img src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/image-20240304210952290.png" alt="image-20240304210952290"></p><p><img src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/END_02.svg"></p>]]></content>
+    
+    
+    <summary type="html">记录Maya的一些环境变量</summary>
+    
+    
+    
+    <category term="Maya" scheme="https://sansuidouer.github.io/categories/Maya/"/>
+    
+    
+    <category term="Maya" scheme="https://sansuidouer.github.io/tags/Maya/"/>
+    
+  </entry>
   
   <entry>
     <title>关于Github的22端口被占用</title>
@@ -399,56 +441,6 @@
     
     
     <category term="阅读" scheme="https://sansuidouer.github.io/tags/%E9%98%85%E8%AF%BB/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Maya有什么命名规范？</title>
-    <link href="https://sansuidouer.github.io/16940/"/>
-    <id>https://sansuidouer.github.io/16940/</id>
-    <published>2023-10-28T08:04:31.000Z</published>
-    <updated>2024-01-24T14:20:41.169Z</updated>
-    
-    <content type="html"><![CDATA[<blockquote><p>Maya中的节点和属性名称不能以数字开头，必须以英文字母开头，不能使用中文字符，特殊字符除了_以外，其他如空格、&#x2F;、-、(、)等都不允许使用。第一个单词首字母小写，后面接的其他单词首字母大写。Mya的工程文件命名虽然不受限制，可以用数字开头，也可以用中文字符和特殊字符，但笔者推荐还是按照节点和属性的命名要求来命名工程文件，以预防出现不可知的错误。<br>提示：Maya的整个文件保存路径最好都是全英文的，不要出现中文字符，否则有可能出现文件打不开等奇怪的问题。</p><p>（以上内容摘抄自，《三维建模与渲染：Maya建模与Arnold渲染百问》 第 20 问 ）</p></blockquote><p><img src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/END_01.svg"></p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;blockquote&gt;
-&lt;p&gt;Maya中的节点和属性名称不能以数字开头，必须以英文字母开头，不能使用中文字符，特殊字符除了_以外，其他如空格、&amp;#x2F;、-、(、)等都不允许使用。第一个单词首字母小写，后面接的其他单词首字母大写。Mya的工程文件命名虽然不受限制，可以用数字开</summary>
-      
-    
-    
-    
-    <category term="Maya" scheme="https://sansuidouer.github.io/categories/Maya/"/>
-    
-    
-    <category term="Maya" scheme="https://sansuidouer.github.io/tags/Maya/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>嵌入iframe播放器</title>
-    <link href="https://sansuidouer.github.io/59730/"/>
-    <id>https://sansuidouer.github.io/59730/</id>
-    <published>2023-10-22T15:20:00.000Z</published>
-    <updated>2024-01-24T14:20:41.262Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="iframe"><a href="#iframe" class="headerlink" title="iframe"></a>iframe</h1><p>iframe 标签用于在网页里面嵌入其他网页。</p><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">iframe</span> <span class="attr">src</span>=<span class="string">&quot;https://www.example.com/&quot;</span></span></span><br><span class="line"><span class="tag">        <span class="attr">width</span>=<span class="string">&quot;100%&quot;</span> <span class="attr">height</span>=<span class="string">&quot;500&quot;</span> <span class="attr">frameborder</span>=<span class="string">&quot;0&quot;</span></span></span><br><span class="line"><span class="tag">        <span class="attr">allowfullscreen</span> <span class="attr">sandbox</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">iframe</span>&gt;</span></span><br></pre></td></tr></table></figure><p>以上代码意思就是在网页中嵌入一个示例站点（<a href="https://www.example.com/%EF%BC%89">https://www.example.com/）</a><br>宽度自适应100% ，高度为500像素。 边框宽度为0<br>效果如下↓</p><iframe src="https://www.example.com/ "        width="100%" height="500" frameborder="0"></iframe><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">div</span> <span class="attr">style</span>=<span class="string">&quot;position: relative; padding: 30% 45%;&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">iframe</span> <span class="attr">style</span>=<span class="string">&quot;position: absolute; width: 100%; height: 100%; left: 0; top: 0;&quot;</span> </span></span><br><span class="line"><span class="tag"><span class="attr">src</span>=<span class="string">&quot;https://player.bilibili.com/player.html?aid=692332871&amp;bvid=BV1d24y1Y79G&amp;cid=950939214&amp;p=1&amp;autoplay=0&quot;</span> </span></span><br><span class="line"><span class="tag"><span class="attr">scrolling</span>=<span class="string">&quot;no&quot;</span> <span class="attr">border</span>=<span class="string">&quot;0&quot;</span> <span class="attr">frameborder</span>=<span class="string">&quot;no&quot;</span> <span class="attr">framespacing</span>=<span class="string">&quot;0&quot;</span> <span class="attr">allowfullscreen</span>=<span class="string">&quot;true&quot;</span> <span class="attr">danmaku</span>=<span class="string">&quot;0&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">iframe</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br></pre></td></tr></table></figure><p>自动播放需要加在链接的后方使用 “&amp;” 连接 </p><p>https :&#x2F;&#x2F;xxxxxx.xxx&amp;autoplay&#x3D;0</p><div style="position: relative; padding: 30% 45%;"><iframe style="position: absolute; width: 100%; height: 100%; left: 0; top: 0;" src="https://player.bilibili.com/player.html?aid=692332871&bvid=BV1d24y1Y79G&cid=950939214&p=1&autoplay=0" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" danmaku="0"></iframe></div><p></p><p></p><table><thead><tr><th align="center"></th><th align="center">作用</th><th align="center">意义</th></tr></thead><tbody><tr><td align="center">autoplay</td><td align="center">自动播放</td><td align="center">0&#x2F;1</td></tr><tr><td align="center">danmaku</td><td align="center">弹幕</td><td align="center">0&#x2F;1</td></tr><tr><td align="center">muted</td><td align="center">静音</td><td align="center">0&#x2F;1</td></tr><tr><td align="center">hasMuteButton</td><td align="center">隐藏静音按钮</td><td align="center">0&#x2F;1</td></tr><tr><td align="center">hideCoverInfo</td><td align="center">播放量，弹幕等</td><td align="center">0&#x2F;1</td></tr><tr><td align="center">hideDanmakuButton</td><td align="center">隐藏弹幕按钮</td><td align="center">0&#x2F;1</td></tr><tr><td align="center">noFullScreenButton</td><td align="center">隐藏全屏按钮</td><td align="center">0&#x2F;1</td></tr><tr><td align="center">fjw</td><td align="center">记忆播放</td><td align="center">0&#x2F;1</td></tr><tr><td align="center">t</td><td align="center">开始时间&#x2F;秒</td><td align="center"></td></tr><tr><td align="center">highQuality</td><td align="center">高清</td><td align="center">0&#x2F;1</td></tr></tbody></table><p><img src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/END_02.svg"></p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;h1 id=&quot;iframe&quot;&gt;&lt;a href=&quot;#iframe&quot; class=&quot;headerlink&quot; title=&quot;iframe&quot;&gt;&lt;/a&gt;iframe&lt;/h1&gt;&lt;p&gt;iframe 标签用于在网页里面嵌入其他网页。&lt;/p&gt;
-&lt;figure class=&quot;highlight h</summary>
-      
-    
-    
-    
-    <category term="Hexo" scheme="https://sansuidouer.github.io/categories/Hexo/"/>
-    
-    
-    <category term="Hexo" scheme="https://sansuidouer.github.io/tags/Hexo/"/>
     
   </entry>
   

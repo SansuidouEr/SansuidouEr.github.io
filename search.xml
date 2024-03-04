@@ -4,6 +4,56 @@
   
     
     <entry>
+      <title>Maya解锁默认纹理列表</title>
+      <link href="/25007/"/>
+      <url>/25007/</url>
+      
+        <content type="html"><![CDATA[<h1 id="解决“defaultTextureList1-textures-1-”-目标被锁定问题！"><a href="#解决“defaultTextureList1-textures-1-”-目标被锁定问题！" class="headerlink" title="解决“defaultTextureList1.textures[-1]” 目标被锁定问题！"></a>解决“defaultTextureList1.textures[-1]” 目标被锁定问题！</h1><p><img src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/image-20240304212956221.png" alt="image-20240304212956221"></p><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> maya.cmds <span class="keyword">as</span> cmds</span><br><span class="line">cmds.lockNode(<span class="string">&#x27;defaultTextureList1&#x27;</span>, l=<span class="literal">False</span>, lockUnpublished=<span class="literal">False</span>)</span><br></pre></td></tr></table></figure><p><img src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/END_02.svg"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Maya </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Maya </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Maya的几个环境变量</title>
+      <link href="/64941/"/>
+      <url>/64941/</url>
+      
+        <content type="html"><![CDATA[<h2 id="登陆选项"><a href="#登陆选项" class="headerlink" title="登陆选项"></a>登陆选项</h2><p><img src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/image-20240304210347997.png" alt="image-20240304210347997"></p><p>禁用许可证，在启动Maya时跳过网络验证。</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">MAYA_DISABLE_CLIC_IPM</span><br></pre></td></tr></table></figure><p>变量值为1</p><p><img src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/image-20240304210626485.png" alt="image-20240304210626485"></p><h2 id="关闭Maya的Output窗口"><a href="#关闭Maya的Output窗口" class="headerlink" title="关闭Maya的Output窗口"></a>关闭Maya的Output窗口</h2><p>变量值依然为1，在启动Maya2022以下版本的Maya不会有Output窗口随之启动</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">MAYA_NO_CONSOLE_WINDOW</span><br></pre></td></tr></table></figure><p><img src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/image-20240304210952290.png" alt="image-20240304210952290"></p><p><img src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/END_02.svg"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Maya </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Maya </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>关于Github的22端口被占用</title>
       <link href="/26404/"/>
       <url>/26404/</url>
