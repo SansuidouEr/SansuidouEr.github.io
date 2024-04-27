@@ -4,6 +4,62 @@
   
     
     <entry>
+      <title>Ps磨皮插件Portraiture</title>
+      <link href="/52338/"/>
+      <url>/52338/</url>
+      
+        <content type="html"><![CDATA[<h3 id="Portraiture"><a href="#Portraiture" class="headerlink" title="Portraiture"></a>Portraiture</h3><p>版本：4.1.2</p><p>官网：<a href="https://www.imagenomic.com/products/portraiture">https://www.imagenomic.com/products/portraiture</a></p><p>界面：</p><p><img src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/image-20240427181145704.png" alt="image-20240427181145704"></p><h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><p>全部点击下一步，然后打开PS在滤镜里面加载可以直接使用。</p><p><img src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/image-20240427182719335.png" alt="image-20240427182719335"></p><h3 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h3><p>蓝奏云：<a href="https://zhangzhilong.lanzouw.com/ibDA71wpvtuj">https://zhangzhilong.lanzouw.com/ibDA71wpvtuj</a></p><p>#ps磨皮插件 #Portraiture</p><p><img src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/END_02.svg"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Adobe </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Adobe </tag>
+            
+            <tag> 软件分享 </tag>
+            
+            <tag> Ps </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>错误：Windws找不到文件360seURL错误</title>
+      <link href="/14562/"/>
+      <url>/14562/</url>
+      
+        <content type="html"><![CDATA[<h1 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h1><p>记录一下在Maya中遇到的一个错误，错误如下：</p><p><img src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/360seURL%E9%94%99%E8%AF%AF.png" alt="360seURL错误"></p><p>起因是我上午刚卸载了360安全浏览器转用 Google Chrome 浏览器，下午当我想通过Maya的帮助菜单看一下Maya的帮助文档，就弹出来了这个错误。</p><p>让我们分析以下弹窗，提示Windows找不到文件’360 seURL\shell\open\command’。提取关键词「 360 seURL 」。</p><p>这肯定就是360的锅，我希望在Maya打开帮助网页，Maya调用360安全浏览器，由于我卸载了360浏览器，Windows就找不到360浏览器，然后就会弹出这个错误。</p><h2 id="Windows调用浏览器默认有两种情况"><a href="#Windows调用浏览器默认有两种情况" class="headerlink" title="Windows调用浏览器默认有两种情况"></a>Windows调用浏览器默认有两种情况</h2><h3 id="第一种情况"><a href="#第一种情况" class="headerlink" title="第一种情况"></a>第一种情况</h3><p>第一种情况就是在设置里面调用Windows默认应用打开，我检查了我的默认Web浏览器，我卸载了360安全浏览器后就将默认浏览器修改回来了，我重启Maya问题依旧存在，确认Maya不是以默认应用的方式调用浏览器。</p><p><img src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/image-20240427174910164.png" alt="image-20240427174910164"></p><h3 id="第二种情况"><a href="#第二种情况" class="headerlink" title="第二种情况"></a>第二种情况</h3><p>第二种情况就是通过注册表所定义的格式选着打开应用</p><p>打开注册表目录：计算机\HKEY_CLASSES_ROOT.html</p><p>这里的  .htm  和  .html  默认属性均是360seURL</p><p><img src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/image-20240427175721812.png" alt="image-20240427175721812"></p><h1 id="解决方法"><a href="#解决方法" class="headerlink" title="解决方法"></a>解决方法</h1><p>打开注册表编辑器：C:\Windows\regedit.exe</p><p>导航到以下两个目录</p><p>计算机\HKEY_CLASSES_ROOT.htm</p><p>计算机\HKEY_CLASSES_ROOT.html</p><p>将以上两个目录的默认属性删除或者将值 360seURL 修改为：htmlfile</p><p>其实选中默认，点击删除也就相当于将属性值恢复默认，并不会真的删除这个默认，因为默认是删不掉的。</p><p><img src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/%E6%B3%A8%E5%86%8C%E8%A1%A8.png" alt="注册表"></p><p>回到Maya，问题得以解决。</p><p><img src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/END_02.svg"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Maya </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Maya </tag>
+            
+            <tag> Windows </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Maya解锁默认纹理列表</title>
       <link href="/25007/"/>
       <url>/25007/</url>
@@ -1010,7 +1066,7 @@
       <link href="/22204/"/>
       <url>/22204/</url>
       
-        <content type="html"><![CDATA[<h2 id="Chrome-应用商店："><a href="#Chrome-应用商店：" class="headerlink" title="Chrome 应用商店："></a>Chrome 应用商店：</h2><p>官网：<a href="https://chrome.google.com/webstore/category/extensions">Chrome 应用商店</a></p><p><img src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main//img/image-20230726213242271.png" alt="image-20230726213242271"></p><h2 id="Edge扩展插件"><a href="#Edge扩展插件" class="headerlink" title="Edge扩展插件"></a>Edge扩展插件</h2><p>官网：<a href="https://microsoftedge.microsoft.com/addons/Microsoft-Edge-Extensions-Home">Microsoft Edge 加载项</a></p><p><img src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main//img/image-20230726215444561.png" alt="image-20230726215444561"></p><h2 id="Tampermonkey"><a href="#Tampermonkey" class="headerlink" title="Tampermonkey"></a>Tampermonkey</h2><p>提到浏览器扩展必不可少的肯定是油猴</p><p>油猴的官网：<a href="https://www.tampermonkey.net/">https://www.tampermonkey.net/</a></p><p>可以直接去谷歌商店去下载安装 Tampermonkey</p><p>也可以在官网点击下载按钮进行下载安装</p><p>（ 另外我发现一个问题，如果你使用Edge访问官网，可能会没有以下下载按钮。）</p><p><img src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main//img/image-20230726213607424.png" alt="image-20230726213607424"></p><p>油猴是非常强大的扩展插件，具有很高的执行权限。安装的时候一定要确认脚本的安全性，因为浏览器在使用中会获取很多平台的密码。各种各样的个人信息</p><p>虽然油猴的插件很方便，安装脚本的时候一定要注意脚本的安全性。（会看代码的去看一下源码）安全第一！</p><h2 id="AdGuard"><a href="#AdGuard" class="headerlink" title="AdGuard"></a>AdGuard</h2><p><img src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main//img/image-20230726214032233.png" alt="image-20230726214032233"></p><p>很好用的广告屏蔽插件，同样有手机软件和电脑软件，只不过是收费的。</p><p>AdGuard官网：<a href="https://adguard.com/zh_cn/welcome.html">https://adguard.com/zh_cn&#x2F;welcome.html</a></p><p>Chrome 应用商店下载地址：<a href="https://chrome.google.com/webstore/detail/adguard-adblocker/bgnkhhnnamicmpeenaelnjfhikgbkllg">AdGuard</a></p><p>Github项目地址：<a href="https://github.com/AdguardTeam/AdguardBrowserExtension">https://github.com/AdguardTeam/AdguardBrowserExtension</a></p><h2 id="猫抓-cat-catch"><a href="#猫抓-cat-catch" class="headerlink" title="猫抓(cat catch)"></a>猫抓(cat catch)</h2><p>猫抓(cat-catch) 资源嗅探扩展，能够抓取当前网页上面的音频视频文件。主要就是这个功能，也是在Github开源的项目，很老牌的一个扩展。</p><p>了解插件的更多信息，请前往帮助文档：<a href="https://o2bmm.gitbook.io/cat-catch/">https://o2bmm.gitbook.io/cat-catch/</a></p><p>Github开源地址：<a href="https://github.com/xifangczy/cat-catch">https://github.com/xifangczy/cat-catch</a></p><p>Chrome 应用商店下载地址：<a href="https://chrome.google.com/webstore/detail/jfedfbgedapdagkghmgibemcoggfppbb">https://chrome.google.com/webstore/detail/jfedfbgedapdagkghmgibemcoggfppbb</a></p><h2 id="IDM-Integration-Module"><a href="#IDM-Integration-Module" class="headerlink" title="IDM Integration Module"></a>IDM Integration Module</h2><p>360安全浏览器：<a href="https://ext.se.360.cn/webstore/search/idm">应用市场 (360.cn)</a></p><p>Edge扩展下载地址：<a href="https://microsoftedge.microsoft.com/addons/detail/idm-integration-module/llbjbkhnmlidjebalopleeepgdfgcpec">IDM Integration Module</a></p><p>需要配合IDM客户端使用。</p><h2 id="沉浸式翻译"><a href="#沉浸式翻译" class="headerlink" title="沉浸式翻译"></a>沉浸式翻译</h2><p>很好用的网页翻译扩展，有些时候感觉没有Edge自带的好使。有些时候已经登陆了某些东西，不方便再复制到Edge访问可以用这个临时顶一下。其实也挺好用的，最大的特点是对照式翻译，原文和译文都显示。翻速度一般。了解更多请移步<a href="https://immersivetranslate.com/docs/">帮助文档</a></p><p>Github开源地址：<a href="https://github.com/immersive-translate/immersive-translate/releases/">Github沉浸式翻译</a></p><p>Chrome 应用商店下载地址：<a href="https://chrome.google.com/webstore/detail/immersive-translate/bpoadfkcbjbfhfodiogcnhhhpibjhbnh/related">沉浸式翻译</a></p><p>帮助文档地址：<a href="https://immersivetranslate.com/docs/">https://immersivetranslate.com/docs/</a></p><h2 id="WebRTC-Control"><a href="#WebRTC-Control" class="headerlink" title="WebRTC Control"></a>WebRTC Control</h2><p>谷歌应用商店：<a href="https://chrome.google.com/webstore/detail/webrtc-control/fjkmabmdepjfammlpliljpnbhleegehm/related">WebRTC Control</a></p><p><img src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/image-20231105162307534.png" alt="image-20231105162307534"></p><p>未完待续。。。</p><p><img src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/END_02.svg"></p>]]></content>
+        <content type="html"><![CDATA[<h2 id="Chrome-应用商店："><a href="#Chrome-应用商店：" class="headerlink" title="Chrome 应用商店："></a>Chrome 应用商店：</h2><p>官网：<a href="https://chrome.google.com/webstore/category/extensions">Chrome 应用商店</a></p><p><img src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main//img/image-20230726213242271.png" alt="image-20230726213242271"></p><h2 id="Edge扩展插件"><a href="#Edge扩展插件" class="headerlink" title="Edge扩展插件"></a>Edge扩展插件</h2><p>官网：<a href="https://microsoftedge.microsoft.com/addons/Microsoft-Edge-Extensions-Home">Microsoft Edge 加载项</a></p><p><img src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main//img/image-20230726215444561.png" alt="image-20230726215444561"></p><h2 id="Tampermonkey"><a href="#Tampermonkey" class="headerlink" title="Tampermonkey"></a>Tampermonkey</h2><p>提到浏览器扩展必不可少的肯定是油猴</p><p>油猴的官网：<a href="https://www.tampermonkey.net/">https://www.tampermonkey.net/</a></p><p>可以直接去谷歌商店去下载安装 Tampermonkey</p><p>也可以在官网点击下载按钮进行下载安装</p><p>（ 另外我发现一个问题，如果你使用Edge访问官网，可能会没有以下下载按钮。）</p><p><img src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main//img/image-20230726213607424.png" alt="image-20230726213607424"></p><p>油猴是非常强大的扩展插件，具有很高的执行权限。安装的时候一定要确认脚本的安全性，因为浏览器在使用中会获取很多平台的密码。各种各样的个人信息</p><p>虽然油猴的插件很方便，安装脚本的时候一定要注意脚本的安全性。（会看代码的去看一下源码）安全第一！</p><h2 id="AdGuard"><a href="#AdGuard" class="headerlink" title="AdGuard"></a>AdGuard</h2><p><img src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main//img/image-20230726214032233.png" alt="image-20230726214032233"></p><p>很好用的广告屏蔽插件，同样有手机软件和电脑软件，只不过是收费的。</p><p>AdGuard官网：<a href="https://adguard.com/zh_cn/welcome.html">https://adguard.com/zh_cn&#x2F;welcome.html</a></p><p>Chrome 应用商店下载地址：<a href="https://chrome.google.com/webstore/detail/adguard-adblocker/bgnkhhnnamicmpeenaelnjfhikgbkllg">AdGuard</a></p><p>Github项目地址：<a href="https://github.com/AdguardTeam/AdguardBrowserExtension">https://github.com/AdguardTeam/AdguardBrowserExtension</a></p><h2 id="猫抓-cat-catch"><a href="#猫抓-cat-catch" class="headerlink" title="猫抓(cat catch)"></a>猫抓(cat catch)</h2><p>猫抓(cat-catch) 资源嗅探扩展，能够抓取当前网页上面的音频视频文件。主要就是这个功能，也是在Github开源的项目，很老牌的一个扩展。</p><p>了解插件的更多信息，请前往帮助文档：<a href="https://o2bmm.gitbook.io/cat-catch/">https://o2bmm.gitbook.io/cat-catch/</a></p><p>Github开源地址：<a href="https://github.com/xifangczy/cat-catch">https://github.com/xifangczy/cat-catch</a></p><p>Chrome 应用商店下载地址：<a href="https://chrome.google.com/webstore/detail/jfedfbgedapdagkghmgibemcoggfppbb">https://chrome.google.com/webstore/detail/jfedfbgedapdagkghmgibemcoggfppbb</a></p><h2 id="IDM-Integration-Module"><a href="#IDM-Integration-Module" class="headerlink" title="IDM Integration Module"></a>IDM Integration Module</h2><p>360安全浏览器：<a href="https://ext.se.360.cn/webstore/search/idm">应用市场 (360.cn)</a></p><p>Edge扩展下载地址：<a href="https://microsoftedge.microsoft.com/addons/detail/idm-integration-module/llbjbkhnmlidjebalopleeepgdfgcpec">IDM Integration Module</a></p><p>需要配合IDM客户端使用。</p><h2 id="沉浸式翻译"><a href="#沉浸式翻译" class="headerlink" title="沉浸式翻译"></a>沉浸式翻译</h2><p>很好用的网页翻译扩展，有些时候感觉没有Edge自带的好使。有些时候已经登陆了某些东西，不方便再复制到Edge访问可以用这个临时顶一下。其实也挺好用的，最大的特点是对照式翻译，原文和译文都显示。翻速度一般。了解更多请移步<a href="https://immersivetranslate.com/docs/">帮助文档</a></p><p>Github开源地址：<a href="https://github.com/immersive-translate/immersive-translate/releases/">Github沉浸式翻译</a></p><p>Chrome 应用商店下载地址：<a href="https://chromewebstore.google.com/detail/%E6%B2%89%E6%B5%B8%E5%BC%8F%E7%BF%BB%E8%AF%91-%E7%BD%91%E9%A1%B5%E7%BF%BB%E8%AF%91%E6%8F%92%E4%BB%B6-pdf%E7%BF%BB%E8%AF%91-%E5%85%8D%E8%B4%B9/bpoadfkcbjbfhfodiogcnhhhpibjhbnh">沉浸式翻译</a></p><p>帮助文档地址：<a href="https://immersivetranslate.com/docs/">https://immersivetranslate.com/docs/</a></p><h2 id="WebRTC-Control"><a href="#WebRTC-Control" class="headerlink" title="WebRTC Control"></a>WebRTC Control</h2><p>谷歌应用商店：<a href="https://chrome.google.com/webstore/detail/webrtc-control/fjkmabmdepjfammlpliljpnbhleegehm/related">WebRTC Control</a></p><p><img src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/image-20231105162307534.png" alt="image-20231105162307534"></p><h2 id="自由跳转"><a href="#自由跳转" class="headerlink" title="自由跳转"></a>自由跳转</h2><p>微博，知乎，简书等网站的外链有时候不能直接访问，通过这个插件来修改不能跳转的外链。</p><p>谷歌应用商店：<a href="https://chromewebstore.google.com/detail/%E8%87%AA%E7%94%B1%E8%B7%B3%E8%BD%AC/ldfofldbjpkkenoichgpoikbfgplgfdd">自由跳转</a></p><p><img src="https://lh3.googleusercontent.com/Iq6KX5DRnCXM-osxp4kIY-ogRTmx-daLblfhZzeordiJQMa2g7R5gSGuVqtxhPpQCmLjVt-PYXD80l1dw0UOCe3ZzQ=s800-w800-h500"></p><p>未完待续。。。</p><p><img src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/END_02.svg"></p>]]></content>
       
       
       
