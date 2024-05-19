@@ -1,0 +1,262 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>ripgrep | SansuidouEr Blog</title><meta name="author" content="ShanSuiDouEr"><meta name="copyright" content="ShanSuiDouEr"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="一个面向行的搜索工具">
+<meta property="og:type" content="article">
+<meta property="og:title" content="ripgrep">
+<meta property="og:url" content="https://sansuidouer.github.io/11922/">
+<meta property="og:site_name" content="SansuidouEr Blog">
+<meta property="og:description" content="一个面向行的搜索工具">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/ripgrep_Banner.webp">
+<meta property="article:published_time" content="2024-05-19T09:53:11.000Z">
+<meta property="article:modified_time" content="2024-05-19T12:02:52.041Z">
+<meta property="article:author" content="ShanSuiDouEr">
+<meta property="article:tag" content="软件分享">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/ripgrep_Banner.webp"><link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/L_v02.svg"><link rel="canonical" href="https://sansuidouer.github.io/11922/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//www.google-analytics.com" crossorigin=""/><link rel="preconnect" href="//hm.baidu.com"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css?v=4.12.0"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.1/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-snackbar@0.1.16/dist/snackbar.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.32/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?56c7fae9531e93ee02426f8764c18419";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script><script async="async" src="https://www.googletagmanager.com/gtag/js?id=G-5PJKX2E5PZ"></script><script>window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-5PJKX2E5PZ');
+</script><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":false,"top_n_per_article":1,"unescape":false,"languages":{"hits_empty":"找不到您查询的内容：${query}","hits_stats":"共找到 ${hits} 篇文章"}},
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":200},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '天',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: {"chs_to_cht":"你已切换为繁体中文","cht_to_chs":"你已切换为简体中文","day_to_night":"你已切换为深色模式","night_to_day":"你已切换为浅色模式","bgLight":"#49b1f5","bgDark":"#1f1f1f","position":"bottom-left"},
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid@4.11.0/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyload: true,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: true,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'ripgrep',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2024-05-19 20:02:52'
+}</script><script>(win=>{
+      win.saveToLocal = {
+        set: (key, value, ttl) => {
+          if (ttl === 0) return
+          const now = Date.now()
+          const expiry = now + ttl * 86400000
+          const item = {
+            value,
+            expiry
+          }
+          localStorage.setItem(key, JSON.stringify(item))
+        },
+      
+        get: key => {
+          const itemStr = localStorage.getItem(key)
+      
+          if (!itemStr) {
+            return undefined
+          }
+          const item = JSON.parse(itemStr)
+          const now = Date.now()
+      
+          if (now > item.expiry) {
+            localStorage.removeItem(key)
+            return undefined
+          }
+          return item.value
+        }
+      }
+    
+      win.getScript = (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        script.onerror = reject
+        script.onload = script.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          script.onload = script.onreadystatechange = null
+          resolve()
+        }
+
+        Object.keys(attr).forEach(key => {
+          script.setAttribute(key, attr[key])
+        })
+
+        document.head.appendChild(script)
+      })
+    
+      win.getCSS = (url, id = false) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onerror = reject
+        link.onload = link.onreadystatechange = function() {
+          const loadState = this.readyState
+          if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+          link.onload = link.onreadystatechange = null
+          resolve()
+        }
+        document.head.appendChild(link)
+      })
+    
+      win.activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+        if (t === 'dark') activateDarkMode()
+        else if (t === 'light') activateLightMode()
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
+    
+      const detectApple = () => {
+        if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+          document.documentElement.classList.add('apple')
+        }
+      }
+      detectApple()
+    })(window)</script><meta name="generator" content="Hexo 7.1.1"><link rel="alternate" href="/atom.xml" title="SansuidouEr Blog" type="application/atom+xml">
+</head><body><script>window.paceOptions = {
+  restartOnPushState: false
+}
+
+document.addEventListener('pjax:send', () => {
+  Pace.restart()
+})
+</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pace-js@1.2.4/themes/blue/pace-theme-minimal.min.css"/><script src="https://cdn.jsdelivr.net/npm/pace-js@1.2.4/pace.min.js"></script><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/L_v02.svg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">61</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">11</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">7</div></a></div><hr class="custom-hr"/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/Links/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background-image: url('https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/ripgrep_Banner.webp')"><nav id="nav"><span id="blog-info"><a href="/" title="SansuidouEr Blog"><span class="site-name">SansuidouEr Blog</span></a></span><div id="menus"><div id="search-button"><a class="site-page social-icon search" href="javascript:void(0);"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/Links/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><a class="site-page" href="javascript:void(0);"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="post-info"><h1 class="post-title">ripgrep</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2024-05-19T09:53:11.000Z" title="发表于 2024-05-19 17:53:11">2024-05-19</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2024-05-19T12:02:52.041Z" title="更新于 2024-05-19 20:02:52">2024-05-19</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E8%BD%AF%E4%BB%B6/">软件</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title="ripgrep"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">阅读量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><h1 id="ripgrep"><a href="#ripgrep" class="headerlink" title="ripgrep"></a>ripgrep</h1><p>ripgrep 是一个以行为单位的搜索工具， 它根据提供的 pattern 递归地在指定的目录里搜索。它是由 Rust 语言写成，相较与同类工具，它的特点就是无与伦比地快。</p>
+<p>性能有多强大可以看一下作者提供的几个常见的搜索工具对比&nbsp;&nbsp;<a target="_blank" rel="noopener" href="https://github.com/chinanf-boy/ripgrep-zh?tab=readme-ov-file#%E5%90%84%E5%A4%A7%E5%B7%A5%E5%85%B7%E5%AF%B9%E6%AF%94%E4%BE%8B%E5%AD%90">去看看&gt;</a></p>
+<h2 id="下面说正事"><a href="#下面说正事" class="headerlink" title="下面说正事"></a>下面说正事</h2><p>Github开源地址：<a target="_blank" rel="noopener" href="https://github.com/BurntSushi/ripgrep">https://github.com/BurntSushi/ripgrep</a></p>
+<p>中文帮助：<a target="_blank" rel="noopener" href="https://github.com/chinanf-boy/ripgrep-zh">https://github.com/chinanf-boy/ripgrep-zh</a></p>
+<p>Github最新版本：</p>
+<img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://camo.githubusercontent.com/40723696a8f78230fd194ba39de2e9a4ce1fe7f03219fe76b458775d216c59e8/68747470733a2f2f696d672e736869656c64732e696f2f6372617465732f762f726970677265702e737667" align="left" />
+<p>&nbsp;</p>
+
+
+
+<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><p>由于没有使用过MaCOS 和 Linux </p>
+<p>我将安装到Windows上面进行使用</p>
+<h3 id="从Vs-Code中使用"><a href="#从Vs-Code中使用" class="headerlink" title="从Vs Code中使用"></a>从Vs Code中使用</h3><p>如果你安装了Vs Code（Visual Studio Code）（&nbsp;如果你想安装VsCode&nbsp;&nbsp;<a href="/45943/">去看看 &nbsp;&gt;</a>）</p>
+<p>则在Vs Code安装目录下的\resources\app\node_modules.asar.unpacked@vscode\ripgrep\bin目录下有ripgrep（rg.exe）</p>
+<p>我将Vs Code默认安装到了C盘，我的完整目录如下：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">C:\Users\Administrator\AppData\Local\Programs\Microsoft VS Code\resources\app\node_modules.asar.unpacked\@vscode\ripgrep\bin</span><br></pre></td></tr></table></figure>
+
+<p>将以上目录添加到环境变量的Path里面即可使用！</p>
+<h3 id="从Github下载安装"><a href="#从Github下载安装" class="headerlink" title="从Github下载安装"></a>从Github下载安装</h3><p>第一步，<a target="_blank" rel="noopener" href="https://github.com/BurntSushi/ripgrep/releases">下载</a></p>
+<p>如果没有找到Windows别忘了展开全部！</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/image-20240519182517532.png" alt="image-20240519182517532"></p>
+<p>如果你不知道下载那个Windws版本</p>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>windows-gnu.zip</th>
+<th>windows-msvc.zip</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>编译器</td>
+<td>GCC</td>
+<td>MSVC</td>
+</tr>
+<tr>
+<td>兼容性</td>
+<td>更广泛的 Windows 系统</td>
+<td>需要 VCRedist</td>
+</tr>
+<tr>
+<td>速度</td>
+<td>略慢</td>
+<td>略快</td>
+</tr>
+</tbody></table>
+<p>如果你看不懂以上表格，则下载windows-msvc.zip即可</p>
+<p>至于.sha256是哈希值校验</p>
+<p>我这里直接下载<a target="_blank" rel="noopener" href="https://github.com/BurntSushi/ripgrep/releases/download/14.1.0/ripgrep-14.1.0-x86_64-pc-windows-msvc.zip">ripgrep-14.1.0-x86_64-pc-windows-msvc.zip</a></p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/image-20240519183509400.png" alt="image-20240519183509400"></p>
+<p>打开压缩包，只有一个rg.exe是有用的！</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/image-20240519183828626.png" alt="image-20240519183828626"></p>
+<p>为了方便使用，将rg可以放在任意一个目录，然后将这个目录添加到环境变量的Path里面</p>
+<p>假如我将rg.exe放在了C:\Program Files\ripgrep\</p>
+<p>也就是将C:\Program Files\ripgrep\这个目录添加到Path的列表中</p>
+<p>如果你不会，那么就让度娘来帮你：<a target="_blank" rel="noopener" href="https://jingyan.baidu.com/article/8ebacdf02d3c2949f65cd5d0.html">https://jingyan.baidu.com/article/8ebacdf02d3c2949f65cd5d0.html</a></p>
+<p>这一步完成就意味着你随时随地可以使用ripgrep了！</p>
+<h2 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h2><p>先检查一下ripgrep是否安装成功，Win+R 运行cmd</p>
+<p>在命令行面板输入以下命令</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rg --version</span><br></pre></td></tr></table></figure>
+
+<p>安装成功则返回版本号，返回ripgrep 14.1.0 (rev e50df40a19)，也就是当前版本为14.1.0，安装好了。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">C:\Users\Administrator&gt;rg --version</span><br><span class="line">ripgrep 14.1.0 (rev e50df40a19)</span><br><span class="line"></span><br><span class="line">features:-simd-accel,+pcre2</span><br><span class="line">simd(compile):+SSE2,-SSSE3,-AVX2</span><br><span class="line">simd(runtime):+SSE2,+SSSE3,+AVX2</span><br><span class="line"></span><br><span class="line">PCRE2 10.42 is available (JIT is available)</span><br><span class="line"></span><br><span class="line">C:\Users\Administrator&gt;</span><br></pre></td></tr></table></figure>
+
+<p><code>rg -h</code> 可以得到简短的帮助！</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br></pre></td><td class="code"><pre><span class="line">ripgrep 14.1.0（修订版 e50df40a19）</span><br><span class="line">Andrew Gallant &lt;jamslam@gmail.com&gt;</span><br><span class="line"></span><br><span class="line">ripgrep（rg）递归搜索当前目录中与正则表达式模式匹配的行。默认情况下，ripgrep 将遵循 gitignore 规则，并自动跳过隐藏文件/目录和二进制文件。</span><br><span class="line"></span><br><span class="line">使用 -h 获取简短描述，使用 --help 获取更多详细信息。</span><br><span class="line"></span><br><span class="line">项目主页：https://github.com/BurntSushi/ripgrep</span><br><span class="line"></span><br><span class="line">用法：</span><br><span class="line">rg [选项] 模式 [路径...]</span><br><span class="line"></span><br><span class="line">位置参数：</span><br><span class="line">&lt;PATTERN&gt; 用于搜索的正则表达式。</span><br><span class="line">&lt;PATH&gt;... 要搜索的文件或目录。</span><br><span class="line"></span><br><span class="line">输入选项：</span><br><span class="line">-e，--regexp=PATTERN 搜索的模式。</span><br><span class="line">-f，--file=PATTERNFILE 从给定文件中搜索模式。</span><br><span class="line">--pre=COMMAND 对每个路径搜索 COMMAND 的输出。</span><br><span class="line">--pre-glob=GLOB 包含或排除预处理器的文件。</span><br><span class="line">-z，--search-zip 在压缩文件中搜索。</span><br><span class="line"></span><br><span class="line">搜索选项：</span><br><span class="line">-s，--case-sensitive 区分大小写地搜索（默认）。</span><br><span class="line">--crlf 使用 CRLF 行终止符（适用于 Windows）。</span><br><span class="line">--dfa-size-limit=NUM 正则表达式 DFA 的上限大小。</span><br><span class="line">-E，--encoding=ENCODING 指定要搜索的文件的文本编码。</span><br><span class="line">--engine=ENGINE 指定要使用的正则表达式引擎。</span><br><span class="line">-F，--fixed-strings 将所有模式视为字面量。</span><br><span class="line">-i，--ignore-case 不区分大小写搜索。</span><br><span class="line">-v，--invert-match 反转匹配。</span><br><span class="line">-x，--line-regexp 显示由行边界包围的匹配项。</span><br><span class="line">-m，--max-count=NUM 限制匹配行数。</span><br><span class="line">--mmap 尽可能使用内存映射进行搜索。</span><br><span class="line">-U，--multiline 启用跨多行的搜索。</span><br><span class="line">--multiline-dotall 使 &#x27;.&#x27; 匹配行终止符。</span><br><span class="line">--no-unicode 禁用 Unicode 模式。</span><br><span class="line">--null-data 使用 NUL 作为行终止符。</span><br><span class="line">-P，--pcre2 启用 PCRE2 匹配。</span><br><span class="line">--regex-size-limit=NUM 编译后的正则表达式大小限制。</span><br><span class="line">-S，--smart-case 智能大小写搜索。</span><br><span class="line">--stop-on-nonmatch 在非匹配后停止搜索。</span><br><span class="line">-a，--text 将二进制文件视为文本搜索。</span><br><span class="line">-j，--threads=NUM 设置要使用的线程数。</span><br><span class="line">-w，--word-regexp 显示由单词边界包围的匹配项。</span><br><span class="line">--auto-hybrid-regex（已弃用）根据需要使用 PCRE2。</span><br><span class="line">--no-pcre2-unicode（已弃用）禁用 PCRE2 的 Unicode 模式。</span><br><span class="line"></span><br><span class="line">过滤选项：</span><br><span class="line">--binary 搜索二进制文件。</span><br><span class="line">-L，--follow 跟随符号链接。</span><br><span class="line">-g，--glob=GLOB 包含或排除文件路径。</span><br><span class="line">--glob-case-insensitive 对所有 glob 模式进行大小写不敏感处理。</span><br><span class="line">-., --hidden 搜索隐藏文件和目录。</span><br><span class="line">--iglob=GLOB 大小写不敏感地包含/排除路径。</span><br><span class="line">--ignore-file=PATH 指定额外的忽略文件。</span><br><span class="line">--ignore-file-case-insensitive 对忽略文件进行大小写不敏感处理。</span><br><span class="line">-d，--max-depth=NUM 最多遍历 NUM 个目录。</span><br><span class="line">--max-filesize=NUM 忽略大小大于 NUM 的文件。</span><br><span class="line">--no-ignore 不使用忽略文件。</span><br><span class="line">--no-ignore-dot 不使用 .ignore 或 .rgignore 文件。</span><br><span class="line">--no-ignore-exclude 不使用本地排除文件。</span><br><span class="line">--no-ignore-files 不使用 --ignore-file 参数。</span><br><span class="line">--no-ignore-global 不使用全局忽略文件。</span><br><span class="line">--no-ignore-parent 不使用父目录中的忽略文件。</span><br><span class="line">--no-ignore-vcs 不使用源代码控制的忽略文件。</span><br><span class="line">--no-require-git 在 git 存储库之外使用 .gitignore。</span><br><span class="line">--one-file-system 跳过其他文件系统上的目录。</span><br><span class="line">-t，--type=TYPE 仅搜索匹配 TYPE 的文件。</span><br><span class="line">-T，--type-not=TYPE 不搜索匹配 TYPE 的文件。</span><br><span class="line">--type-add=TYPESPEC 为文件类型添加新的 glob。</span><br><span class="line">--type-clear=TYPE 清除文件类型的 glob。</span><br><span class="line">-u，--unrestricted 降低“智能”过滤的级别。</span><br><span class="line"></span><br><span class="line">输出选项：</span><br><span class="line">-A，--after-context=NUM 显示每个匹配项后的 NUM 行。</span><br><span class="line">-B，--before-context=NUM 显示每个匹配项前的 NUM 行。</span><br><span class="line">--block-buffered 强制使用块缓冲。</span><br><span class="line">-b，--byte-offset 打印每个匹配行的字节偏移量。</span><br><span class="line">--color=WHEN 何时使用颜色。</span><br><span class="line">--colors=COLOR_SPEC 配置颜色设置和样式。</span><br><span class="line">--column 显示列号。</span><br><span class="line">-C，--context=NUM 显示每个匹配项前后的 NUM 行。</span><br><span class="line">--context-separator=SEP 设置上下文块的分隔符。</span><br><span class="line">--field-context-separator=SEP 设置字段上下文分隔符。</span><br><span class="line">--field-match-separator=SEP 设置字段匹配分隔符。</span><br><span class="line">--heading 按每个文件分组打印匹配项。</span><br><span class="line">-h，--help 显示帮助输出。</span><br><span class="line">--hostname-bin=COMMAND 运行程序获取此系统的主机名。</span><br><span class="line">--hyperlink-format=FORMAT 设置超链接的格式。</span><br><span class="line">--include-zero 在摘要输出中包含零匹配。</span><br><span class="line">--line-buffered 强制使用行缓冲。</span><br><span class="line">-n，--line-number 显示行号。</span><br><span class="line">-N，--no-line-number 不打印行号。</span><br><span class="line">-M，--max-columns=NUM 忽略长度超过此限制的行。</span><br><span class="line">--max-columns-preview 显示超过限制的行的预览。</span><br><span class="line">-0，--null 在文件路径后打印一个 NUL 字节。</span><br><span class="line">-o，--only-matching 仅打印行的匹配部分。</span><br><span class="line">--path-separator=SEP 设置打印路径的路径分隔符。</span><br><span class="line">--passthru 打印匹配和非匹配行。</span><br><span class="line">-p，--pretty 颜色、标题和行号的别名。</span><br><span class="line">-q，--quiet 不向标准输出打印任何内容。</span><br><span class="line">-r，--replace=TEXT 用给定文本替换匹配</span><br></pre></td></tr></table></figure>
+
+<p>关键字搜索：</p>
+<p>搜索D盘所有二进制文件内容包含Hello关键字的文件并列举出来</p>
+<p><code>-l</code> &nbsp;告诉 ripgrep 只输出匹配的文件路径，而不显示匹配的内容。</p>
+<p><code>&quot;Hello&quot;</code>&nbsp;关键字:Hello</p>
+<p><code>&quot;D:&quot;</code>&nbsp;路径D盘</p>
+<p><code>-i</code>&nbsp;忽略大小写</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rg -l &quot;Hello&quot; &quot;D:&quot; -i</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="搜索有病毒的Maya文件"><a href="#搜索有病毒的Maya文件" class="headerlink" title="搜索有病毒的Maya文件"></a>搜索有病毒的Maya文件</h2><p>关键字vaccine&nbsp;&nbsp;fuckVirus&nbsp;&nbsp;“|”为连接符 </p>
+<p>搜索路径为&nbsp;&nbsp;D:\work</p>
+<p>-g “<em>.ma” -g “</em>.mb”&nbsp;&nbsp;仅搜索ma和mb格式文件</p>
+<p>-i&nbsp;&nbsp;不区分大小写</p>
+<p>> D:\results.txt &nbsp;&nbsp;将搜索结果保存到D:\results.txt<p>
+
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">rg -l &quot;vaccine|fuckVirus&quot; &quot;D:\work&quot; -g &quot;*.ma&quot; -g &quot;*.mb&quot; -i &gt; D:\results.txt</span><br></pre></td></tr></table></figure>
+
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/END_02.svg"></p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>文章作者: </span><span class="post-copyright-info"><a href="https://sansuidouer.github.io">ShanSuiDouEr</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>文章链接: </span><span class="post-copyright-info"><a href="https://sansuidouer.github.io/11922/">https://sansuidouer.github.io/11922/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来自 <a href="https://sansuidouer.github.io" target="_blank">SansuidouEr Blog</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/%E8%BD%AF%E4%BB%B6%E5%88%86%E4%BA%AB/">软件分享</a></div><div class="post_share"><div class="social-share" data-image="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/ripgrep_Banner.webp" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.3/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.3/sharejs/dist/js/social-share.min.js" defer></script></div></div><div class="post-reward"><div class="reward-button"><i class="fas fa-qrcode"></i>打赏三岁豆Er</div><div class="reward-main"><ul class="reward-all"><li class="reward-item"><a href="https://s2.loli.net/2023/07/23/xMPYRhWV5JNFnAU.png" target="_blank"><img class="post-qr-code-img" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://s2.loli.net/2023/07/23/xMPYRhWV5JNFnAU.png" alt="微信"/></a><div class="post-qr-code-desc">微信</div></li><li class="reward-item"><a href="https://s2.loli.net/2023/07/23/aGLTW4jf8tV316o.png" target="_blank"><img class="post-qr-code-img" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://s2.loli.net/2023/07/23/aGLTW4jf8tV316o.png" alt="支付宝"/></a><div class="post-qr-code-desc">支付宝</div></li></ul></div></div><nav class="pagination-post" id="pagination"><div class="next-post pull-full"><a href="/52338/" title="Ps磨皮插件Portraiture"><img class="cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/Portraiture2.png" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="pagination-info"><div class="label">下一篇</div><div class="next_info">Ps磨皮插件Portraiture</div></div></a></div></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>相关推荐</span></div><div class="relatedPosts-list"><div><a href="/53540/" title="2345看图王绿色去广告版"><img class="cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/2345Pic.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2023-09-16</div><div class="title">2345看图王绿色去广告版</div></div></a></div><div><a href="/25633/" title="IDM下载器"><img class="cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/IDM_Banner.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2023-08-04</div><div class="title">IDM下载器</div></div></a></div><div><a href="/23086/" title="Listary"><img class="cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://s1.ax1x.com/2023/07/23/pCLKywR.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2023-07-08</div><div class="title">Listary</div></div></a></div><div><a href="/59922/" title="NekoBox"><img class="cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/NekoBox.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2023-11-12</div><div class="title">NekoBox</div></div></a></div><div><a href="/21735/" title="PixPin"><img class="cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/PixPin_B.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2023-12-06</div><div class="title">PixPin</div></div></a></div><div><a href="/52338/" title="Ps磨皮插件Portraiture"><img class="cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/Portraiture2.png" alt="cover"><div class="content is-center"><div class="date"><i class="far fa-calendar-alt fa-fw"></i> 2024-04-27</div><div class="title">Ps磨皮插件Portraiture</div></div></a></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/L_v02.svg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">ShanSuiDouEr</div><div class="author-info__description">知足不辱，知止不殆</div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">61</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">11</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">7</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/SansuidouEr/"><i class="fab fa-github"></i><span>我的 Github</span></a><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/SansuidouEr/" target="_blank" title="Github"><i class="fab fa-github" style="color: #24292e;"></i></a><a class="social-icon" href="mailto:2898865071@qq.com" target="_blank" title="Email"><i class="fas fa-envelope" style="color: #4a7dbe;"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">欢迎来到我的博客<p>如遇问题请通过<a href="/about" style="color:#49b1f5">关于</a>联系我</p><p>因网络而异, 如访问本站较慢</p><p>请使用科学上网访问本站</p></div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#ripgrep"><span class="toc-number">1.</span> <span class="toc-text">ripgrep</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%8B%E9%9D%A2%E8%AF%B4%E6%AD%A3%E4%BA%8B"><span class="toc-number">1.1.</span> <span class="toc-text">下面说正事</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AE%89%E8%A3%85"><span class="toc-number">1.2.</span> <span class="toc-text">安装</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BB%8EVs-Code%E4%B8%AD%E4%BD%BF%E7%94%A8"><span class="toc-number">1.2.1.</span> <span class="toc-text">从Vs Code中使用</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BB%8EGithub%E4%B8%8B%E8%BD%BD%E5%AE%89%E8%A3%85"><span class="toc-number">1.2.2.</span> <span class="toc-text">从Github下载安装</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BD%BF%E7%94%A8"><span class="toc-number">1.3.</span> <span class="toc-text">使用</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%90%9C%E7%B4%A2%E6%9C%89%E7%97%85%E6%AF%92%E7%9A%84Maya%E6%96%87%E4%BB%B6"><span class="toc-number">1.4.</span> <span class="toc-text">搜索有病毒的Maya文件</span></a></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/11922/" title="ripgrep"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/ripgrep_Banner.webp" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="ripgrep"/></a><div class="content"><a class="title" href="/11922/" title="ripgrep">ripgrep</a><time datetime="2024-05-19T09:53:11.000Z" title="发表于 2024-05-19 17:53:11">2024-05-19</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/52338/" title="Ps磨皮插件Portraiture"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/Portraiture2.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Ps磨皮插件Portraiture"/></a><div class="content"><a class="title" href="/52338/" title="Ps磨皮插件Portraiture">Ps磨皮插件Portraiture</a><time datetime="2024-04-27T10:06:21.000Z" title="发表于 2024-04-27 18:06:21">2024-04-27</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/14562/" title="错误：Windws找不到文件360seURL错误"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/360seURL.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="错误：Windws找不到文件360seURL错误"/></a><div class="content"><a class="title" href="/14562/" title="错误：Windws找不到文件360seURL错误">错误：Windws找不到文件360seURL错误</a><time datetime="2024-04-27T09:21:40.000Z" title="发表于 2024-04-27 17:21:40">2024-04-27</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/25007/" title="Maya解锁默认纹理列表"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/defaultTextureList_Banner.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Maya解锁默认纹理列表"/></a><div class="content"><a class="title" href="/25007/" title="Maya解锁默认纹理列表">Maya解锁默认纹理列表</a><time datetime="2024-03-04T13:17:41.000Z" title="发表于 2024-03-04 21:17:41">2024-03-04</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/64941/" title="Maya的几个环境变量"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/HuanJing.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Maya的几个环境变量"/></a><div class="content"><a class="title" href="/64941/" title="Maya的几个环境变量">Maya的几个环境变量</a><time datetime="2024-03-04T13:00:02.000Z" title="发表于 2024-03-04 21:00:02">2024-03-04</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2023 - 2024 By ShanSuiDouEr</div><div class="footer_custom_text">欢迎来到我的博客！</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js?v=4.12.0"></script><script src="/js/main.js?v=4.12.0"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0.32/dist/fancybox/fancybox.umd.min.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page@5.2.0/instantpage.min.js" type="module"></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.8.5/dist/lazyload.iife.min.js"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar@0.1.16/dist/snackbar.min.js"></script><div class="js-pjax"></div><canvas class="fireworks" mobile="true"></canvas><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.3/dist/fireworks.min.js"></script><script defer="defer" id="fluttering_ribbon" mobile="true" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc@1.1.3/dist/canvas-fluttering-ribbon.min.js"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="is-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据库加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div id="local-search-results"></div><div id="local-search-stats-wrap"></div></div></div><div id="search-mask"></div><script src="/js/search/local-search.js?v=4.12.0"></script></div></div></body></html>
