@@ -4,6 +4,81 @@
   
     
     <entry>
+      <title>PureRef 2.0 汉化版</title>
+      <link href="/23644/"/>
+      <url>/23644/</url>
+      
+        <content type="html"><![CDATA[<h1 id="PureRef-2-0-汉化版"><a href="#PureRef-2-0-汉化版" class="headerlink" title="PureRef  2.0 汉化版"></a>PureRef  2.0 汉化版</h1><h3 id="官网：https-www-pureref-com"><a href="#官网：https-www-pureref-com" class="headerlink" title="官网：https://www.pureref.com/"></a>官网：<a href="https://www.pureref.com/">https://www.pureref.com/</a></h3><p>研几汉化：<a href="https://yanjicg.com/product/pureref">https://yanjicg.com/product/pureref</a></p><p>2.0更新内容：<a href="https://www.pureref.com/blog/pureref2/">https://www.pureref.com/blog/pureref2/</a></p><p>默认研几提供的是123云盘下载！</p><p>蓝奏云下载：<a href="https://zhangzhilong.lanzouw.com/ieqi41zu4ltg">https://zhangzhilong.lanzouw.com/ieqi41zu4ltg</a></p><p><img src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/PixPin_2024-05-26_19-04-51.webp" alt="PixPin_2024-05-26_19-04-51"></p><p><img src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/END_02.svg"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 软件 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 软件分享 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Oblivion Desktop</title>
+      <link href="/9922/"/>
+      <url>/9922/</url>
+      
+        <content type="html"><![CDATA[<h1 id="Oblivion-Desktop"><a href="#Oblivion-Desktop" class="headerlink" title="Oblivion Desktop"></a>Oblivion Desktop</h1><p>这是由伊朗人开发的一款软件，基于Cloudflare Warp，默认语言是波斯语</p><p>如果你想了解Cloudflare Warp，就在浏览器输入1.1.1.1去看看吧！</p><p>不多做介绍，懂的都懂啦（魔法工具）</p><p>Github主页（Windows）：<a href="https://github.com/bepass-org/oblivion-desktop/">https://github.com/bepass-org/oblivion-desktop/</a></p><p>Github主页（Android ）：<a href="https://github.com/bepass-org/oblivion/">https://github.com/bepass-org/oblivion/</a></p><p>谷歌play商店：<a href="https://play.google.com/store/apps/details?id=org.bepass.oblivion">https://play.google.com/store/apps/details?id=org.bepass.oblivion</a></p><p>Windows端支持中文，需要自己设置，安卓目前不支持，有魔改的版本，但是不稳定。</p><p>Windows端设置中文的方法：</p><p><img src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/image-20240526184248441.png" alt="image-20240526184248441"></p><p><img src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/END_02.svg"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 软件 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 软件分享 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>关于安装Python后Hexo无法使用的问题</title>
+      <link href="/59387/"/>
+      <url>/59387/</url>
+      
+        <content type="html"><![CDATA[<h2 id="问题"><a href="#问题" class="headerlink" title="问题"></a>问题</h2><p>前两天安装了以下Python模块，今天打开Hexo发现无论什么命令都会返回<p style="color: red;"> hexo: command not found</p></p><p><img src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/image-20240526173832960.png" alt="image-20240526173832960"></p><p>于是打开了万能的谷歌，就找到了这篇文章！</p><p>才知道是Python的问题!</p><h2 id="解决方法"><a href="#解决方法" class="headerlink" title="解决方法"></a>解决方法</h2><p>CSDN原文地址：<a href="https://blog.csdn.net/qq_36759224/article/details/100411949">https://blog.csdn.net/qq_36759224/article/details/100411949</a></p><p>解决办法也很简单，按照上文的解决方法，在变量的Path将你的node_modules.bin添加到里面，</p><p>问题即可解决！</p><p><img src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/image-20240526174342444.png" alt="image-20240526174342444"></p><p>hexo -v</p><p>成功！</p><p><img src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/image-20240526174655502.png" alt="image-20240526174655502"></p><p>万万没想到是安装了Python的坑！</p><p>今天又填上了一个坑！</p><p><img src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/END_02.svg"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Hexo </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Hexo </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>ripgrep</title>
       <link href="/11922/"/>
       <url>/11922/</url>
@@ -45,9 +120,9 @@
       
         <tags>
             
-            <tag> 软件分享 </tag>
-            
             <tag> Adobe </tag>
+            
+            <tag> 软件分享 </tag>
             
             <tag> Ps </tag>
             
