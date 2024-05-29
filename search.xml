@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>ACES流程正确设置贴图的色彩空间</title>
+      <link href="/56050/"/>
+      <url>/56050/</url>
+      
+        <content type="html"><![CDATA[<h1 id="ACES流程正确设置贴图的色彩空间"><a href="#ACES流程正确设置贴图的色彩空间" class="headerlink" title="ACES流程正确设置贴图的色彩空间"></a>ACES流程正确设置贴图的色彩空间</h1><p>数据来源：<a href="https://blog.csdn.net/qq_39947564/article/details/125898659">CSDN</a></p><table><thead><tr><th>贴图</th><th>颜色空间</th></tr></thead><tbody><tr><td>颜色贴图（8bit）</td><td>Utility-sRGB-Texture</td></tr><tr><td>颜色贴图（32bit）</td><td>Utility_Linear_sRGB</td></tr><tr><td>HDRI(8bit的jpg文件)</td><td>Utility-sRGB-Texture</td></tr><tr><td>HDRI(32bit的exr文件)</td><td>Utility_Linear_sRGB</td></tr><tr><td>输出数值的贴图</td><td>Utility_Raw</td></tr></tbody></table><p><img src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/END_02.svg"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Maya </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Maya </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>PureRef 2.0 汉化版</title>
       <link href="/23644/"/>
       <url>/23644/</url>
@@ -33,7 +58,7 @@
       <link href="/9922/"/>
       <url>/9922/</url>
       
-        <content type="html"><![CDATA[<h1 id="Oblivion-Desktop"><a href="#Oblivion-Desktop" class="headerlink" title="Oblivion Desktop"></a>Oblivion Desktop</h1><p>这是由伊朗人开发的一款软件，基于Cloudflare Warp，默认语言是波斯语</p><p>如果你想了解Cloudflare Warp，就在浏览器输入1.1.1.1去看看吧！</p><p>不多做介绍，懂的都懂啦（魔法工具）</p><p>Github主页（Windows）：<a href="https://github.com/bepass-org/oblivion-desktop/">https://github.com/bepass-org/oblivion-desktop/</a></p><p>Github主页（Android ）：<a href="https://github.com/bepass-org/oblivion/">https://github.com/bepass-org/oblivion/</a></p><p>谷歌play商店：<a href="https://play.google.com/store/apps/details?id=org.bepass.oblivion">https://play.google.com/store/apps/details?id=org.bepass.oblivion</a></p><p>Windows端支持中文，需要自己设置，安卓目前不支持，有魔改的版本，但是不稳定。</p><p>Windows端设置中文的方法：</p><p><img src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/image-20240526184248441.png" alt="image-20240526184248441"></p><p><img src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/END_02.svg"></p>]]></content>
+        <content type="html"><![CDATA[<h1 id="Oblivion-Desktop"><a href="#Oblivion-Desktop" class="headerlink" title="Oblivion Desktop"></a>Oblivion Desktop</h1><p>这是由伊朗人开发的一款软件，基于Cloudflare Warp，默认语言是波斯语</p><p>如果你想了解Cloudflare Warp，就在浏览器输入1.1.1.1去看看吧！</p><p>不多做介绍，懂的都懂啦（魔法工具）</p><p>Github主页（Windows）：<a href="https://github.com/bepass-org/oblivion-desktop/">https://github.com/bepass-org/oblivion-desktop/</a></p><p>Github主页（Android ）：<a href="https://github.com/bepass-org/oblivion/">https://github.com/bepass-org/oblivion/</a></p><p>谷歌play商店：<a href="https://play.google.com/store/apps/details?id=org.bepass.oblivion">https://play.google.com/store/apps/details?id=org.bepass.oblivion</a></p><p>Windows端支持中文，需要自己设置，安卓目前不支持，有魔改的版本，但是不稳定。</p><p>Windows端设置中文的方法：</p><p><img src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/image-20240526184248441.png" alt="image-20240526184248441"></p><p>Windows设置，勾选系统托盘，这样当最小化时就不会占用托盘的位置！</p><p><img src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20240529205234123.png" alt="image-20240529205234123"></p><p><img src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/END_02.svg"></p>]]></content>
       
       
       <categories>
@@ -120,9 +145,9 @@
       
         <tags>
             
-            <tag> Adobe </tag>
-            
             <tag> 软件分享 </tag>
+            
+            <tag> Adobe </tag>
             
             <tag> Ps </tag>
             

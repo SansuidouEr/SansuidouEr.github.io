@@ -6,7 +6,7 @@
   <link href="https://sansuidouer.github.io/atom.xml" rel="self"/>
   
   <link href="https://sansuidouer.github.io/"/>
-  <updated>2024-05-26T11:21:25.272Z</updated>
+  <updated>2024-05-29T12:54:18.357Z</updated>
   <id>https://sansuidouer.github.io/</id>
   
   <author>
@@ -15,6 +15,30 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>ACES流程正确设置贴图的色彩空间</title>
+    <link href="https://sansuidouer.github.io/56050/"/>
+    <id>https://sansuidouer.github.io/56050/</id>
+    <published>2024-05-29T12:33:14.000Z</published>
+    <updated>2024-05-29T12:54:18.357Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="ACES流程正确设置贴图的色彩空间"><a href="#ACES流程正确设置贴图的色彩空间" class="headerlink" title="ACES流程正确设置贴图的色彩空间"></a>ACES流程正确设置贴图的色彩空间</h1><p>数据来源：<a href="https://blog.csdn.net/qq_39947564/article/details/125898659">CSDN</a></p><table><thead><tr><th>贴图</th><th>颜色空间</th></tr></thead><tbody><tr><td>颜色贴图（8bit）</td><td>Utility-sRGB-Texture</td></tr><tr><td>颜色贴图（32bit）</td><td>Utility_Linear_sRGB</td></tr><tr><td>HDRI(8bit的jpg文件)</td><td>Utility-sRGB-Texture</td></tr><tr><td>HDRI(32bit的exr文件)</td><td>Utility_Linear_sRGB</td></tr><tr><td>输出数值的贴图</td><td>Utility_Raw</td></tr></tbody></table><p><img src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/END_02.svg"></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h1 id=&quot;ACES流程正确设置贴图的色彩空间&quot;&gt;&lt;a href=&quot;#ACES流程正确设置贴图的色彩空间&quot; class=&quot;headerlink&quot; title=&quot;ACES流程正确设置贴图的色彩空间&quot;&gt;&lt;/a&gt;ACES流程正确设置贴图的色彩空间&lt;/h1&gt;&lt;p&gt;数据来源：&lt;a hr</summary>
+      
+    
+    
+    
+    <category term="Maya" scheme="https://sansuidouer.github.io/categories/Maya/"/>
+    
+    
+    <category term="Maya" scheme="https://sansuidouer.github.io/tags/Maya/"/>
+    
+  </entry>
   
   <entry>
     <title>PureRef 2.0 汉化版</title>
@@ -45,9 +69,9 @@
     <link href="https://sansuidouer.github.io/9922/"/>
     <id>https://sansuidouer.github.io/9922/</id>
     <published>2024-05-26T10:15:14.000Z</published>
-    <updated>2024-05-26T11:22:43.943Z</updated>
+    <updated>2024-05-29T12:55:28.758Z</updated>
     
-    <content type="html"><![CDATA[<h1 id="Oblivion-Desktop"><a href="#Oblivion-Desktop" class="headerlink" title="Oblivion Desktop"></a>Oblivion Desktop</h1><p>这是由伊朗人开发的一款软件，基于Cloudflare Warp，默认语言是波斯语</p><p>如果你想了解Cloudflare Warp，就在浏览器输入1.1.1.1去看看吧！</p><p>不多做介绍，懂的都懂啦（魔法工具）</p><p>Github主页（Windows）：<a href="https://github.com/bepass-org/oblivion-desktop/">https://github.com/bepass-org/oblivion-desktop/</a></p><p>Github主页（Android ）：<a href="https://github.com/bepass-org/oblivion/">https://github.com/bepass-org/oblivion/</a></p><p>谷歌play商店：<a href="https://play.google.com/store/apps/details?id=org.bepass.oblivion">https://play.google.com/store/apps/details?id=org.bepass.oblivion</a></p><p>Windows端支持中文，需要自己设置，安卓目前不支持，有魔改的版本，但是不稳定。</p><p>Windows端设置中文的方法：</p><p><img src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/image-20240526184248441.png" alt="image-20240526184248441"></p><p><img src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/END_02.svg"></p>]]></content>
+    <content type="html"><![CDATA[<h1 id="Oblivion-Desktop"><a href="#Oblivion-Desktop" class="headerlink" title="Oblivion Desktop"></a>Oblivion Desktop</h1><p>这是由伊朗人开发的一款软件，基于Cloudflare Warp，默认语言是波斯语</p><p>如果你想了解Cloudflare Warp，就在浏览器输入1.1.1.1去看看吧！</p><p>不多做介绍，懂的都懂啦（魔法工具）</p><p>Github主页（Windows）：<a href="https://github.com/bepass-org/oblivion-desktop/">https://github.com/bepass-org/oblivion-desktop/</a></p><p>Github主页（Android ）：<a href="https://github.com/bepass-org/oblivion/">https://github.com/bepass-org/oblivion/</a></p><p>谷歌play商店：<a href="https://play.google.com/store/apps/details?id=org.bepass.oblivion">https://play.google.com/store/apps/details?id=org.bepass.oblivion</a></p><p>Windows端支持中文，需要自己设置，安卓目前不支持，有魔改的版本，但是不稳定。</p><p>Windows端设置中文的方法：</p><p><img src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/image-20240526184248441.png" alt="image-20240526184248441"></p><p>Windows设置，勾选系统托盘，这样当最小化时就不会占用托盘的位置！</p><p><img src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20240529205234123.png" alt="image-20240529205234123"></p><p><img src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/END_02.svg"></p>]]></content>
     
     
       
@@ -123,9 +147,9 @@
     <category term="Adobe" scheme="https://sansuidouer.github.io/categories/Adobe/"/>
     
     
-    <category term="Adobe" scheme="https://sansuidouer.github.io/tags/Adobe/"/>
-    
     <category term="软件分享" scheme="https://sansuidouer.github.io/tags/%E8%BD%AF%E4%BB%B6%E5%88%86%E4%BA%AB/"/>
+    
+    <category term="Adobe" scheme="https://sansuidouer.github.io/tags/Adobe/"/>
     
     <category term="Ps" scheme="https://sansuidouer.github.io/tags/Ps/"/>
     
@@ -432,27 +456,6 @@
     <category term="Adobe" scheme="https://sansuidouer.github.io/tags/Adobe/"/>
     
     <category term="Ps" scheme="https://sansuidouer.github.io/tags/Ps/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>李跳跳自定义规则</title>
-    <link href="https://sansuidouer.github.io/24119/"/>
-    <id>https://sansuidouer.github.io/24119/</id>
-    <published>2023-11-12T10:29:14.000Z</published>
-    <updated>2024-01-27T09:53:08.125Z</updated>
-    
-    <content type="html"><![CDATA[<p><strong>2023年11月19日21:26:52更新：Github公告</strong></p><blockquote><p>由于李跳跳自定义规则的局限性，很多弹窗无法编写规则关闭，本项目不再更新应用内广告和弹窗规则。如果你有关闭开屏广告以外的需求，建议切换至 <a href="https://github.com/gkd-kit/gkd">gkd</a> 使用，<a href="https://github.com/gkd-kit/subscription">gkd 默认订阅</a> 后续将持续更新。</p></blockquote><p><strong>2023 年 8 月 24 日</strong>，李跳跳官方公众号宣布无限期停更！</p><p>用过李跳跳的懂得都懂，不想换掉李跳跳的可以用以下方法继续更新规则</p><p>Github 有一个仓库更新了很多自定义跳过规则。介绍的很清楚如何使用，感兴趣了解一下</p><p>Github 主页：<a href="https://github.com/Snoopy1866/LiTiaotiao-Custom-Rules">https://github.com/Snoopy1866/LiTiaotiao-Custom-Rules</a></p><p>自定义规则页面：<a href="https://snoopy1866.github.io/LiTiaotiao-Custom-Rules">https://snoopy1866.github.io/LiTiaotiao-Custom-Rules</a></p><p><img src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/image-20231112183540842.png" alt="image-20231112183540842"></p>]]></content>
-    
-    
-    <summary type="html">李跳跳是一款利用无障碍权限进行跳App开屏广告的安卓辅助应用，无需联网，免费使用。</summary>
-    
-    
-    
-    <category term="软件" scheme="https://sansuidouer.github.io/categories/%E8%BD%AF%E4%BB%B6/"/>
-    
-    
-    <category term="软件分享" scheme="https://sansuidouer.github.io/tags/%E8%BD%AF%E4%BB%B6%E5%88%86%E4%BA%AB/"/>
     
   </entry>
   
