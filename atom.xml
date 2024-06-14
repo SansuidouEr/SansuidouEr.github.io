@@ -6,7 +6,7 @@
   <link href="https://sansuidouer.github.io/atom.xml" rel="self"/>
   
   <link href="https://sansuidouer.github.io/"/>
-  <updated>2024-06-06T12:38:13.601Z</updated>
+  <updated>2024-06-14T13:31:22.573Z</updated>
   <id>https://sansuidouer.github.io/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Maya定义规则以便将颜色空间指定给输入文件</title>
+    <link href="https://sansuidouer.github.io/6645/"/>
+    <id>https://sansuidouer.github.io/6645/</id>
+    <published>2024-06-14T13:04:11.000Z</published>
+    <updated>2024-06-14T13:31:22.573Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="Maya定义规则以便将颜色空间指定给输入文件"><a href="#Maya定义规则以便将颜色空间指定给输入文件" class="headerlink" title="Maya定义规则以便将颜色空间指定给输入文件"></a>Maya定义规则以便将颜色空间指定给输入文件</h1><h3 id="Maya官方帮助"><a href="#Maya官方帮助" class="headerlink" title="Maya官方帮助"></a>Maya官方帮助</h3><p><a href="https://help.autodesk.com/view/MAYAUL/2022/CHS/?guid=GUID-631C665F-3092-4B2B-90B7-2A94158870C9">https://help.autodesk.com/view/MAYAUL/2022/CHS/?guid=GUID-631C665F-3092-4B2B-90B7-2A94158870C9</a></p><h2 id="规则"><a href="#规则" class="headerlink" title="规则"></a>规则</h2><p>注意有上下级关系，优先匹配上面的。</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">*[Bb]aseColor*</span><br><span class="line">*[Dd]iffuse*</span><br><span class="line">*[Aa]lbedo*</span><br><span class="line">*[Rr]oughness*</span><br><span class="line">*[Gg]lossiness*</span><br><span class="line">*[Mm]etallic*</span><br><span class="line">*[Nn]ormal*</span><br><span class="line">*[Dd]isplacement*</span><br><span class="line">*[Hh]eight*</span><br></pre></td></tr></table></figure><h3 id="13470907600626234644-filerules-txt"><a href="#13470907600626234644-filerules-txt" class="headerlink" title="13470907600626234644_filerules.txt"></a>13470907600626234644_filerules.txt</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">file_rules:</span><br><span class="line">  - !&lt;Rule&gt; &#123;name: BaseColor, colorspace: sRGB, pattern: &quot;*[Bb]aseColor*&quot;, extension: &quot;*&quot;&#125;</span><br><span class="line">  - !&lt;Rule&gt; &#123;name: Diffuse, colorspace: sRGB, pattern: &quot;*[Dd]iffuse*&quot;, extension: &quot;*&quot;&#125;</span><br><span class="line">  - !&lt;Rule&gt; &#123;name: Albedo, colorspace: sRGB, pattern: &quot;*[Aa]lbedo*&quot;, extension: &quot;*&quot;&#125;</span><br><span class="line">  - !&lt;Rule&gt; &#123;name: Roughness, colorspace: Raw, pattern: &quot;*[Rr]oughness*&quot;, extension: &quot;*&quot;&#125;</span><br><span class="line">  - !&lt;Rule&gt; &#123;name: Glossiness, colorspace: Raw, pattern: &quot;*[Gg]lossiness*&quot;, extension: &quot;*&quot;&#125;</span><br><span class="line">  - !&lt;Rule&gt; &#123;name: Metallic, colorspace: Raw, pattern: &quot;*[Mm]etallic*&quot;, extension: &quot;*&quot;&#125;</span><br><span class="line">  - !&lt;Rule&gt; &#123;name: Normal, colorspace: Raw, pattern: &quot;*[Nn]ormal*&quot;, extension: &quot;*&quot;&#125;</span><br><span class="line">  - !&lt;Rule&gt; &#123;name: Displacement, colorspace: Raw, pattern: &quot;*[Dd]isplacement*&quot;, extension: &quot;*&quot;&#125;</span><br><span class="line">  - !&lt;Rule&gt; &#123;name: Height, colorspace: Raw, pattern: &quot;*[Hh]eight*&quot;, extension: &quot;*&quot;&#125;</span><br><span class="line">  - !&lt;Rule&gt; &#123;name: tx, colorspace: Raw, pattern: &quot;*&quot;, extension: tx&#125;</span><br><span class="line">  - !&lt;Rule&gt; &#123;name: hdr, colorspace: Raw, pattern: &quot;*&quot;, extension: hdr&#125;</span><br><span class="line">  - !&lt;Rule&gt; &#123;name: exr, colorspace: Raw, pattern: &quot;*&quot;, extension: exr&#125;</span><br><span class="line">  - !&lt;Rule&gt; &#123;name: Default, colorspace: sRGB&#125;</span><br></pre></td></tr></table></figure><h3 id="9330721183767755752-filerules-txt"><a href="#9330721183767755752-filerules-txt" class="headerlink" title="9330721183767755752_filerules.txt"></a>9330721183767755752_filerules.txt</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">file_rules:</span><br><span class="line">  - !&lt;Rule&gt; &#123;name: BaseColor, colorspace: Utility - sRGB - Texture, pattern: &quot;*[Bb]aseColor*&quot;, extension: &quot;*&quot;&#125;</span><br><span class="line">  - !&lt;Rule&gt; &#123;name: Diffuse, colorspace: Utility - sRGB - Texture, pattern: &quot;*[Dd]iffuse*&quot;, extension: &quot;*&quot;&#125;</span><br><span class="line">  - !&lt;Rule&gt; &#123;name: Albedo, colorspace: Utility - sRGB - Texture, pattern: &quot;*[Aa]lbedo*&quot;, extension: &quot;*&quot;&#125;</span><br><span class="line">  - !&lt;Rule&gt; &#123;name: Roughness, colorspace: Utility - Raw, pattern: &quot;*[Rr]oughness*&quot;, extension: &quot;*&quot;&#125;</span><br><span class="line">  - !&lt;Rule&gt; &#123;name: Glossiness, colorspace: Utility - Raw, pattern: &quot;*[Gg]lossiness*&quot;, extension: &quot;*&quot;&#125;</span><br><span class="line">  - !&lt;Rule&gt; &#123;name: Metallic, colorspace: Utility - Raw, pattern: &quot;*[Mm]etallic*&quot;, extension: &quot;*&quot;&#125;</span><br><span class="line">  - !&lt;Rule&gt; &#123;name: Nnormal, colorspace: Utility - Raw, pattern: &quot;*[Nn]ormal*&quot;, extension: &quot;*&quot;&#125;</span><br><span class="line">  - !&lt;Rule&gt; &#123;name: Displacement, colorspace: Utility - Raw, pattern: &quot;*[Dd]isplacement*&quot;, extension: &quot;*&quot;&#125;</span><br><span class="line">  - !&lt;Rule&gt; &#123;name: Height, colorspace: Utility - Raw, pattern: &quot;*[Hh]eight*&quot;, extension: &quot;*&quot;&#125;</span><br><span class="line">  - !&lt;Rule&gt; &#123;name: Default, colorspace: Utility - sRGB - Texture&#125;</span><br></pre></td></tr></table></figure><p><img src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/END_02.svg"></p>]]></content>
+    
+    
+    <summary type="html">Maya定义规则以便将颜色空间指定给输入贴图文件</summary>
+    
+    
+    
+    <category term="Maya" scheme="https://sansuidouer.github.io/categories/Maya/"/>
+    
+    
+    <category term="Maya" scheme="https://sansuidouer.github.io/tags/Maya/"/>
+    
+  </entry>
   
   <entry>
     <title>FFmpeg</title>
@@ -424,27 +445,6 @@
     <category term="Adobe" scheme="https://sansuidouer.github.io/tags/Adobe/"/>
     
     <category term="Ps" scheme="https://sansuidouer.github.io/tags/Ps/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Windows10 超级资源管理器 Clover</title>
-    <link href="https://sansuidouer.github.io/8090/"/>
-    <id>https://sansuidouer.github.io/8090/</id>
-    <published>2023-11-18T12:39:51.000Z</published>
-    <updated>2024-01-24T14:20:41.297Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="Clover"><a href="#Clover" class="headerlink" title="Clover"></a>Clover</h1><p>一款很古老的软件，现在已经不更新了</p><p>目前版本支持到Windows10</p><p>Clover 是 Windows Explorer 资源管理器的一个扩展，为其增加类似谷歌 Chrome 浏览器的多标签页功能</p><p>官网：<a href="http://cn.ejie.me/">http://cn.ejie.me/</a></p><h2 id="特别说明"><a href="#特别说明" class="headerlink" title="特别说明"></a>特别说明</h2><p>下载火绒会报毒，介意勿用！介意勿用！介意勿用！</p><p>我个人认为可能是内置了广告书签导致的，后续使用没发现有什么问题。</p><p>病毒名称：TrojanDownloader&#x2F;QiaoYa.d</p><p><img src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/image-20231118204756021.png" alt="image-20231118204756021"></p><p>哈勃查毒显示未发现风险 <a href="https://habo.qq.com/file/showdetail?pk=ADQGZF1qB2YIMVs6U2oHYQ==">腾讯哈勃分析系统</a></p><p><img src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/image-20231118205403786.png" alt="image-20231118205403786"></p><h2 id="功能"><a href="#功能" class="headerlink" title="功能"></a>功能</h2><p>功能也很简单，就是可以像浏览器一样开很多标签，而不是像Win10分好多窗口。还有就是可以设置书签快速访问，也可以设置网页书签。很方便。</p><p><img src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/image-20231118205823861.png" alt="image-20231118205823861"></p><h2 id="修改三叶草图标"><a href="#修改三叶草图标" class="headerlink" title="修改三叶草图标"></a>修改三叶草图标</h2><p>记一次更改任务栏三叶草图标问题</p><p>修改Clover的快捷方式图标，达到修改图标的目的</p><p>Clover默认安装快捷方式目录：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">C:\ProgramData\Microsoft\Windows\Start Menu\Programs</span><br></pre></td></tr></table></figure><p>打开目录后寻找Clover的一个快捷方式，修改图标即可。</p><p>Windows图标路径：C:\Windows\System32\imageres.dll</p><p><img src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/image-20231118210208900.png" alt="image-20231118210208900"></p><p><img src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/END_02.svg"></p>]]></content>
-    
-    
-    <summary type="html">Clover 是 Windows Explorer 资源管理器的一个扩展，为其增加类似谷歌浏览器的多标签页功能</summary>
-    
-    
-    
-    <category term="软件" scheme="https://sansuidouer.github.io/categories/%E8%BD%AF%E4%BB%B6/"/>
-    
-    
-    <category term="软件分享" scheme="https://sansuidouer.github.io/tags/%E8%BD%AF%E4%BB%B6%E5%88%86%E4%BA%AB/"/>
     
   </entry>
   
