@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>CuteHttpFileServer</title>
+      <link href="/50791/"/>
+      <url>/50791/</url>
+      
+        <content type="html"><![CDATA[<h1 id="CuteHttpFileServer"><a href="#CuteHttpFileServer" class="headerlink" title="CuteHttpFileServer"></a>CuteHttpFileServer</h1><p>这个工具我经常用来局域网传输较大的电影文件，实测速度能够稳定在90MB&#x2F;s，当然，这取决于你的路由器性能和网络设备。总之是我找了很久比较方便的一种局域网传输工具，没有太高门槛，随拿随用，直接在电脑运行即可，可以轻松配置权限，平板和手机无需设置，直接扫码连接传输即可。</p><p>官网：<a href="http://iscute.cn/chfs">http://iscute.cn/chfs</a></p><p>下载：</p><p><a href="https://zhangzhilong.lanzouw.com/iMQ9M234esvi">蓝奏云下载_v3.1</a></p><p>其实这是一个命令行程序，我使用的是GUI版本，有图形化界面更加方便使用！</p><p><img src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/image-20240630161820041.png" alt="image-20240630161820041"></p><p>界面：</p><p><img src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/image-20240630161204426.png" alt="image-20240630161204426"></p><p>使用：</p><p>添加好分享目录，分配好访客权限点左上角的运行即可开启，在操作日志可以看到访问地址和WabDav地址</p><p><img src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/image-20240630162739250.png" alt="image-20240630162739250"></p><p><img src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/END_02.svg"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 软件 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 软件分享 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Maya定义规则以便将颜色空间指定给输入文件</title>
       <link href="/6645/"/>
       <url>/6645/</url>
@@ -1199,7 +1224,7 @@
       <link href="/63412/"/>
       <url>/63412/</url>
       
-        <content type="html"><![CDATA[<p>有些时候我们断开第二个显示器或者远程控制不支持切换屏幕，就会遇到第二块屏幕的内容无法移动到主屏幕的情况。</p><p>第一步：我们可以使用快捷键  <strong>Alt+空格</strong>打开Windows窗口自带的一个小窗口</p><p><img src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/image-20230731215514427.png"></p><p>理论上Windows所有的窗口使用这个快捷键都可以打开这个小窗口，包括Maya里面的二级窗口。</p><p>第二步：我们能打开上面这个小窗口就好办了。其实也会分两种情况，第一种是全屏的情况，也就是在第二块屏幕全屏，不支持移动。这种情况需要按<strong>R</strong>键还原，将窗口设置为非全屏状态，然后再<strong>Alt+空格</strong>打开小窗口，点击<strong>M</strong>键，再点一下小键盘的小箭头，就可以移动鼠标直接将窗口带回到第一块屏幕，也可以使用小键盘的上下左右移动键慢慢将窗口移回到第一块屏幕。</p><p><img src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/image-20230731220256017.png"></p><p><img src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/END_02.svg"></p>]]></content>
+        <content type="html"><![CDATA[<p>有些时候我们断开第二个显示器或者远程控制不支持切换屏幕，就会遇到第二块屏幕的内容无法移动到主屏幕的情况。</p><p>第一步：我们可以使用快捷键  <strong>Alt+空格</strong>打开Windows窗口自带的一个小窗口</p><p><img src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/image-20230731215514427.png"></p><p>理论上Windows所有的窗口使用这个快捷键都可以打开这个小窗口，包括Maya里面的二级窗口。</p><p>第二步：我们能打开上面这个小窗口就好办了。其实也会分两种情况，第一种是全屏的情况，也就是在第二块屏幕全屏，不支持移动。这种情况需要按<strong>R</strong>键还原，将窗口设置为非全屏状态，然后再<strong>Alt+空格</strong>打开小窗口，点击<strong>M</strong>键，再点一下小键盘的小箭头，就可以移动鼠标直接将窗口带回到第一块屏幕，也可以使用小键盘的上下左右移动键慢慢将窗口移回到第一块屏幕。</p><p><img src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/image-20230731220256017.png"></p><p>还有一种方法是使用Win+方向键，前提是你当前窗口至于最前并选择。</p><p><img src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/END_02.svg"></p>]]></content>
       
       
       
