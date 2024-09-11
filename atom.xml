@@ -6,7 +6,7 @@
   <link href="https://sansuidouer.github.io/atom.xml" rel="self"/>
   
   <link href="https://sansuidouer.github.io/"/>
-  <updated>2024-06-30T08:34:01.077Z</updated>
+  <updated>2024-09-11T12:58:47.944Z</updated>
   <id>https://sansuidouer.github.io/</id>
   
   <author>
@@ -15,6 +15,27 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>小工具：选中场景中被隐藏的组和多边形</title>
+    <link href="https://sansuidouer.github.io/37034/"/>
+    <id>https://sansuidouer.github.io/37034/</id>
+    <published>2024-09-11T13:12:30.000Z</published>
+    <updated>2024-09-11T12:58:47.944Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h3><p>此脚本可以选中场景中被隐藏的模型和组，用于快速找到被隐藏的很深的多边形或组。</p><h3 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h3><p>由于过于脚本简短，功能单一，没写UI，直接复制代码在Maya的MEL中执行即可选中。</p><h3 id="脚本"><a href="#脚本" class="headerlink" title="脚本"></a>脚本</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">string $transforms[] = `ls -type &quot;transform&quot;`;</span><br><span class="line">string $hiddenTransforms[] = &#123;&#125;;</span><br><span class="line">for ($transform in $transforms) &#123;</span><br><span class="line">    string $meshes[] = `listRelatives -type &quot;mesh&quot; $transform`;</span><br><span class="line">    string $children[] = `listRelatives -type &quot;transform&quot; $transform`;</span><br><span class="line"></span><br><span class="line">    if (size($meshes) &gt; 0 || size($children) &gt; 0) &#123;</span><br><span class="line">        int $visibility = `getAttr ($transform + &quot;.visibility&quot;)`;</span><br><span class="line">        if ($visibility == 0) &#123;</span><br><span class="line">            $hiddenTransforms[size($hiddenTransforms)] = $transform;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">if (size($hiddenTransforms) &gt; 0) &#123;</span><br><span class="line">    select -r $hiddenTransforms;</span><br><span class="line">    print(&quot;已选中该场景中隐藏的多边形或组&quot;);</span><br><span class="line">&#125; else &#123;</span><br><span class="line">    print(&quot;该场景中没有被隐藏的多边形或组&quot;);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p><img src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/END_02.svg"></p>]]></content>
+    
+    
+    <summary type="html">此脚本可以选中场景中被隐藏的模型和组，用于快速找到被隐藏的很深的多边形或组。</summary>
+    
+    
+    
+    <category term="MEL" scheme="https://sansuidouer.github.io/categories/MEL/"/>
+    
+    
+    <category term="MEL" scheme="https://sansuidouer.github.io/tags/MEL/"/>
+    
+  </entry>
   
   <entry>
     <title>CuteHttpFileServer</title>
@@ -420,29 +441,6 @@
     
     
     <category term="软件分享" scheme="https://sansuidouer.github.io/tags/%E8%BD%AF%E4%BB%B6%E5%88%86%E4%BA%AB/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Vray 在线资源库无法正常打开</title>
-    <link href="https://sansuidouer.github.io/39509/"/>
-    <id>https://sansuidouer.github.io/39509/</id>
-    <published>2023-12-03T08:26:29.000Z</published>
-    <updated>2024-01-24T14:20:41.248Z</updated>
-    
-    <content type="html"><![CDATA[<p><img src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/image-20231203164351435.png" alt="image-20231203164351435"></p><h3 id="第一步"><a href="#第一步" class="headerlink" title="第一步"></a>第一步</h3><p>首先在浏览器打开以下网址</p><p><a href="https://cosmos.chaos.com/">https://cosmos.chaos.com/</a></p><p>如果能打开以上网址，正常访问</p><p>那就进行第二步</p><p>如果无法正常访问，测试不同浏览器是否能正常访问。</p><p>检查DNS 是否正常，防火墙是否拦截。</p><h3 id="第二步"><a href="#第二步" class="headerlink" title="第二步"></a>第二步</h3><p>下载最新的 Chaos Cosmos Browser</p><p><a href="https://download.chaos.com/cn?platform=47&product=62">https://download.chaos.com/cn?platform=47&amp;product=62</a></p><p>关闭Maya安装下载的Chaos Cosmos Browser</p><p>启动Maya即可解决。</p><p><img src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/image-20231203163311874.png" alt="image-20231203163311874"></p><p><img src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/END_02.svg"></p>]]></content>
-    
-    
-    <summary type="html">解决VrayforMaya 的 Chaos Cosmos Browser 无法打开的问题</summary>
-    
-    
-    
-    <category term="Maya" scheme="https://sansuidouer.github.io/categories/Maya/"/>
-    
-    
-    <category term="Mel" scheme="https://sansuidouer.github.io/tags/Mel/"/>
-    
-    <category term="Vray" scheme="https://sansuidouer.github.io/tags/Vray/"/>
     
   </entry>
   

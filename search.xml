@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>小工具：选中场景中被隐藏的组和多边形</title>
+      <link href="/37034/"/>
+      <url>/37034/</url>
+      
+        <content type="html"><![CDATA[<h3 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h3><p>此脚本可以选中场景中被隐藏的模型和组，用于快速找到被隐藏的很深的多边形或组。</p><h3 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h3><p>由于过于脚本简短，功能单一，没写UI，直接复制代码在Maya的MEL中执行即可选中。</p><h3 id="脚本"><a href="#脚本" class="headerlink" title="脚本"></a>脚本</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line">string $transforms[] = `ls -type &quot;transform&quot;`;</span><br><span class="line">string $hiddenTransforms[] = &#123;&#125;;</span><br><span class="line">for ($transform in $transforms) &#123;</span><br><span class="line">    string $meshes[] = `listRelatives -type &quot;mesh&quot; $transform`;</span><br><span class="line">    string $children[] = `listRelatives -type &quot;transform&quot; $transform`;</span><br><span class="line"></span><br><span class="line">    if (size($meshes) &gt; 0 || size($children) &gt; 0) &#123;</span><br><span class="line">        int $visibility = `getAttr ($transform + &quot;.visibility&quot;)`;</span><br><span class="line">        if ($visibility == 0) &#123;</span><br><span class="line">            $hiddenTransforms[size($hiddenTransforms)] = $transform;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">if (size($hiddenTransforms) &gt; 0) &#123;</span><br><span class="line">    select -r $hiddenTransforms;</span><br><span class="line">    print(&quot;已选中该场景中隐藏的多边形或组&quot;);</span><br><span class="line">&#125; else &#123;</span><br><span class="line">    print(&quot;该场景中没有被隐藏的多边形或组&quot;);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p><img src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/END_02.svg"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> MEL </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> MEL </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>CuteHttpFileServer</title>
       <link href="/50791/"/>
       <url>/50791/</url>
