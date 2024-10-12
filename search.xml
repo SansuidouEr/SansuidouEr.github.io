@@ -4,6 +4,69 @@
   
     
     <entry>
+      <title>关闭钉钉AI助理</title>
+      <link href="/59582/"/>
+      <url>/59582/</url>
+      
+        <content type="html"><![CDATA[<h3 id="吐槽："><a href="#吐槽：" class="headerlink" title="吐槽："></a>吐槽：</h3><p>不知道什么时候更新了钉钉，打开电脑后左下角就多了个小图标，打开一看是钉钉Ai助理，我寻思在这就在吧，然后我在选中文本的时候也会有一个小窗口，每次选中文本都会出现，就很烦！！！</p><p>钉钉我想问你，你怎么知道每个钉钉用户都需要这个功能呢？怎么就给所有的用户都默认打开了这俩选项呢？最起码也给用户一个引导吧！让用户决定开不开启。</p><p><span style="font-size: 20px; color: red; font-weight: bold; display: inline-block;">这种行为我觉得真的很流氓</span>&nbsp;&nbsp;<span style="font-size: 40px; color: red; font-weight: bold; display: inline-block;">!</span>&nbsp;&nbsp;<span style="font-size: 50px; color: red; font-weight: bold; display: inline-block;">!</span>&nbsp;&nbsp;<span style="font-size: 60px; color: red; font-weight: bold; display: inline-block;">!</span></p><h3 id="关闭步骤："><a href="#关闭步骤：" class="headerlink" title="关闭步骤："></a>关闭步骤：</h3><p>点击头像，点击设置与隐私</p><p><img src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/DDaI446486.png" alt="DDaI446485"></p><p>把AI助理这一栏的两个勾全部取消即可关闭！</p><p><img src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/DDaI446487.png" alt="DDaI446485"></p><p><img src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/END_02.svg"></p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Vray 安装包下载</title>
+      <link href="/12116/"/>
+      <url>/12116/</url>
+      
+        <content type="html"><![CDATA[<h2 id="Vray安装包下载官网"><a href="#Vray安装包下载官网" class="headerlink" title="Vray安装包下载官网"></a>Vray安装包下载官网</h2><p><a href="https://nightlies.chaos.com/">https://nightlies.chaos.com/</a></p><p>这种下载方法需要注册登录，其实注册登录很简单，自己注册一个账户即可。</p><p><img src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/image-20240916210313216.png" alt="image-20240916210313216"></p><p><img src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/image-20240916210433271.png" alt="image-20240916210433271"></p><p>找到 V-Ray 6 for Maya -stable</p><p>找到最新的更新日期进去，这时候可能会很懵，应该下载那个版本，看完下面这段话你就明白一个下载那个版本了。</p><hr><p>这是不同操作系统和不同Maya版本的V-Ray渲染器安装包列表。文件名中包含的信息如下：</p><ol><li><p><strong>vray_adv_62003</strong>: V-Ray 6.2.003 版本。</p></li><li><p><strong>maya2020&#x2F;2022&#x2F;2023&#x2F;2024&#x2F;2025</strong>: 针对不同的Maya版本（2020、2022、2023、2024、2025）的安装包。</p></li><li><p>centos7&#x2F;mavericks_x64&#x2F;rhel8&#x2F;bigsur_univ&#x2F;x64</p><p>: 表示支持的操作系统和架构。</p><ul><li><strong>centos7</strong>: 针对CentOS 7的Linux系统。</li><li><strong>mavericks_x64</strong>: 针对Mac OS Mavericks 64位系统。</li><li><strong>bigsur_univ</strong>: 针对Mac OS Big Sur通用架构。</li><li><strong>rhel8</strong>: 针对Red Hat Enterprise Linux 8系统。</li><li><strong>x64</strong>: 针对Windows的64位版本。</li></ul></li><li><p><strong>python2</strong>: 说明此版本使用Python 2。</p></li></ol><p>你可以根据你的操作系统和Maya版本选择相应的安装包。例如，如果你使用的是Windows上的Maya 2022，则应该选择 <code>vray_adv_62003_maya2022_x64_32743_install.zip</code>。</p><hr><p>下载对应安装即可，接下来将破解补丁放入对应的文件夹即可</p><p>以Maya2022为例，将对应文件放入以下文件夹</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">C:\Program Files\Autodesk\Maya2022\vray\vrayplugins</span><br></pre></td></tr></table></figure><p>如果安装的Vray6则放入<code>vray_v60002_maya_fix.dll</code></p><p>Vray5则放入<code>vray_v50020_maya_fix.dll</code></p><p>破解文件下载地址：<a href="https://zhangzhilong.lanzouw.com/i3x2t2a48zrc">蓝奏云</a></p><p><img src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/END_02.svg"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Vray </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Vray </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>渲染设定预设</title>
+      <link href="/31779/"/>
+      <url>/31779/</url>
+      
+        <content type="html"><![CDATA[<h2 id="渲染设置与传统渲染层"><a href="#渲染设置与传统渲染层" class="headerlink" title="渲染设置与传统渲染层"></a>渲染设置与传统渲染层</h2><p>早期 Maya 版本使用的是“层编辑器”(Layer Editor)，现在默认都修改为了渲染设定。</p><h3 id="设置回旧渲染层的方法"><a href="#设置回旧渲染层的方法" class="headerlink" title="设置回旧渲染层的方法"></a>设置回旧渲染层的方法</h3><p>请选择“窗口 &gt; 设置&#x2F;首选项 &gt; 首选项”(Windows &gt; Settings&#x2F;Preferences &gt; Preferences)以打开“首选项”(Preferences)窗口，然后导航到“渲染”(Rendering)类别。选择“传统渲染层”(Legacy Render Layers)作为“首选渲染设置系统”(Preferred Render Setup system)，然后重新启动 Maya。</p><p><img src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/Snipaste_2024-09-15_22-19-59.png" alt="Snipaste_2024-09-15_22-19-59"></p><h2 id="预设"><a href="#预设" class="headerlink" title="预设"></a>预设</h2><p>进入主题，在使用新的渲染层会牵扯到一些覆盖，比如主可见性、产生阴影、接受阴影等。在Maya中内置了一些预设，</p><p>MatteOverride-Arnold（遮罩覆盖 Arnold）</p><p>RemoveRenderableCameras（移除可渲染相机）</p><p>RenderlayerExample-Arnold（渲染层示例 Arnold）</p><p>SetRenderableCameras（设置可渲染相机）</p><p>这些预设我没有具体使用过，因为主要是关于Arnod的预设且不是很常用</p><p>这些预设存储的路径为</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">C:\Users\Administrator\Documents\maya\RSTemplates</span><br></pre></td></tr></table></figure><p>这些预设的格式为.json格式文件</p><p>我目前写了四个预设，分别是Environmenti、Lights、Shadows、Visibility。</p><p>他们分别的作用如下：</p><h3 id="Environmenti：覆盖大气雾"><a href="#Environmenti：覆盖大气雾" class="headerlink" title="Environmenti：覆盖大气雾"></a>Environmenti：覆盖大气雾</h3><p>因为这是属于渲染设置级别的覆盖，故需要在渲染层这一级别上右键导入用户模版，选择Environmenti。其作用就是将此渲染层关闭大气雾，也就是取消勾选OverrideEnvironmenti选项</p><p><img src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/Snipaste_2024-09-15_22-49-42.png" alt="Snipaste_2024-09-15_22-49-42"></p><h3 id="Lights：覆盖灯光可见性"><a href="#Lights：覆盖灯光可见性" class="headerlink" title="Lights：覆盖灯光可见性"></a>Lights：覆盖灯光可见性</h3><p>因为这一层级属于集和级别的，要在需要覆盖的集和上面右键选择Lights，由于在分层渲染的时候有一些灯光可能会在其他层渲染可见，例如小夜灯灯泡等，在这一渲染层希望不可见，这时候就可以将所有灯光添加在这个集和中，添加一个灯光覆盖的预设，即可将所有灯光可见性关闭，对应的属性为灯光的Lnvisibel属性，可以理解为将这一层的所有灯光均勾选了这一属性。</p><p><img src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/Snipaste_2024-09-15_22-58-02.png" alt="Snipaste_2024-09-15_22-58-02"></p><h3 id="Shadows：阴影覆盖"><a href="#Shadows：阴影覆盖" class="headerlink" title="Shadows：阴影覆盖"></a>Shadows：阴影覆盖</h3><p>集和级覆盖，可将此集和的多边形设置为不投射阴影，常在渲染阴影的时候使用，不详做介绍，和Lights覆盖使用类使，只是使用了多边形的投射阴影属性。</p><h3 id="Visibility：主可见性覆盖"><a href="#Visibility：主可见性覆盖" class="headerlink" title="Visibility：主可见性覆盖"></a>Visibility：主可见性覆盖</h3><p>字面意思，可将该集和的多边形的主可见性关掉，使用到的是主可见性属性。也是最常见的属性之一。</p><p>后续可能会添加更多预设，根据以后遇到的分层需求添加预设……</p><p><img src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/END_02.svg"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Maya </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Maya </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>小工具：选中场景中被隐藏的组和多边形</title>
       <link href="/37034/"/>
       <url>/37034/</url>

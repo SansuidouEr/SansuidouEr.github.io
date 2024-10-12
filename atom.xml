@@ -6,7 +6,7 @@
   <link href="https://sansuidouer.github.io/atom.xml" rel="self"/>
   
   <link href="https://sansuidouer.github.io/"/>
-  <updated>2024-09-11T12:58:47.944Z</updated>
+  <updated>2024-10-12T13:25:58.140Z</updated>
   <id>https://sansuidouer.github.io/</id>
   
   <author>
@@ -15,6 +15,68 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>关闭钉钉AI助理</title>
+    <link href="https://sansuidouer.github.io/59582/"/>
+    <id>https://sansuidouer.github.io/59582/</id>
+    <published>2024-10-12T12:49:05.000Z</published>
+    <updated>2024-10-12T13:25:58.140Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="吐槽："><a href="#吐槽：" class="headerlink" title="吐槽："></a>吐槽：</h3><p>不知道什么时候更新了钉钉，打开电脑后左下角就多了个小图标，打开一看是钉钉Ai助理，我寻思在这就在吧，然后我在选中文本的时候也会有一个小窗口，每次选中文本都会出现，就很烦！！！</p><p>钉钉我想问你，你怎么知道每个钉钉用户都需要这个功能呢？怎么就给所有的用户都默认打开了这俩选项呢？最起码也给用户一个引导吧！让用户决定开不开启。</p><p><span style="font-size: 20px; color: red; font-weight: bold; display: inline-block;">这种行为我觉得真的很流氓</span>&nbsp;&nbsp;<span style="font-size: 40px; color: red; font-weight: bold; display: inline-block;">!</span>&nbsp;&nbsp;<span style="font-size: 50px; color: red; font-weight: bold; display: inline-block;">!</span>&nbsp;&nbsp;<span style="font-size: 60px; color: red; font-weight: bold; display: inline-block;">!</span></p><h3 id="关闭步骤："><a href="#关闭步骤：" class="headerlink" title="关闭步骤："></a>关闭步骤：</h3><p>点击头像，点击设置与隐私</p><p><img src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/DDaI446486.png" alt="DDaI446485"></p><p>把AI助理这一栏的两个勾全部取消即可关闭！</p><p><img src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/DDaI446487.png" alt="DDaI446485"></p><p><img src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/END_02.svg"></p>]]></content>
+    
+    
+    <summary type="html">关闭钉钉底部任务栏Ai助理小图标</summary>
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Vray 安装包下载</title>
+    <link href="https://sansuidouer.github.io/12116/"/>
+    <id>https://sansuidouer.github.io/12116/</id>
+    <published>2024-09-16T12:53:22.000Z</published>
+    <updated>2024-09-22T06:27:49.451Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="Vray安装包下载官网"><a href="#Vray安装包下载官网" class="headerlink" title="Vray安装包下载官网"></a>Vray安装包下载官网</h2><p><a href="https://nightlies.chaos.com/">https://nightlies.chaos.com/</a></p><p>这种下载方法需要注册登录，其实注册登录很简单，自己注册一个账户即可。</p><p><img src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/image-20240916210313216.png" alt="image-20240916210313216"></p><p><img src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/image-20240916210433271.png" alt="image-20240916210433271"></p><p>找到 V-Ray 6 for Maya -stable</p><p>找到最新的更新日期进去，这时候可能会很懵，应该下载那个版本，看完下面这段话你就明白一个下载那个版本了。</p><hr><p>这是不同操作系统和不同Maya版本的V-Ray渲染器安装包列表。文件名中包含的信息如下：</p><ol><li><p><strong>vray_adv_62003</strong>: V-Ray 6.2.003 版本。</p></li><li><p><strong>maya2020&#x2F;2022&#x2F;2023&#x2F;2024&#x2F;2025</strong>: 针对不同的Maya版本（2020、2022、2023、2024、2025）的安装包。</p></li><li><p>centos7&#x2F;mavericks_x64&#x2F;rhel8&#x2F;bigsur_univ&#x2F;x64</p><p>: 表示支持的操作系统和架构。</p><ul><li><strong>centos7</strong>: 针对CentOS 7的Linux系统。</li><li><strong>mavericks_x64</strong>: 针对Mac OS Mavericks 64位系统。</li><li><strong>bigsur_univ</strong>: 针对Mac OS Big Sur通用架构。</li><li><strong>rhel8</strong>: 针对Red Hat Enterprise Linux 8系统。</li><li><strong>x64</strong>: 针对Windows的64位版本。</li></ul></li><li><p><strong>python2</strong>: 说明此版本使用Python 2。</p></li></ol><p>你可以根据你的操作系统和Maya版本选择相应的安装包。例如，如果你使用的是Windows上的Maya 2022，则应该选择 <code>vray_adv_62003_maya2022_x64_32743_install.zip</code>。</p><hr><p>下载对应安装即可，接下来将破解补丁放入对应的文件夹即可</p><p>以Maya2022为例，将对应文件放入以下文件夹</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">C:\Program Files\Autodesk\Maya2022\vray\vrayplugins</span><br></pre></td></tr></table></figure><p>如果安装的Vray6则放入<code>vray_v60002_maya_fix.dll</code></p><p>Vray5则放入<code>vray_v50020_maya_fix.dll</code></p><p>破解文件下载地址：<a href="https://zhangzhilong.lanzouw.com/i3x2t2a48zrc">蓝奏云</a></p><p><img src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/END_02.svg"></p>]]></content>
+    
+    
+    <summary type="html">Vray安装包官方下载地址，记录一下怎么下载最新版的Vray安装包。</summary>
+    
+    
+    
+    <category term="Vray" scheme="https://sansuidouer.github.io/categories/Vray/"/>
+    
+    
+    <category term="Vray" scheme="https://sansuidouer.github.io/tags/Vray/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>渲染设定预设</title>
+    <link href="https://sansuidouer.github.io/31779/"/>
+    <id>https://sansuidouer.github.io/31779/</id>
+    <published>2024-09-15T13:49:55.000Z</published>
+    <updated>2024-09-16T12:51:34.712Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="渲染设置与传统渲染层"><a href="#渲染设置与传统渲染层" class="headerlink" title="渲染设置与传统渲染层"></a>渲染设置与传统渲染层</h2><p>早期 Maya 版本使用的是“层编辑器”(Layer Editor)，现在默认都修改为了渲染设定。</p><h3 id="设置回旧渲染层的方法"><a href="#设置回旧渲染层的方法" class="headerlink" title="设置回旧渲染层的方法"></a>设置回旧渲染层的方法</h3><p>请选择“窗口 &gt; 设置&#x2F;首选项 &gt; 首选项”(Windows &gt; Settings&#x2F;Preferences &gt; Preferences)以打开“首选项”(Preferences)窗口，然后导航到“渲染”(Rendering)类别。选择“传统渲染层”(Legacy Render Layers)作为“首选渲染设置系统”(Preferred Render Setup system)，然后重新启动 Maya。</p><p><img src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/Snipaste_2024-09-15_22-19-59.png" alt="Snipaste_2024-09-15_22-19-59"></p><h2 id="预设"><a href="#预设" class="headerlink" title="预设"></a>预设</h2><p>进入主题，在使用新的渲染层会牵扯到一些覆盖，比如主可见性、产生阴影、接受阴影等。在Maya中内置了一些预设，</p><p>MatteOverride-Arnold（遮罩覆盖 Arnold）</p><p>RemoveRenderableCameras（移除可渲染相机）</p><p>RenderlayerExample-Arnold（渲染层示例 Arnold）</p><p>SetRenderableCameras（设置可渲染相机）</p><p>这些预设我没有具体使用过，因为主要是关于Arnod的预设且不是很常用</p><p>这些预设存储的路径为</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">C:\Users\Administrator\Documents\maya\RSTemplates</span><br></pre></td></tr></table></figure><p>这些预设的格式为.json格式文件</p><p>我目前写了四个预设，分别是Environmenti、Lights、Shadows、Visibility。</p><p>他们分别的作用如下：</p><h3 id="Environmenti：覆盖大气雾"><a href="#Environmenti：覆盖大气雾" class="headerlink" title="Environmenti：覆盖大气雾"></a>Environmenti：覆盖大气雾</h3><p>因为这是属于渲染设置级别的覆盖，故需要在渲染层这一级别上右键导入用户模版，选择Environmenti。其作用就是将此渲染层关闭大气雾，也就是取消勾选OverrideEnvironmenti选项</p><p><img src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/Snipaste_2024-09-15_22-49-42.png" alt="Snipaste_2024-09-15_22-49-42"></p><h3 id="Lights：覆盖灯光可见性"><a href="#Lights：覆盖灯光可见性" class="headerlink" title="Lights：覆盖灯光可见性"></a>Lights：覆盖灯光可见性</h3><p>因为这一层级属于集和级别的，要在需要覆盖的集和上面右键选择Lights，由于在分层渲染的时候有一些灯光可能会在其他层渲染可见，例如小夜灯灯泡等，在这一渲染层希望不可见，这时候就可以将所有灯光添加在这个集和中，添加一个灯光覆盖的预设，即可将所有灯光可见性关闭，对应的属性为灯光的Lnvisibel属性，可以理解为将这一层的所有灯光均勾选了这一属性。</p><p><img src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/Snipaste_2024-09-15_22-58-02.png" alt="Snipaste_2024-09-15_22-58-02"></p><h3 id="Shadows：阴影覆盖"><a href="#Shadows：阴影覆盖" class="headerlink" title="Shadows：阴影覆盖"></a>Shadows：阴影覆盖</h3><p>集和级覆盖，可将此集和的多边形设置为不投射阴影，常在渲染阴影的时候使用，不详做介绍，和Lights覆盖使用类使，只是使用了多边形的投射阴影属性。</p><h3 id="Visibility：主可见性覆盖"><a href="#Visibility：主可见性覆盖" class="headerlink" title="Visibility：主可见性覆盖"></a>Visibility：主可见性覆盖</h3><p>字面意思，可将该集和的多边形的主可见性关掉，使用到的是主可见性属性。也是最常见的属性之一。</p><p>后续可能会添加更多预设，根据以后遇到的分层需求添加预设……</p><p><img src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/END_02.svg"></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;渲染设置与传统渲染层&quot;&gt;&lt;a href=&quot;#渲染设置与传统渲染层&quot; class=&quot;headerlink&quot; title=&quot;渲染设置与传统渲染层&quot;&gt;&lt;/a&gt;渲染设置与传统渲染层&lt;/h2&gt;&lt;p&gt;早期 Maya 版本使用的是“层编辑器”(Layer Editor)，现在默</summary>
+      
+    
+    
+    
+    <category term="Maya" scheme="https://sansuidouer.github.io/categories/Maya/"/>
+    
+    
+    <category term="Maya" scheme="https://sansuidouer.github.io/tags/Maya/"/>
+    
+  </entry>
   
   <entry>
     <title>小工具：选中场景中被隐藏的组和多边形</title>
@@ -376,71 +438,6 @@
     
     
     <category term="Python" scheme="https://sansuidouer.github.io/tags/Python/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>UV集检查修复工具</title>
-    <link href="https://sansuidouer.github.io/56425/"/>
-    <id>https://sansuidouer.github.io/56425/</id>
-    <published>2024-01-21T09:37:59.000Z</published>
-    <updated>2024-03-22T14:09:35.772Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="UV集修复工具"><a href="#UV集修复工具" class="headerlink" title="UV集修复工具"></a>UV集修复工具</h2><p>功能简单，都写在按钮上了，不做介绍，如遇报错请联系我。</p><h3 id="界面："><a href="#界面：" class="headerlink" title="界面："></a>界面：</h3><p><img src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/image-20240121175452264.png" alt="image-20240121175452264"></p><h3 id="MEL源码："><a href="#MEL源码：" class="headerlink" title="MEL源码："></a>MEL源码：</h3><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br></pre></td><td class="code"><pre><span class="line">//UV集检查修改工具//</span><br><span class="line">// 作者：三岁豆 , 创建日期 2024.01.13  V 1.0//</span><br><span class="line"></span><br><span class="line">// 创建窗口 判断UVToolWindow是否存在</span><br><span class="line">if (`window -exists uvToolWindow`) </span><br><span class="line">    deleteUI uvToolWindow;</span><br><span class="line">window -title &quot;三岁豆Er&quot; </span><br><span class="line">-sizeable false</span><br><span class="line">uvToolWindow;</span><br><span class="line"></span><br><span class="line">// 窗口布局</span><br><span class="line">columnLayout  -columnAttach &quot;both&quot; 10 -rowSpacing 5 -columnWidth 230;</span><br><span class="line">int $buttonHeight = 30;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">//窗口内容</span><br><span class="line">text -h 50 -label &quot;UV集检查修改工具&quot;;</span><br><span class="line">button -label &quot;选中具有多个UV集的模型&quot; -height $buttonHeight -command &quot;selectMultipleUVSetsModels&quot;;</span><br><span class="line">button -label &quot;选中UV集不为map1的模型&quot; -height $buttonHeight -command &quot;selectNonDefaultUVModels&quot;;</span><br><span class="line">button -label &quot;删除多余的UV集&quot; -height $buttonHeight -command &quot;deleteExtraUVSets&quot;;</span><br><span class="line">button -label &quot;重命名默认UV集为map1&quot; -height $buttonHeight -command &quot;renameFirstUVSetToMap1&quot;;</span><br><span class="line">text  -h 5 -label&quot;&quot;;</span><br><span class="line"></span><br><span class="line">//显示窗口</span><br><span class="line">showWindow uvToolWindow;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">// 选中具有多个UV集的对象</span><br><span class="line">global proc selectMultipleUVSetsModels() &#123;</span><br><span class="line">    select -cl;</span><br><span class="line">    string $allModels[] = `ls -g`;</span><br><span class="line">    string $model;</span><br><span class="line">    int $foundModels = 0;</span><br><span class="line"></span><br><span class="line">    for ($model in $allModels) &#123;</span><br><span class="line">        string $uvSets[] = `polyUVSet -q -allUVSets $model`;</span><br><span class="line">        if (size($uvSets) &gt; 1) &#123;</span><br><span class="line">            select -add $model;</span><br><span class="line">            $foundModels++;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    if ($foundModels == 0) &#123;</span><br><span class="line">        confirmDialog -title &quot;提示&quot; -message &quot;\n在当前场景中未找到具有多个UV集的模型!\n&quot; -button &quot;确定&quot; -defaultButton &quot;确定&quot;;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">// 选中UV集不为map1的模型</span><br><span class="line">global proc selectNonDefaultUVModels() &#123;</span><br><span class="line">    select -cl;</span><br><span class="line">    string $allModels[] = `ls -g`;</span><br><span class="line">    string $model;</span><br><span class="line">    int $foundModels = 0;</span><br><span class="line"></span><br><span class="line">    for ($model in $allModels) &#123;</span><br><span class="line">        string $currentUVSets[] = `polyUVSet -q -currentUVSet $model`;</span><br><span class="line">        if (size($currentUVSets) &gt; 0 &amp;&amp; $currentUVSets[0] != &quot;map1&quot;) &#123;</span><br><span class="line">            select -add $model;</span><br><span class="line">            $foundModels++;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    if ($foundModels == 0) &#123;</span><br><span class="line">        confirmDialog </span><br><span class="line">        -title &quot;提示&quot; </span><br><span class="line">        -message &quot;\n在当前场景中未找到默认UV集名称非 map1 的模型！\n&quot; </span><br><span class="line">        -button &quot;确定&quot; </span><br><span class="line">        -defaultButton &quot;确定&quot;;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">// 删除多余的UV集</span><br><span class="line">global proc deleteExtraUVSets() &#123;</span><br><span class="line">    string $selectedModels[] = `ls -sl -dag -ni -type mesh`;</span><br><span class="line">    if(size($selectedModels) == 0)&#123;</span><br><span class="line">            confirmDialog </span><br><span class="line">            -title &quot;提示&quot; </span><br><span class="line">            -message &quot;\n您还没有选中模型或选中的不是多边形!\n&quot; </span><br><span class="line">            -button &quot;确定&quot; </span><br><span class="line">            -defaultButton &quot;确定&quot;;</span><br><span class="line">        return;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    string $model;</span><br><span class="line">    for ($model in $selectedModels) &#123;</span><br><span class="line">        string $uvSets[] = `polyUVSet -q -allUVSets $model`;</span><br><span class="line"></span><br><span class="line">        if(size($uvSets) &lt;= 1) &#123;</span><br><span class="line">            confirmDialog </span><br><span class="line">            -title &quot;提示&quot; </span><br><span class="line">            -message &quot;\n您当前选中的模型仅有一个UV集\n&quot; </span><br><span class="line">            -button &quot;确定&quot; </span><br><span class="line">            -defaultButton &quot;确定&quot;;</span><br><span class="line">            continue;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        string $uvSet;</span><br><span class="line">        for ($uvSet in $uvSets) &#123;</span><br><span class="line">            if ($uvSet != &quot;map1&quot;) &#123;</span><br><span class="line">                print (&quot;正在删除 &quot; + $model + &quot; 的UV集:&quot; + $uvSet + &quot;\n&quot;);</span><br><span class="line">                polyUVSet -delete -uvSet $uvSet $model;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    print &quot;三岁豆Er:删除多余UV集成功!\n&quot;;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">// 重命名默认UV集为map1</span><br><span class="line">global proc renameFirstUVSetToMap1() &#123;</span><br><span class="line">    string $selectedObjects[] = `ls -sl -dag -ni -type mesh`;</span><br><span class="line">    if(size($selectedObjects) == 0)&#123;</span><br><span class="line">        confirmDialog </span><br><span class="line">        -title &quot;提示&quot; </span><br><span class="line">        -message &quot;\n您还没有选中模型或选中的不是多边形!\n&quot; </span><br><span class="line">        -button &quot;确定&quot; </span><br><span class="line">        -defaultButton &quot;确定&quot;;</span><br><span class="line">        return;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    string $object;</span><br><span class="line">    for ($object in $selectedObjects) &#123;</span><br><span class="line">        string $uvSets[] = `polyUVSet -q -allUVSets $object`;</span><br><span class="line">        if (size($uvSets) &gt; 0) &#123;</span><br><span class="line">            string $firstUVSet = $uvSets[0];</span><br><span class="line">            if ($firstUVSet != &quot;map1&quot;) &#123;</span><br><span class="line">                polyUVSet -rename -newUVSet &quot;map1&quot; -uvSet $firstUVSet $object;</span><br><span class="line">                print (&quot;已将 &quot; + $object + &quot; 的默认UV集重命名为 &#x27;map1&#x27;\n&quot;);</span><br><span class="line">            &#125; else &#123;</span><br><span class="line">                print ($object + &quot; 的第一个 UV 集已经是 &#x27;map1&#x27;。\n&quot;);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125; else &#123;</span><br><span class="line">            print ($object + &quot; 没有 UV 集。\n&quot;);</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    print &quot;三岁豆Er!重命名默认UV集成功!\n&quot;;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure><p><img src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/END_02.svg"></p>]]></content>
-    
-    
-    <summary type="html">检查场景中是否有多个UV集和UV集名称不为map1的模型，并提供修复方法</summary>
-    
-    
-    
-    <category term="Maya" scheme="https://sansuidouer.github.io/categories/Maya/"/>
-    
-    
-    <category term="Maya" scheme="https://sansuidouer.github.io/tags/Maya/"/>
-    
-    <category term="Mel" scheme="https://sansuidouer.github.io/tags/Mel/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>鼠标右键发送到</title>
-    <link href="https://sansuidouer.github.io/45700/"/>
-    <id>https://sansuidouer.github.io/45700/</id>
-    <published>2023-12-27T12:53:52.000Z</published>
-    <updated>2024-01-24T14:20:41.283Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="发送到"><a href="#发送到" class="headerlink" title="发送到"></a>发送到</h1><p>我们使用Windows管理文件中，鼠标右键里面有个发送到，发送到桌面快捷方式很好用</p><p>里面固定的有几个选项，传真、文档、桌面快捷方式……</p><p>如果我们想要自定义一个目录进行发送文件该怎么弄呢？</p><p><img src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/image-20231227205205283.png" alt="image-20231227205205283"></p><h3 id="添加发送到文件夹的选项"><a href="#添加发送到文件夹的选项" class="headerlink" title="添加发送到文件夹的选项"></a>添加发送到文件夹的选项</h3><p>Win+R 打开运行对话框</p><p>输入以下内容，回车。</p><p>会打开一个目录，在此目录下新建一个快捷方式，目标指向你想要自定义的文件夹。</p><p>就可以在鼠标右键找到你自定义的文件夹啦。</p><p>切记现在是相当于发送当前选中文件到指定文件夹，也就是拷贝了一份给这个指定的文件夹。</p><p>如果您的目的已经达到了，那么您就看到这里就可以了</p><p>如果您想像发送到桌面快捷方式一样发送这个文件的快捷方式到指定目录请继续往下看。</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">shell:sendto</span><br></pre></td></tr></table></figure><p><img src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/image-20231227211301001.png" alt="image-20231227211301001"></p><p><img src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/image-20231227212716479.png" alt="image-20231227212716479"></p><h3 id="发送到指定文件夹快捷方式"><a href="#发送到指定文件夹快捷方式" class="headerlink" title="发送到指定文件夹快捷方式"></a>发送到指定文件夹快捷方式</h3><h4 id="第一步-新建VB脚本"><a href="#第一步-新建VB脚本" class="headerlink" title="第一步 新建VB脚本"></a>第一步 新建VB脚本</h4><p>在你指定的目录下新建文本文档，将以下代码存储到文本文档中，</p><p>需要修改的内容就是第四句代码引号中的内容</p><p>“E:\测试\“修改为你自己想要存放快捷方式的目录，一定要以“ \ ”结尾。</p><p>重点！！</p><p>不要直接保存，按快捷键Ctrl+Shift+S另存为</p><p>另存为名称随意，编码格式一定要选择ANSI 否则会报错，默认保存的话是UTF-8</p><p>然后将文件后缀.txt修改为.vbs</p><figure class="highlight vbs"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">Set</span> unNamedArguments = WScript.Arguments.UnNamed </span><br><span class="line"><span class="keyword">set</span> WshShell = WScript.<span class="built_in">CreateObject</span>(<span class="string">&quot;WScript.Shell&quot;</span>) </span><br><span class="line"><span class="keyword">Set</span> objFSO = <span class="built_in">CreateObject</span>(<span class="string">&quot;Scripting.FileSystemObject&quot;</span>) </span><br><span class="line">strFolder = <span class="string">&quot;E:\测试\&quot;</span></span><br><span class="line"><span class="keyword">for</span> count = <span class="number">0</span> <span class="keyword">to</span> wscript.arguments.count<span class="number">-1</span> <span class="keyword">Step</span> <span class="number">1</span> </span><br><span class="line">    filename = unNamedArguments.Item(count) </span><br><span class="line">    <span class="keyword">Set</span> objFile = objFSO.GetFile(filename)  </span><br><span class="line"><span class="keyword">set</span> oShellLink = WshShell.CreateShortcut(strFolder &amp; objFSO.GetFileName(filename)&amp; <span class="string">&quot;.lnk&quot;</span>) </span><br><span class="line">    oShellLink.TargetPath = filename </span><br><span class="line">    oShellLink.WindowStyle = <span class="number">1</span> </span><br><span class="line">    oShellLink.WorkingDirectory = objFSO.GetParentFolderName(filename) </span><br><span class="line">    oShellLink.Save  </span><br><span class="line"><span class="keyword">NEXT</span></span><br></pre></td></tr></table></figure><p><img src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/image-20231227214806936.png" alt="image-20231227214806936"></p><h4 id="第二步-将当前的VB脚本发送到shell-sendto目录"><a href="#第二步-将当前的VB脚本发送到shell-sendto目录" class="headerlink" title="第二步 将当前的VB脚本发送到shell:sendto目录"></a>第二步 将当前的VB脚本发送到shell:sendto目录</h4><p>将你新建好的VB脚本的快捷方式发送到你的shell:sendto目录。</p><p>快捷方式的命名可以随意。</p><p>自此结束，就可以把你选中的文件快捷发送到你自定义的目录下面了。</p><h4 id="补充："><a href="#补充：" class="headerlink" title="补充："></a>补充：</h4><p>如果你觉得VBS脚本的图标不好看，可以修改shell:sendto目录下的VBS快捷方式的图标</p><p>在文件名最前面加上“..”，可以让你的文件顺序达到最高。</p><p><img src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/END_02.svg"></p>]]></content>
-    
-    
-    <summary type="html">鼠标右键“发送到”功能，发送到指定目录</summary>
-    
-    
-    
-    <category term="Windows" scheme="https://sansuidouer.github.io/categories/Windows/"/>
-    
-    
-    <category term="Windows" scheme="https://sansuidouer.github.io/tags/Windows/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>PixPin</title>
-    <link href="https://sansuidouer.github.io/21735/"/>
-    <id>https://sansuidouer.github.io/21735/</id>
-    <published>2023-12-06T12:57:46.000Z</published>
-    <updated>2024-01-24T14:20:41.183Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="PixPin"><a href="#PixPin" class="headerlink" title="PixPin"></a>PixPin</h1><p>PixPin是一款功能强大的截图&#x2F;贴图工具。</p><p>其实按照我的理解，就是Snipaste的一个加强版。</p><p>功能比Snipaste多一些，比如本地OCR，截长图，录制GIF等。</p><p>主要是Snipaste已经好久不更新了，估计也不会有更新了。这个是作者还在做一些新功能。可以体验一下。</p><p>PixPin官网：<a href="https://pixpinapp.com/">https://pixpinapp.com/</a></p><p><img src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/image-20231206211708987.png" alt="image-20231206211708987"></p><h1 id="Snipaste"><a href="#Snipaste" class="headerlink" title="Snipaste"></a>Snipaste</h1><p>Snipaste官网：<a href="https://zh.snipaste.com/">https://zh.snipaste.com/</a></p><p><img src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/image-20231206211629395.png" alt="image-20231206211629395"></p><p><img src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/END_02.svg"></p>]]></content>
-    
-    
-    <summary type="html">“ 功能强大使用简单的截图/贴图工具 ”</summary>
-    
-    
-    
-    <category term="软件" scheme="https://sansuidouer.github.io/categories/%E8%BD%AF%E4%BB%B6/"/>
-    
-    
-    <category term="软件分享" scheme="https://sansuidouer.github.io/tags/%E8%BD%AF%E4%BB%B6%E5%88%86%E4%BA%AB/"/>
     
   </entry>
   
