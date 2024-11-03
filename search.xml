@@ -4,6 +4,44 @@
   
     
     <entry>
+      <title>键盘RK98用户手册|说明书</title>
+      <link href="/6235/"/>
+      <url>/6235/</url>
+      
+        <content type="html"><![CDATA[<h2 id="RK键盘"><a href="#RK键盘" class="headerlink" title="RK键盘"></a>RK键盘</h2><p>RK官网：<a href="https://www.rkgaming.com/">https://www.rkgaming.com/</a></p><p>用户手册：<a href="https://www.rkgaming.com/media/files/20220104/20220104153557_3148.pdf">https://www.rkgaming.com/media/files/20220104/20220104153557_3148.pdf</a></p><p>蓝奏云备份：<a href="https://zhangzhilong.lanzouw.com/iFPQv2e4jnib">下载</a></p><p><img src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/RKBeiGuang.png"></p><p><img src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/RKzuhe2.png"></p><p><img src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/RKBeiGuangL.png"></p><p><img src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/RKDuoMeiTi.png"></p><p><img src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/END_02.svg"></p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>我的电视</title>
+      <link href="/41863/"/>
+      <url>/41863/</url>
+      
+        <content type="html"><![CDATA[<h2 id="我的电视"><a href="#我的电视" class="headerlink" title="我的电视"></a>我的电视</h2><p>我的电视Github开源地址:<a href="https://github.com/lizongying/my-tv">https://github.com/lizongying/my-tv</a></p><p>这个开源好像没有最新的版本了,可以下载一个旧版本,进入软件后再更新到最新版</p><p>AK直播源 : <a href="https://aktv.top/">https://aktv.top/</a></p><p>饭太硬接口:<a href="https://www.饭太硬.com/">https://www.xn--sss604efuw.com/</a></p><p>饭太硬的官网有很多Tvbox的下载地址,因为Tvbox有很多版本,下载一个就好。</p><p><img src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/image-20241103145058024.png" alt="image-20241103145058024"></p><p><img src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/END_02.svg"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 软件分享 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 软件分享 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>分享会 Round 1</title>
       <link href="/28985/"/>
       <url>/28985/</url>
@@ -27,7 +65,7 @@
       <link href="/7051/"/>
       <url>/7051/</url>
       
-        <content type="html"><![CDATA[<p>VrayForMaya代理工具</p><h2 id="界面："><a href="#界面：" class="headerlink" title="界面："></a>界面：</h2><p><img src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/Snipaste_2024-10-31_21-59-06.png" alt="Snipaste_2024-10-31_21-59-05"></p><h3 id="下载："><a href="#下载：" class="headerlink" title="下载："></a>下载：</h3><p>V3.3：<a href="https://zhangzhilong.lanzouw.com/i2cz52dvmqbg">蓝奏云</a></p>]]></content>
+        <content type="html"><![CDATA[<p>VrayForMaya代理工具</p><h2 id="界面："><a href="#界面：" class="headerlink" title="界面："></a>界面：</h2><p><img src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/Snipaste_2024-10-31_21-59-06.png" alt="Snipaste_2024-10-31_21-59-05"></p><h3 id="介绍："><a href="#介绍：" class="headerlink" title="介绍："></a>介绍：</h3><p><strong>导出路径：</strong>顾名思义，你要把代理导出到那里</p><p><strong>导出XML规则：</strong>勾选将当前选中的组或多边形所被赋予的材质的XML规则将被以同名导出</p><p><strong>导出材质球：</strong>勾选将当前选中的组或多边形所被赋予的材质球以ma格式导出到目录</p><p><strong>规则文件：</strong>选中或识别出来代理的XML规则路径</p><p><strong>复制规则：</strong>复制当前选中代理的规则</p><p><strong>粘贴规则：</strong>粘贴已经复制的XML材质规则或应用手动选中的XML规则</p><h3 id="下载："><a href="#下载：" class="headerlink" title="下载："></a>下载：</h3><p>V3.3：<a href="https://zhangzhilong.lanzouw.com/i2cz52dvmqbg">蓝奏云</a></p>]]></content>
       
       
       <categories>
@@ -185,7 +223,7 @@
       <link href="/31779/"/>
       <url>/31779/</url>
       
-        <content type="html"><![CDATA[<h2 id="渲染设置与传统渲染层"><a href="#渲染设置与传统渲染层" class="headerlink" title="渲染设置与传统渲染层"></a>渲染设置与传统渲染层</h2><p>早期 Maya 版本使用的是“层编辑器”(Layer Editor)，现在默认都修改为了渲染设定。</p><h3 id="设置回旧渲染层的方法"><a href="#设置回旧渲染层的方法" class="headerlink" title="设置回旧渲染层的方法"></a>设置回旧渲染层的方法</h3><p>请选择“窗口 &gt; 设置&#x2F;首选项 &gt; 首选项”(Windows &gt; Settings&#x2F;Preferences &gt; Preferences)以打开“首选项”(Preferences)窗口，然后导航到“渲染”(Rendering)类别。选择“传统渲染层”(Legacy Render Layers)作为“首选渲染设置系统”(Preferred Render Setup system)，然后重新启动 Maya。</p><p><img src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/Snipaste_2024-09-15_22-19-59.png" alt="Snipaste_2024-09-15_22-19-59"></p><h2 id="预设"><a href="#预设" class="headerlink" title="预设"></a>预设</h2><p>进入主题，在使用新的渲染层会牵扯到一些覆盖，比如主可见性、产生阴影、接受阴影等。在Maya中内置了一些预设，</p><p>MatteOverride-Arnold（遮罩覆盖 Arnold）</p><p>RemoveRenderableCameras（移除可渲染相机）</p><p>RenderlayerExample-Arnold（渲染层示例 Arnold）</p><p>SetRenderableCameras（设置可渲染相机）</p><p>这些预设我没有具体使用过，因为主要是关于Arnod的预设且不是很常用</p><p>这些预设存储的路径为</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">C:\Users\Administrator\Documents\maya\RSTemplates</span><br></pre></td></tr></table></figure><p>这些预设的格式为.json格式文件</p><p>我目前写了四个预设，分别是Environmenti、Lights、Shadows、Visibility。</p><p>他们分别的作用如下：</p><h3 id="Environmenti：覆盖大气雾"><a href="#Environmenti：覆盖大气雾" class="headerlink" title="Environmenti：覆盖大气雾"></a>Environmenti：覆盖大气雾</h3><p>因为这是属于渲染设置级别的覆盖，故需要在渲染层这一级别上右键导入用户模版，选择Environmenti。其作用就是将此渲染层关闭大气雾，也就是取消勾选OverrideEnvironmenti选项</p><p><img src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/Snipaste_2024-09-15_22-49-42.png" alt="Snipaste_2024-09-15_22-49-42"></p><h3 id="Lights：覆盖灯光可见性"><a href="#Lights：覆盖灯光可见性" class="headerlink" title="Lights：覆盖灯光可见性"></a>Lights：覆盖灯光可见性</h3><p>因为这一层级属于集和级别的，要在需要覆盖的集和上面右键选择Lights，由于在分层渲染的时候有一些灯光可能会在其他层渲染可见，例如小夜灯灯泡等，在这一渲染层希望不可见，这时候就可以将所有灯光添加在这个集和中，添加一个灯光覆盖的预设，即可将所有灯光可见性关闭，对应的属性为灯光的Lnvisibel属性，可以理解为将这一层的所有灯光均勾选了这一属性。</p><p><img src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/Snipaste_2024-09-15_22-58-02.png" alt="Snipaste_2024-09-15_22-58-02"></p><h3 id="Shadows：阴影覆盖"><a href="#Shadows：阴影覆盖" class="headerlink" title="Shadows：阴影覆盖"></a>Shadows：阴影覆盖</h3><p>集和级覆盖，可将此集和的多边形设置为不投射阴影，常在渲染阴影的时候使用，不详做介绍，和Lights覆盖使用类使，只是使用了多边形的投射阴影属性。</p><h3 id="Visibility：主可见性覆盖"><a href="#Visibility：主可见性覆盖" class="headerlink" title="Visibility：主可见性覆盖"></a>Visibility：主可见性覆盖</h3><p>字面意思，可将该集和的多边形的主可见性关掉，使用到的是主可见性属性。也是最常见的属性之一。</p><p>后续可能会添加更多预设，根据以后遇到的分层需求添加预设……</p><p><img src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/END_02.svg"></p>]]></content>
+        <content type="html"><![CDATA[<h2 id="渲染设置与传统渲染层"><a href="#渲染设置与传统渲染层" class="headerlink" title="渲染设置与传统渲染层"></a>渲染设置与传统渲染层</h2><p>早期 Maya 版本使用的是“层编辑器”(Layer Editor)，现在默认都修改为了渲染设定。</p><h3 id="设置回旧渲染层的方法"><a href="#设置回旧渲染层的方法" class="headerlink" title="设置回旧渲染层的方法"></a>设置回旧渲染层的方法</h3><p>请选择“窗口 &gt; 设置&#x2F;首选项 &gt; 首选项”(Windows &gt; Settings&#x2F;Preferences &gt; Preferences)以打开“首选项”(Preferences)窗口，然后导航到“渲染”(Rendering)类别。选择“传统渲染层”(Legacy Render Layers)作为“首选渲染设置系统”(Preferred Render Setup system)，然后重新启动 Maya。</p><p><img src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/Snipaste_2024-09-15_22-19-59.png" alt="Snipaste_2024-09-15_22-19-59"></p><h2 id="预设"><a href="#预设" class="headerlink" title="预设"></a>预设</h2><p>进入主题，在使用新的渲染层会牵扯到一些覆盖，比如主可见性、产生阴影、接受阴影等。在Maya中内置了一些预设，</p><p>MatteOverride-Arnold（遮罩覆盖 Arnold）</p><p>RemoveRenderableCameras（移除可渲染相机）</p><p>RenderlayerExample-Arnold（渲染层示例 Arnold）</p><p>SetRenderableCameras（设置可渲染相机）</p><p>这些预设我没有具体使用过，因为主要是关于Arnod的预设且不是很常用</p><p>这些预设存储的路径为</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">C:\Users\Administrator\Documents\maya\RSTemplates</span><br></pre></td></tr></table></figure><p>这些预设的格式为.json格式文件</p><p>我目前写了四个预设，分别是Environmenti、Lights、Shadows、Visibility。</p><p>他们分别的作用如下：</p><h3 id="Environmenti：覆盖大气雾"><a href="#Environmenti：覆盖大气雾" class="headerlink" title="Environmenti：覆盖大气雾"></a>Environmenti：覆盖大气雾</h3><p>因为这是属于渲染设置级别的覆盖，故需要在渲染层这一级别上右键导入用户模版，选择Environmenti。其作用就是将此渲染层关闭大气雾，也就是取消勾选OverrideEnvironmenti选项</p><p><img src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/Snipaste_2024-09-15_22-49-42.png" alt="Snipaste_2024-09-15_22-49-42"></p><h3 id="Lights：覆盖灯光可见性"><a href="#Lights：覆盖灯光可见性" class="headerlink" title="Lights：覆盖灯光可见性"></a>Lights：覆盖灯光可见性</h3><p>因为这一层级属于集和级别的，要在需要覆盖的集和上面右键选择Lights，由于在分层渲染的时候有一些灯光可能会在其他层渲染可见，例如小夜灯灯泡等，在这一渲染层希望不可见，这时候就可以将所有灯光添加在这个集和中，添加一个灯光覆盖的预设，即可将所有灯光可见性关闭，对应的属性为灯光的Lnvisibel属性，可以理解为将这一层的所有灯光均勾选了这一属性。</p><p><img src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/Snipaste_2024-09-15_22-58-02.png" alt="Snipaste_2024-09-15_22-58-02"></p><h3 id="Shadows：阴影覆盖"><a href="#Shadows：阴影覆盖" class="headerlink" title="Shadows：阴影覆盖"></a>Shadows：阴影覆盖</h3><p>集和级覆盖，可将此集和的多边形设置为不投射阴影，常在渲染阴影的时候使用，不详做介绍，和Lights覆盖使用类使，只是使用了多边形的投射阴影属性。</p><h3 id="Visibility：主可见性覆盖"><a href="#Visibility：主可见性覆盖" class="headerlink" title="Visibility：主可见性覆盖"></a>Visibility：主可见性覆盖</h3><p>字面意思，可将该集和的多边形的主可见性关掉，使用到的是主可见性属性。也是最常见的属性之一。</p><h3 id="Metalness：金属性覆盖"><a href="#Metalness：金属性覆盖" class="headerlink" title="Metalness：金属性覆盖"></a>Metalness：金属性覆盖</h3><p>将该集和下面的材质金属度全部设置为0</p><h2 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h2><p>2024&#x2F;11&#x2F;03下载预设：<a href="https://zhangzhilong.lanzouw.com/i2mR92e4paub">蓝奏云</a></p><p>后续可能会添加更多预设，根据以后遇到的分层需求添加预设……</p><p><img src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/END_02.svg"></p>]]></content>
       
       
       <categories>
@@ -955,9 +993,9 @@
       
         <tags>
             
-            <tag> Mel </tag>
-            
             <tag> Vray </tag>
+            
+            <tag> Mel </tag>
             
         </tags>
       
@@ -1862,9 +1900,9 @@
       
         <tags>
             
-            <tag> Mel </tag>
-            
             <tag> Vray </tag>
+            
+            <tag> Mel </tag>
             
         </tags>
       
