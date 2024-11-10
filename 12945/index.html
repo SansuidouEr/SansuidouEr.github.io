@@ -1,0 +1,170 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>Keepass | SansuidouEr Blog</title><meta name="author" content="三岁豆Er"><meta name="copyright" content="三岁豆Er"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="Here&#39;s something encrypted, password is required to continue reading.">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Keepass">
+<meta property="og:url" content="https://sansuidouer.github.io/12945/">
+<meta property="og:site_name" content="SansuidouEr Blog">
+<meta property="og:description" content="Here&#39;s something encrypted, password is required to continue reading.">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/KeePass_Blender.png">
+<meta property="article:published_time" content="2024-11-10T12:19:30.000Z">
+<meta property="article:modified_time" content="2024-11-10T13:58:40.871Z">
+<meta property="article:author" content="三岁豆Er">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/KeePass_Blender.png"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://sansuidouer.github.io/12945/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>
+    (() => {
+      
+    const saveToLocal = {
+      set: (key, value, ttl) => {
+        if (!ttl) return
+        const expiry = Date.now() + ttl * 86400000
+        localStorage.setItem(key, JSON.stringify({ value, expiry }))
+      },
+      get: key => {
+        const itemStr = localStorage.getItem(key)
+        if (!itemStr) return undefined
+        const { value, expiry } = JSON.parse(itemStr)
+        if (Date.now() > expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return value
+      }
+    }
+
+    window.btf = {
+      saveToLocal,
+      getScript: (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        Object.entries(attr).forEach(([key, val]) => script.setAttribute(key, val))
+        script.onload = script.onreadystatechange = () => {
+          if (!script.readyState || /loaded|complete/.test(script.readyState)) resolve()
+        }
+        script.onerror = reject
+        document.head.appendChild(script)
+      }),
+      getCSS: (url, id) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onload = link.onreadystatechange = () => {
+          if (!link.readyState || /loaded|complete/.test(link.readyState)) resolve()
+        }
+        link.onerror = reject
+        document.head.appendChild(link)
+      }),
+      addGlobalFn: (key, fn, name = false, parent = window) => {
+        if (!false && key.startsWith('pjax')) return
+        const globalFn = parent.globalFn || {}
+        globalFn[key] = globalFn[key] || {}
+        if (name && globalFn[key][name]) return
+        globalFn[key][name || Object.keys(globalFn[key]).length] = fn
+        parent.globalFn = globalFn
+      }
+    }
+  
+      
+      const activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      const activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+
+      btf.activateDarkMode = activateDarkMode
+      btf.activateLightMode = activateLightMode
+
+      const theme = saveToLocal.get('theme')
+    
+          theme === 'dark' ? activateDarkMode() : theme === 'light' ? activateLightMode() : null
+        
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        document.documentElement.classList.toggle('hide-aside', asideStatus === 'hide')
+      }
+    
+      
+    const detectApple = () => {
+      if (/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)) {
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+  
+    })()
+  </script><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":false,"top_n_per_article":1,"unescape":false,"languages":{"hits_empty":"未找到符合您查询的内容：${query}","hits_stats":"共找到 ${hits} 篇文章"}},
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":200,"highlightFullpage":false,"highlightMacStyle":true},
+  copy: {
+    success: '复制成功',
+    error: '复制失败',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: {"chs_to_cht":"已切换为繁体中文","cht_to_chs":"已切换为简体中文","day_to_night":"已切换为深色模式","night_to_day":"已切换为浅色模式","bgLight":"#49b1f5","bgDark":"#1f1f1f","position":"bottom-left"},
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyload: true,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'Keepass',
+  isPost: true,
+  isHome: false,
+  isHighlightShrink: false,
+  isToc: true,
+  postUpdate: '2024-11-10 21:58:40'
+}</script><meta name="generator" content="Hexo 7.1.1"><link rel="alternate" href="/atom.xml" title="SansuidouEr Blog" type="application/atom+xml">
+</head><body><script>window.paceOptions = {
+  restartOnPushState: false
+}
+
+btf.addGlobalFn('pjaxSend', () => {
+  Pace.restart()
+}, 'pace_restart')
+
+</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pace-js/themes/blue/pace-theme-minimal.min.css"/><script src="https://cdn.jsdelivr.net/npm/pace-js/pace.min.js"></script><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img text-center"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/L_v02.svg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data text-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">86</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">12</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">11</div></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/Links/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg fixed" id="page-header" style="background-image: url(https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/KeePass_Blender.png);"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"><span class="site-name">SansuidouEr Blog</span></a><a class="nav-page-title" href="/"><span class="site-name">Keepass</span></a></span><div id="menus"><div id="search-button"><span class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></span></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/Links/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><span class="site-page"><i class="fas fa-bars fa-fw"></i></span></div></div></nav><div id="post-info"><h1 class="post-title">Keepass</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2024-11-10T12:19:30.000Z" title="发表于 2024-11-10 20:19:30">2024-11-10</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2024-11-10T13:58:40.871Z" title="更新于 2024-11-10 21:58:40">2024-11-10</time></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title=""><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">浏览量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="post-content" id="article-container"><div class="hbe hbe-container" id="hexo-blog-encrypt" data-wpm="Oh, this is an invalid password. Check and try again, please." data-whm="OOPS, these decrypted content may changed, but you can still have a look.">
+  <script id="hbeData" type="hbeData" data-hmacdigest="4e330fc8cbaebc23ae7c28474fe1ae583e86f918aaf5fa27592f9ffc0b129d55">54837ee8995b9536c9dff4420ae6141bd25477bda08e2bcc3f408a3d0ecff1f7256e0bb2ea1622b90478c68ec9594bd3264c11179260d7ed9c29d56f2d361a9432ffb29fb407d4c80fba0f9e3a618d1a72553893c19db171d294d91e67376384820a7eb25402a1cfd4c9b3f2709295bbfbd6c7fa1fe2ca5eab7c48fddcf89fd13acad8e795df28a27b88ab7bbf6f73db4a1b9a3ebe0b1b9674f254397d25ef8a9f3316bd1e4cb0d18661ea5dd75bc50d853d7eb10226511f0732556015af293fe8bbd89c3efbc6300cfe1a0d77bd0ae40a5581bc64c3800ae8dfbb6d8c5199f176f6fef64fb2fc965defa829b8964f2a42305512222a63c3aef7ed9357ab72fbe161e476ae286fb49a8ddab759ff007c48700b8f6d6b067c276c1e976ab773353931147b80464d2775258907f4bca048a560bb0b2d6ed5c633a80f50617ee387a53dc8a1d7d5437e691d7d32bdd0ca54a065d00f269598310455de30b5531d9e1d679c8b37c3722dc3fe35e16e79d939851f06d6a94a452cc4704b9256bfaf515f081498fc07890f01a90f6c0597f18a8396b6324a6f536c26de40258dfad232c21d555ab3eecd4d42007aab0ca4234492a607a73678109465bfa5df3fc9f739127c2ba34fecbb3ae64116428fa2ec08cb42b45c8a391c63b7c9dad7ff550552256fa91621c03bf44e437b276d46895cf7b1fc1dda982a1277014ff150bf94f8193b55c9066565ec667f9ccc661626eb18218b5c359627d3ef8b18015c9802ddd6af9a0a3ce6f80be3682eac3a4beaf3cef0434999bf9871e0e7c0f5c2e869649251c1316e3e4169c4f924fc16265dbab43406d8a476d20b9367f4609213e825399589fe4999542cb61d8cd2ffaca71c0f0c0e1bf300683e332fc7e68570ef801c29f8f3eb5cf5d51db60bdff5f034b1acb681b11af5f9ee6a23f32d44ed00830caca6a898e3487f884df0e200f249cb3d37c3b8e346677fea235e6a53d2ee6ae6a97ac7bf56676123176274cf054a460c3671f421cda741a7ff98f131da8b22cdb0d95f20df55a1994f6397e6f8d43deb1bd8c054f0f73e35f59b7239fef5c4c2175e17870bdf0aff84dc46a2c13ede4d7f86741f7b0b7827f7eebab1c0f11be69b895d973666b9bde6e5929c9fd1421ffab68bdee10a0109188de54c17f1ff83ff76929be3d47cbc324322132301d01475a77a65d26d04df00d581978f8d6bccd450e1f31bfb5a5d155fcadc5b7524870f4782c7e1a29fe696a3b36309c7cc8a5c52c3e6bb03e903bd37b4f9d2aa325cf941ff8f3aab7dcdc282944e26a0640a4376c71244f83417f1875a114c3cebf25bc3a97591ffbc9a206c63f557d4638c3dfa58501f9468d3044037fc72f579ef3587c8f859ec1204332e2658bdff446902caec1b26d4116c76610046fa9c3e0f32e8b7163a20bd9eaff3df01eb8ac8fbd7bfbb843a011b85c7673ea8ab45140bcb82831e1758cc5b417bec943cad1ac61bf68e3f5a9586fb3bbfcd7774c0978dacb801a48b7b1e77948b04384cf86693fe195e74cfa33772eba8d4b08fe3bf945040aa71c369f49b3dd0770300be271ef7bf122d9814ad257037abfe7ddfcb3f2e1078c33e8ab629a840200b12ddaaa1adb18627889bd0ccd50e57947098225d049f03906d07e1e4e1a1a3ac898a60294577c2e03c29665574d26d8c2fe48064a850e4fe3f273d6a4e366c1a4f90a5f1cdca0cd5804305f6ff5caa7877a1fea38053484f35dcdb14ce1d27b2002d00dd72d72cb8bb8df8b8874bad5f909723f51ab23c277d8dcd967199b88ef9fccfa5ac69080710f255c648989f2251f7ead6354d6d5cb4804465a390876d70494b6564104d2fb0bac59efac4d9b4930480b02005947cb661b58370da17e9ea9933c3a72d053e7cae60a61c64613ebc08e5d9cb53ad019b750e10ddd86bcbc37b75ced67f051dffab0f6b93bce2a7e1cb8a25ffa9337f990c783459f73ad02eb689e4baa31b431a81d6b9352ef141b046d1fbab5fe3cee3f54e25e10b012bd3bdf2fb0f54acc68134fe780e8e07a0ecc15dedc9152da1fec4f101e29791593f12c25a4451661dd4106e59b894b57f683e929ab2372a00c91e9318740e3511e250b53036bc30551ffdfc66bb51252aaffbc9012bffaec56c9925b20619db644a3dc364593330926d760fb82cc14437fb1ae7e3aeb7ad15f47ce5600382cb24650f086ba2da41ad49b335028df4c28ce962856815f99c49e9bde7c8cad13f7f5f40efe3e36d1304bf08e86c69f661d7c4d08efb7df6e1c66ca357dd5ac218a6fe9be694f0ccaad059f8a27854aaabf5a21f1c7ab17b64b4767b4433465982498deeaa6fa6ffc744b6e2f168a080650d7ca83d791d0efb17b4908deb6479166739649bc1dd78b1eba33da8b566911efb29bd1eb3ad8c1df0a58a22b0ac112ad010257ec790024c7706be672c038a86cd4ed830fe13741f0b2e335bb1a6b1074d35a978e9aae89ad0bf57afe59f9f09c34b7b208514263eccfd29ede5540cd44b59d61bd7e4f62cf751ab00f5d46c092530bef5c79670e24834a62c30921eef4e696329aefd51709cc171096bc4865b4c71497cd434264af05b0fa5a097f5274c8925e57bf6ee5c3d5fb1534a22048c567dc9f7cb5f7a5890377a91fd368f6a1f79297a6a54492f2b2d112a581a420b2075b9a547a60dc2173ee59020bdd1653c03ccfb958f82fd6db00b8f4f4c7b963b56562c2972bf89310462fbe70c34868fe57f70e2cfae0e1ff1a37cb3af3dd163c1991131eb8ba5168cd2566a8286fa16ec459991c6066d62e99c5354465dd807787d3ddc5d93ab27bf126fda309b6f320cb9c2e829809bcfed028b1e608f4279e431eb4b5dffbc7eb3787690d4985052b1429b0a5f5197b108011aa70984801a624cba8af7292728f5933ebcf52b85d09b4d2fcf09c18d72cc251f4b74c8bcec7a999bec18c272083e3a9fe329c777b935053e7bb27d53fd9123b58b0acecef800dadfa3704c450c23a52394165bc9c2c3885de3bf6ce7ddccc10336006e6f8d133f0adc19aacc93b5f7d4a3ea83cee872a988d1810f96f0fe5ee3e756fba81d1d0a71e5da21409403b819cf4b16544d4a79482df470f414d22871044451d0986025d22b88fa2bcc1733783c8bd02e19604748c81dd20ac843de3d602b49ec3818aa804b9c3a5da7067b967149e6e8c4e41fac3bbd301fcc8389a3ca8010a9d7224dc486d38220361dd97104a8513a22af7ef047f1f6c5657f87ab96e81f7416d64128e8b771115f733507a50cc42dee772671d833acd4dfdad530f98fe57ab487c8bd1368afabecf54416caa6e29587528261971e67e2c99a7909fe2cf77301cc7707a6f79bc7b1386c3e421295597695f198e56a34796731192f4cc1770ca08823f0edd55afaf4f395d97e9c400fded17148e7c99f49aabaff5edf49a09c96d2775ea07ee58930d46999b948c97c8c3b41f4958d7db51b6f5dd174fc34891267c599c25e8e103e594aa14942defedc4ae08aaaf4efe9545818d62d6f741fdb130f4a397d080196a3c156ad84374155ebca4b97d83758c1d7c82473389b621a3503ae1343ce3361f0a9dbbd4cd4169d5da6c49c4a752e1f49688e6f44b3f361aec004e8045fdafcaf0ecf6745e88cb9c0311d6a5caa482ff1747c2c4393743a5fc6020eb51374a34617136e02810e6298fd85e410d43ab125b992573e3bf3c1a27f96c6e7744b0c01f1541857448ca4e985c721750b031147f28484a8745606035bae8cbb2dcfadce4c334a72448032b862c29ad237d05bd76dbec0de53976b57678fbc00387e109941ce2a3f3d8cf6183133bdc80cdde9f49d363f3aedff0d2cd84c110cfa052af8f3a2424fcd3c9acd0ae5ac695ea0bd6ba45a4028435e669b7f3708ba2d30279de7a248920f2ebd9aa4610472e415548b25b1b196edf38318e803025170ecb24308d337c77c18b11399776c325420b83e87f2174787255e09cc7e3f9268efcdaa3beb867dc3c3b6f7cbbfa7ec6780b5c36e5ac7b4958a14be9d5bc83d9115f8e036177db9dd248d595dcc26bc68266ff491d12d4574744f62e77a30965afcdb0ca79954c1343fee5e44e684bc08a4ed2315661c801022b0461a6198dcb0a09c841554dcc5c1aec2d1e79789b93247ed6204b66ffed97e378426f83d3e18f60e6ac1a4a7184e35c8aa608945d3d9b1bb977073e2c5fed8d252bd33d7d63b5ec99fc9f38c8bbdf151b3c4f1f07293391445f7aa2dabf82cee0e52321b15285be858f834508cc14a43b6abce531c8f1fe67ed792397876816982120b7f304252d26f03db730a37a00295217ecc988b5c41cd81b29e005aff571d5217d4fde6f4b37b7cf21d56a5371f46791b09c8e323631e11e4f4255074e428b613</script>
+  <div class="hbe hbe-content">
+    <div class="hbe hbe-input hbe-input-default">
+      <input class="hbe hbe-input-field hbe-input-field-default" type="password" id="hbePass">
+      <label class="hbe hbe-input-label hbe-input-label-default" for="hbePass">
+        <span class="hbe hbe-input-label-content hbe-input-label-content-default">暂不开放，还没写完</span>
+      </label>
+    </div>
+  </div>
+</div>
+<script data-pjax src="/lib/hbe.js"></script><link href="/css/hbe.style.css" rel="stylesheet" type="text/css"></article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>文章作者: </span><span class="post-copyright-info"><a href="https://sansuidouer.github.io">三岁豆Er</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>文章链接: </span><span class="post-copyright-info"><a href="https://sansuidouer.github.io/12945/">https://sansuidouer.github.io/12945/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来源 <a href="https://sansuidouer.github.io" target="_blank">SansuidouEr Blog</a>！</span></div></div><div class="tag_share"><div class="post-share"><div class="social-share" data-image="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/KeePass_Blender.png" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><div class="post-reward"><div class="reward-button"><i class="fas fa-qrcode"></i>赞助</div><div class="reward-main"><ul class="reward-all"><li class="reward-item"><a href="https://s2.loli.net/2023/07/23/xMPYRhWV5JNFnAU.png" target="_blank"><img class="post-qr-code-img" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://s2.loli.net/2023/07/23/xMPYRhWV5JNFnAU.png" alt="微信"/></a><div class="post-qr-code-desc">微信</div></li><li class="reward-item"><a href="https://s2.loli.net/2023/07/23/aGLTW4jf8tV316o.png" target="_blank"><img class="post-qr-code-img" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://s2.loli.net/2023/07/23/aGLTW4jf8tV316o.png" alt="支付宝"/></a><div class="post-qr-code-desc">支付宝</div></li></ul></div></div><nav class="pagination-post" id="pagination"><a class="pagination-related full-width" href="/10194/" title="鼠标右键执行指定批处理"><img class="cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/BatBanner.png" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="info text-right"><div class="info-1"><div class="info-item-1">下一篇</div><div class="info-item-2">鼠标右键执行指定批处理</div></div><div class="info-2"><div class="info-item-1">鼠标右键添加一个选项来执行指定的批处理文件！</div></div></div></a></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info text-center"><div class="avatar-img"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/L_v02.svg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info-name">三岁豆Er</div><div class="author-info-description">知足不辱，知止不殆</div><div class="site-data"><a href="/archives/"><div class="headline">文章</div><div class="length-num">86</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">12</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">11</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/SansuidouEr/"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons"><a class="social-icon" href="https://github.com/SansuidouEr/" target="_blank" title="Github"><i class="fab fa-github" style="color: #24292e;"></i></a><a class="social-icon" href="mailto:2898865071@qq.com" target="_blank" title="Email"><i class="fas fa-envelope" style="color: #4a7dbe;"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">欢迎来到我的博客<p>如遇问题请通过<a href="/about" style="color:#49b1f5">关于</a>联系我</p><p>因网络而异, 如访问本站较慢</p><p>请使用科学上网访问本站</p><br>感谢赞助：<br><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/ZhanZhu01.png" width="100%"></div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content toc-div-class is-expand" style="display:none"><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Keepass"><span class="toc-number">1.</span> <span class="toc-text">Keepass</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%B5%84%E6%96%99%EF%BC%9A"><span class="toc-number">1.0.1.</span> <span class="toc-text">资料：</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%8F%92%E4%BB%B6"><span class="toc-number">1.1.</span> <span class="toc-text">插件</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#KeePassNatMsg%EF%BC%9A"><span class="toc-number">1.1.1.</span> <span class="toc-text">KeePassNatMsg：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#KeePass-Yet-Another-Favicon-Downloader%EF%BC%88%E5%9B%BE%E6%A0%87%E4%B8%8B%E8%BD%BD%E5%99%A8%EF%BC%89"><span class="toc-number">1.1.2.</span> <span class="toc-text">KeePass-Yet-Another-Favicon-Downloader（图标下载器）</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%B5%8F%E8%A7%88%E5%99%A8%E6%89%A9%E5%B1%95"><span class="toc-number">1.2.</span> <span class="toc-text">浏览器扩展</span></a></li></ol></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/12945/" title="Keepass"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/KeePass_Blender.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Keepass"/></a><div class="content"><a class="title" href="/12945/" title="Keepass">Keepass</a><time datetime="2024-11-10T12:19:30.000Z" title="发表于 2024-11-10 20:19:30">2024-11-10</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/10194/" title="鼠标右键执行指定批处理"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/BatBanner.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="鼠标右键执行指定批处理"/></a><div class="content"><a class="title" href="/10194/" title="鼠标右键执行指定批处理">鼠标右键执行指定批处理</a><time datetime="2024-11-10T11:13:34.000Z" title="发表于 2024-11-10 19:13:34">2024-11-10</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/25893/" title="关于DNS泄露的一些记录"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://s1.ax1x.com/2023/07/23/pCLn0hT.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="关于DNS泄露的一些记录"/></a><div class="content"><a class="title" href="/25893/" title="关于DNS泄露的一些记录">关于DNS泄露的一些记录</a><time datetime="2024-11-10T10:51:53.000Z" title="发表于 2024-11-10 18:51:53">2024-11-10</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/41473/" title="Yaml规则覆写"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/MihomoPaty_Banner.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Yaml规则覆写"/></a><div class="content"><a class="title" href="/41473/" title="Yaml规则覆写">Yaml规则覆写</a><time datetime="2024-11-10T09:49:58.000Z" title="发表于 2024-11-10 17:49:58">2024-11-10</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/6235/" title="键盘RK98用户手册|说明书"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/RKBanner.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="键盘RK98用户手册|说明书"/></a><div class="content"><a class="title" href="/6235/" title="键盘RK98用户手册|说明书">键盘RK98用户手册|说明书</a><time datetime="2024-11-03T07:50:33.000Z" title="发表于 2024-11-03 15:50:33">2024-11-03</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2023 - 2024 By 三岁豆Er</div><div class="footer_custom_text">欢迎来到我的博客！</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="日间和夜间模式切换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.umd.min.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page/instantpage.min.js" type="module"></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.iife.min.js"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.js"></script><div class="js-pjax"></div><script defer="defer" id="ribbon" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/canvas-ribbon.min.js" size="150" alpha="0.6" zIndex="-1" mobile="false" data-click="false"></script><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="text-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div id="local-search-results"></div><div id="local-search-stats-wrap"></div></div></div><div id="search-mask"></div><script src="/js/search/local-search.js"></script></div></div></body></html>
