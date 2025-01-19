@@ -6,7 +6,7 @@
   <link href="https://sansuidouer.github.io/atom.xml" rel="self"/>
   
   <link href="https://sansuidouer.github.io/"/>
-  <updated>2025-01-19T07:59:51.043Z</updated>
+  <updated>2025-01-19T08:35:42.427Z</updated>
   <id>https://sansuidouer.github.io/</id>
   
   <author>
@@ -15,6 +15,25 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Win10+优化小工具</title>
+    <link href="https://sansuidouer.github.io/54934/"/>
+    <id>https://sansuidouer.github.io/54934/</id>
+    <published>2025-01-18T12:51:06.000Z</published>
+    <updated>2025-01-19T08:35:42.427Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="Win10优化小工具"><a href="#Win10优化小工具" class="headerlink" title="Win10优化小工具"></a>Win10优化小工具</h2><p>工具地址（吾爱）：<a href="https://www.52pojie.cn/thread-1651910-1-1.html">https://www.52pojie.cn/thread-1651910-1-1.html</a></p><p>作者提供的蓝奏云：<strong><a href="https://wwu.lanzoum.com/b0379ryne">https://wwu.lanzoum.com/b0379ryne</a></strong>  密码：<code>52pj</code></p><p>记录一下我自己的配置：</p><p>！！！请不要点击**<code>一键设置</code>**！！！</p><p>详细使用方法请去作者主页看看。我觉得很方便的一个小工具，特此分享。</p><p><img src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/image-20250119163223293.png" alt="image-20250119163223293"></p><p><img src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/END_02.svg"></p>]]></content>
+    
+    
+    <summary type="html">关于VsCode的unins000.exe程序尝试在指定目录创建文件被拒的解决方案</summary>
+    
+    
+    
+    
+    <category term="软件分享" scheme="https://sansuidouer.github.io/tags/%E8%BD%AF%E4%BB%B6%E5%88%86%E4%BA%AB/"/>
+    
+  </entry>
   
   <entry>
     <title>VsCode的unins000.exe程序尝试在指定目录创建文件拒绝访问</title>
@@ -385,27 +404,6 @@
     
     
     
-    
-  </entry>
-  
-  <entry>
-    <title>Vray 安装包下载</title>
-    <link href="https://sansuidouer.github.io/12116/"/>
-    <id>https://sansuidouer.github.io/12116/</id>
-    <published>2024-09-16T12:53:22.000Z</published>
-    <updated>2024-09-22T06:27:49.451Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="Vray安装包下载官网"><a href="#Vray安装包下载官网" class="headerlink" title="Vray安装包下载官网"></a>Vray安装包下载官网</h2><p><a href="https://nightlies.chaos.com/">https://nightlies.chaos.com/</a></p><p>这种下载方法需要注册登录，其实注册登录很简单，自己注册一个账户即可。</p><p><img src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/image-20240916210313216.png" alt="image-20240916210313216"></p><p><img src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/image-20240916210433271.png" alt="image-20240916210433271"></p><p>找到 V-Ray 6 for Maya -stable</p><p>找到最新的更新日期进去，这时候可能会很懵，应该下载那个版本，看完下面这段话你就明白一个下载那个版本了。</p><hr><p>这是不同操作系统和不同Maya版本的V-Ray渲染器安装包列表。文件名中包含的信息如下：</p><ol><li><p><strong>vray_adv_62003</strong>: V-Ray 6.2.003 版本。</p></li><li><p><strong>maya2020&#x2F;2022&#x2F;2023&#x2F;2024&#x2F;2025</strong>: 针对不同的Maya版本（2020、2022、2023、2024、2025）的安装包。</p></li><li><p>centos7&#x2F;mavericks_x64&#x2F;rhel8&#x2F;bigsur_univ&#x2F;x64</p><p>: 表示支持的操作系统和架构。</p><ul><li><strong>centos7</strong>: 针对CentOS 7的Linux系统。</li><li><strong>mavericks_x64</strong>: 针对Mac OS Mavericks 64位系统。</li><li><strong>bigsur_univ</strong>: 针对Mac OS Big Sur通用架构。</li><li><strong>rhel8</strong>: 针对Red Hat Enterprise Linux 8系统。</li><li><strong>x64</strong>: 针对Windows的64位版本。</li></ul></li><li><p><strong>python2</strong>: 说明此版本使用Python 2。</p></li></ol><p>你可以根据你的操作系统和Maya版本选择相应的安装包。例如，如果你使用的是Windows上的Maya 2022，则应该选择 <code>vray_adv_62003_maya2022_x64_32743_install.zip</code>。</p><hr><p>下载对应安装即可，接下来将破解补丁放入对应的文件夹即可</p><p>以Maya2022为例，将对应文件放入以下文件夹</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">C:\Program Files\Autodesk\Maya2022\vray\vrayplugins</span><br></pre></td></tr></table></figure><p>如果安装的Vray6则放入<code>vray_v60002_maya_fix.dll</code></p><p>Vray5则放入<code>vray_v50020_maya_fix.dll</code></p><p>破解文件下载地址：<a href="https://zhangzhilong.lanzouw.com/i3x2t2a48zrc">蓝奏云</a></p><p><img src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/END_02.svg"></p>]]></content>
-    
-    
-    <summary type="html">Vray安装包官方下载地址，记录一下怎么下载最新版的Vray安装包。</summary>
-    
-    
-    
-    <category term="Vray" scheme="https://sansuidouer.github.io/categories/Vray/"/>
-    
-    
-    <category term="Vray" scheme="https://sansuidouer.github.io/tags/Vray/"/>
     
   </entry>
   
