@@ -6,7 +6,7 @@
   <link href="https://sansuidouer.github.io/atom.xml" rel="self"/>
   
   <link href="https://sansuidouer.github.io/"/>
-  <updated>2025-03-29T13:03:09.413Z</updated>
+  <updated>2025-03-29T13:37:22.344Z</updated>
   <id>https://sansuidouer.github.io/</id>
   
   <author>
@@ -17,11 +17,32 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>PureRef 2.0.3 汉化版</title>
+    <link href="https://sansuidouer.github.io/12795/"/>
+    <id>https://sansuidouer.github.io/12795/</id>
+    <published>2025-03-29T13:03:29.000Z</published>
+    <updated>2025-03-29T13:37:22.344Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="PureRef-2-0-3-汉化版"><a href="#PureRef-2-0-3-汉化版" class="headerlink" title="PureRef  2.0.3 汉化版"></a>PureRef  2.0.3 汉化版</h1><h3 id="官网：https-www-pureref-com"><a href="#官网：https-www-pureref-com" class="headerlink" title="官网：https://www.pureref.com/"></a>官网：<a href="https://www.pureref.com/">https://www.pureref.com/</a></h3><p>汉化作者：<a href="https://space.bilibili.com/335155319">Mgentry</a></p><p>2.0更新内容：<a href="https://www.pureref.com/blog/pureref2/">https://www.pureref.com/blog/pureref2/</a></p><p>记录一下由Mgentry作者汉化的PureRef  2.0.3 感谢作者，已三连！</p><p>下载：<a href="https://zhangzhilong.lanzouw.com/iNSef2s25oob">蓝奏云</a></p><p><img src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/image-20250329213713944.png" alt="image-20250329213713944"></p><p><img src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/END_02.svg"></p>]]></content>
+    
+    
+    <summary type="html">PureRef 2.0.3 汉化版软件分享</summary>
+    
+    
+    
+    <category term="软件" scheme="https://sansuidouer.github.io/categories/%E8%BD%AF%E4%BB%B6/"/>
+    
+    
+    <category term="软件分享" scheme="https://sansuidouer.github.io/tags/%E8%BD%AF%E4%BB%B6%E5%88%86%E4%BA%AB/"/>
+    
+  </entry>
+  
+  <entry>
     <title>体验NXrender渲染器</title>
     <link href="https://sansuidouer.github.io/7304/"/>
     <id>https://sansuidouer.github.io/7304/</id>
     <published>2025-03-29T12:05:30.000Z</published>
-    <updated>2025-03-29T13:03:09.413Z</updated>
+    <updated>2025-03-29T13:08:47.274Z</updated>
     
     <content type="html"><![CDATA[<h1 id="NXRENDER"><a href="#NXRENDER" class="headerlink" title="NXRENDER"></a>NXRENDER</h1><p>最早是在哔哩哔哩看到的<a href="https://space.bilibili.com/1370313607">NX研发小组</a>的宣传视频认识到的这个渲染器，口号也很响亮，<strong>国内首个自研GPU离线渲染器打破国外技术垄断！比国外产品更快的超级渲染器NxRender首发！</strong>，<strong>打破国外技术垄断！首个国内自研渲染器NxRender首发！</strong>等等……，今天刚好有时间下载一个体验一下这款渲染器，在此记录一下从下载到使用的一个过程。</p><p>NXRENDEREN官网：<a href="https://www.nxrenderer.com/">https://www.nxrenderer.com/</a></p><h2 id="下载安装"><a href="#下载安装" class="headerlink" title="下载安装"></a>下载安装</h2><p>官网也很简洁，填写相关信息，等着接受邮件，邮件将包含下载地址和许可证。</p><p><img src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/image-20250329202922142.png" alt="image-20250329202922142"></p><p><img src="https://s21.ax1x.com/2025/03/29/pErv59J.png"></p><p>邮件中包含两个文件，一个是许可证，还有一个版权声明。通过提供的下载链接下载安装包，一直下一步安装即可。</p><p>将许可证放入对应目录，我没有邮件中提到的这个目录，我原以为安装好软件这个目录就被创建了，但是并没有，我渲染出来的画面是带有水印的。</p><p>于是我创建了这个目录，当前所使用用户的目录下创建了文件夹，命名为了“.OFAuth”</p><p>我的目录：<code>C:\Users\SansuidouEr\.OFAuth</code></p><p>如果你是管理员用户则是：<code>C:\Users\Administrator\.OFAuth</code></p><p>将许可证.lic文件放入该目录即可。</p><h2 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h2><p>我使用的是Maya2022，进入软件，在插件管理器加载NXMaya.mll</p><p>⚠️⚠️加载这个渲染器前必须加载Arnold渲染器！！⚠️⚠️</p><p>因为这是一个基于Arnold的渲染器，没有加载Arnold当然不能使用，其实这时候我有一点点失望，我寻思这是一个完全独立的渲染器，因为在使用前没有太了解这款渲染器。原来他是基于阿诺德的一个渲染器，我使用的是NXrender2.0渲染器，渲染速度的确比Arnold渲染速度快，因为他是调用CPU和GPU进行渲染，的确是较快。</p><p><img src="https://s21.ax1x.com/2025/03/29/pErvz3d.png"></p><p>渲染设置和Arnold也很像，AA采样，AOV等。</p><p><img src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/image-20250329205342099.png" alt="image-20250329205342099"></p><p>渲染界面也较为简单，一些常用的按钮。</p><p><img src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/image-20250329205521015.png" alt="image-20250329205521015"></p><h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>我只是简单的进行使用，没有资格评价他的好坏，我只是觉得同时调用CPU和GPU进行渲染真的是一大优势，的确渲染速度很快，其实我个人觉得如果他能像Redshift和Vray似的能有自己的灯光和材质球等会更好，我在使用的时候相同的设置有时候调用Arnold渲染效果和NXrender渲染器效果还是不太一致。可能是我设置不对，我也没细研究。总之他是基于Arnold运行的，后续不知道还会不会有其他方面的更新。以上是我整个使用过程的一些记录。可能我使用时间较短存在一些错误。仅仅是体验了一下。晚安，拜拜。</p><p><img src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/END_02.svg"></p>]]></content>
     
@@ -304,9 +325,9 @@
     
     
     
-    <category term="分享会" scheme="https://sansuidouer.github.io/tags/%E5%88%86%E4%BA%AB%E4%BC%9A/"/>
-    
     <category term="Blender" scheme="https://sansuidouer.github.io/tags/Blender/"/>
+    
+    <category term="分享会" scheme="https://sansuidouer.github.io/tags/%E5%88%86%E4%BA%AB%E4%BC%9A/"/>
     
   </entry>
   
@@ -391,23 +412,6 @@
     
     
     <category term="Windows" scheme="https://sansuidouer.github.io/tags/Windows/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>获取光猫超级管员理密码</title>
-    <link href="https://sansuidouer.github.io/29181/"/>
-    <id>https://sansuidouer.github.io/29181/</id>
-    <published>2024-10-19T04:44:44.000Z</published>
-    <updated>2024-10-19T05:42:36.711Z</updated>
-    
-    <content type="html"><![CDATA[<p>每个光猫都有一个普通的用户管理员密码，都会在猫盒的背面写着，可以根据访问地址登录光猫的后台，但是这个权限是很有限的，甚至有些地方根本不让修改。</p><p>所以要获取到超级管理员的密码进行登录，光猫就可以没有限制的修改设置啦。</p><h2 id="第一步"><a href="#第一步" class="headerlink" title="第一步"></a>第一步</h2><p>登陆普通的用户账号密码，</p><p>我的光猫型号是&nbsp;&nbsp;PT27G，按照默认终端配置地址访问192.168.1.1，输入管理员账户密码登录</p><p><img src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/image-20241019130826254.png" alt="image-20241019130826254"></p><p>登录后打开一下以下网址</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">http://192.168.1.1/cgi-bin/abcdidfope94e0934jiewru8ew414.cgi</span><br></pre></td></tr></table></figure><p><img src="C:\Users\Administrator\AppData\Roaming\Typora\typora-user-images\image-20241019131247963.png" alt="image-20241019131247963"></p><p>这时候看到success则已经打开了&nbsp;&nbsp;Telnet</p><h2 id="第二步"><a href="#第二步" class="headerlink" title="第二步"></a>第二步</h2><p>打开Windows的Trlnet </p><p>如果你默认是勾选的则忽略这一步</p><p>默认是关闭的，可以去控制面板→程序→启用或关闭Windows功能</p><p>然后启用Telnet客户端，大概等上一分钟左右就好啦</p><p><img src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/image-20241019131805352.png" alt="image-20241019131805352"></p><h2 id="第三步"><a href="#第三步" class="headerlink" title="第三步"></a>第三步</h2><p>Win + R</p><p>运行cmd</p><p><img src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/image-20241019133247581.png" alt="image-20241019133247581"></p><p>在cmd输入以下命令</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">telnet 192.168.1.1</span><br></pre></td></tr></table></figure><p>接着输入用户名和密码</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">用户名：</span><br><span class="line">yhtcAdmin</span><br><span class="line"></span><br><span class="line">密码：</span><br><span class="line">Cm1@YHfw</span><br></pre></td></tr></table></figure><p>用户名会正常显示，可以复制粘贴</p><p>但是密码必须手动输入，因为密码是不显示的，输入请注意大小写</p><p>输入密码后回车</p><p>再输入以下代码</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cat /var/config/lastgood.xml | grep &quot;SUSER_PASSWORD&quot;</span><br></pre></td></tr></table></figure><p>输入以上代码后即可得到该光猫的超级管理员密码</p><p>也就是引号里面的内容</p><p>回到192.168.1.1登录即可</p><p>用户名：CMMCCAdmin</p><p>密码：CMCCAdminBt2Tv3Nw（获取到的秘密）</p><p>我不知道这是不是一个永久的密码，这个密码会不会变化，我大概一周后登录还是可以登录的。</p><p><img src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/image-20241019133630125.png" alt="image-20241019133630125"></p><p><img src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/END_02.svg"></p>]]></content>
-    
-    
-    <summary type="html">获取中国移动光猫的超级管理员密码</summary>
-    
-    
-    
     
   </entry>
   
