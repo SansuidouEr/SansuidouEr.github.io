@@ -6,7 +6,7 @@
   <link href="https://sansuidouer.github.io/atom.xml" rel="self"/>
   
   <link href="https://sansuidouer.github.io/"/>
-  <updated>2025-03-15T10:31:41.344Z</updated>
+  <updated>2025-03-29T13:03:09.413Z</updated>
   <id>https://sansuidouer.github.io/</id>
   
   <author>
@@ -15,6 +15,23 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>体验NXrender渲染器</title>
+    <link href="https://sansuidouer.github.io/7304/"/>
+    <id>https://sansuidouer.github.io/7304/</id>
+    <published>2025-03-29T12:05:30.000Z</published>
+    <updated>2025-03-29T13:03:09.413Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="NXRENDER"><a href="#NXRENDER" class="headerlink" title="NXRENDER"></a>NXRENDER</h1><p>最早是在哔哩哔哩看到的<a href="https://space.bilibili.com/1370313607">NX研发小组</a>的宣传视频认识到的这个渲染器，口号也很响亮，<strong>国内首个自研GPU离线渲染器打破国外技术垄断！比国外产品更快的超级渲染器NxRender首发！</strong>，<strong>打破国外技术垄断！首个国内自研渲染器NxRender首发！</strong>等等……，今天刚好有时间下载一个体验一下这款渲染器，在此记录一下从下载到使用的一个过程。</p><p>NXRENDEREN官网：<a href="https://www.nxrenderer.com/">https://www.nxrenderer.com/</a></p><h2 id="下载安装"><a href="#下载安装" class="headerlink" title="下载安装"></a>下载安装</h2><p>官网也很简洁，填写相关信息，等着接受邮件，邮件将包含下载地址和许可证。</p><p><img src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/image-20250329202922142.png" alt="image-20250329202922142"></p><p><img src="https://s21.ax1x.com/2025/03/29/pErv59J.png"></p><p>邮件中包含两个文件，一个是许可证，还有一个版权声明。通过提供的下载链接下载安装包，一直下一步安装即可。</p><p>将许可证放入对应目录，我没有邮件中提到的这个目录，我原以为安装好软件这个目录就被创建了，但是并没有，我渲染出来的画面是带有水印的。</p><p>于是我创建了这个目录，当前所使用用户的目录下创建了文件夹，命名为了“.OFAuth”</p><p>我的目录：<code>C:\Users\SansuidouEr\.OFAuth</code></p><p>如果你是管理员用户则是：<code>C:\Users\Administrator\.OFAuth</code></p><p>将许可证.lic文件放入该目录即可。</p><h2 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h2><p>我使用的是Maya2022，进入软件，在插件管理器加载NXMaya.mll</p><p>⚠️⚠️加载这个渲染器前必须加载Arnold渲染器！！⚠️⚠️</p><p>因为这是一个基于Arnold的渲染器，没有加载Arnold当然不能使用，其实这时候我有一点点失望，我寻思这是一个完全独立的渲染器，因为在使用前没有太了解这款渲染器。原来他是基于阿诺德的一个渲染器，我使用的是NXrender2.0渲染器，渲染速度的确比Arnold渲染速度快，因为他是调用CPU和GPU进行渲染，的确是较快。</p><p><img src="https://s21.ax1x.com/2025/03/29/pErvz3d.png"></p><p>渲染设置和Arnold也很像，AA采样，AOV等。</p><p><img src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/image-20250329205342099.png" alt="image-20250329205342099"></p><p>渲染界面也较为简单，一些常用的按钮。</p><p><img src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/image-20250329205521015.png" alt="image-20250329205521015"></p><h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h2><p>我只是简单的进行使用，没有资格评价他的好坏，我只是觉得同时调用CPU和GPU进行渲染真的是一大优势，的确渲染速度很快，其实我个人觉得如果他能像Redshift和Vray似的能有自己的灯光和材质球等会更好，我在使用的时候相同的设置有时候调用Arnold渲染效果和NXrender渲染器效果还是不太一致。可能是我设置不对，我也没细研究。总之他是基于Arnold运行的，后续不知道还会不会有其他方面的更新。以上是我整个使用过程的一些记录。可能我使用时间较短存在一些错误。仅仅是体验了一下。晚安，拜拜。</p><p><img src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/END_02.svg"></p>]]></content>
+    
+    
+    <summary type="html">一款超高性能，全面兼容Arnold的国产自研GPU渲染器，同时调用GPU和CPU进行渲染。</summary>
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>AI应用实战分享会</title>
@@ -391,27 +408,6 @@
     
     
     
-    
-  </entry>
-  
-  <entry>
-    <title>MihomoParty</title>
-    <link href="https://sansuidouer.github.io/50712/"/>
-    <id>https://sansuidouer.github.io/50712/</id>
-    <published>2024-10-13T07:19:29.000Z</published>
-    <updated>2024-11-10T09:47:25.446Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="Mihomo-Party"><a href="#Mihomo-Party" class="headerlink" title="Mihomo Party"></a>Mihomo Party</h1><p>一个傻瓜易用的科学上网工具，UI比较好看。最大的特点就是简单易用。</p><p>订阅，打开系统代理，就可以使用了，非常适合小白，没有复杂的操作。</p><p>还有一个特点，小白要是不会用，刚安装会有一个较为详细的引导。</p><p><span style="font-size: 20px;font-weight: bold;;"><a href="https://mihomo.party/">官方文档</a></span>&nbsp;&nbsp;&nbsp;&nbsp;<span style="font-size: 20px;font-weight: bold;;"><a href="https://github.com/mihomo-party-org/mihomo-party">Github</a></span></p><p><img src="https://github.com/mihomo-party-org/mihomo-party/raw/master/images/preview.jpg"></p><p>记录一下我的设置：</p><p><img src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/image-20241013154837691.png" alt="image-20241013154837691"></p><p><img src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/END_02.svg"></p>]]></content>
-    
-    
-    <summary type="html">一个更易用的科学上网客户端</summary>
-    
-    
-    
-    <category term="软件分享" scheme="https://sansuidouer.github.io/categories/%E8%BD%AF%E4%BB%B6%E5%88%86%E4%BA%AB/"/>
-    
-    
-    <category term="软件分享" scheme="https://sansuidouer.github.io/tags/%E8%BD%AF%E4%BB%B6%E5%88%86%E4%BA%AB/"/>
     
   </entry>
   
