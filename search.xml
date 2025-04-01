@@ -4,6 +4,56 @@
   
     
     <entry>
+      <title>IDM下载器新用法</title>
+      <link href="/25634/"/>
+      <url>/25634/</url>
+      
+        <content type="html"><![CDATA[<h3 id="InternetDownloadManager"><a href="#InternetDownloadManager" class="headerlink" title="InternetDownloadManager"></a>InternetDownloadManager</h3><h3 id="官网："><a href="#官网：" class="headerlink" title="官网："></a>官网：</h3><p><a href="https://www.internetdownloadmanager.com/">https://www.internetdownloadmanager.com/</a></p><p><img src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/20230804231049.png" alt="image-20230804230037197"></p><p>直接使用官网下载的版本，通过脚本进行冻结激活</p><p>Github:<a href="https://github.com/cjhdevact/IDM-Activation-Script-Chinese?tab=readme-ov-file">https://github.com/cjhdevact/IDM-Activation-Script-Chinese?tab=readme-ov-file</a></p><p>直接下载：<a href="https://codeload.github.com/cjhdevact/IDM-Activation-Script-Chinese/zip/refs/heads/main">https://codeload.github.com/cjhdevact/IDM-Activation-Script-Chinese/zip/refs/heads/main</a></p><p>双击里面的.bat文件，根据需求进行激活即可。</p><p><img src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/image-20250401214130980.png" alt="image-20250401214130980"></p><p><img src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/END_02.svg"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 软件 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 软件分享 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Windows 10文件类型关联的默认应用程序</title>
+      <link href="/60176/"/>
+      <url>/60176/</url>
+      
+        <content type="html"><![CDATA[<h2 id="Windows10帮助论坛：Tenorumshttps-www-tenforums-com"><a href="#Windows10帮助论坛：Tenorumshttps-www-tenforums-com" class="headerlink" title="Windows10帮助论坛：Tenorumshttps://www.tenforums.com/"></a>Windows10帮助论坛：Tenorums<a href="https://www.tenforums.com/">https://www.tenforums.com/</a></h2><p><img src="https://www.tenforums.com/img/TenForumsLogo.png"></p><hr><p>起因是不知道为什么我的电脑.msi文件无法通过双击进行安装了，msi文件的安装包还挺常见的。所以这个问题需要解决一下。</p><p>啥是MSI？ 直接百度百科：<a href="https://baike.baidu.com/item/MSI/10209">https://baike.baidu.com/item/MSI/10209</a></p><p>MSI（MSI &#x3D;microsoft installer）文件是Windows Installer的数据，它实际上是一个数据库，包含安装一种产品所需要的信息和在很多安装情形下安装（和卸载）程序所需的指令和数据。MSI文件将程序的组成文件与功能关联起来。此外，它还包含有关安装过程本身的信息：如安装序列、目标文件夹路径、系统依赖项、安装选项和控制安装过程的属性。</p><p>通过搜索得知MSI文件是通过msiexec.exe进行安装的。</p><p><img src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/image-20250401211752649.png" alt="image-20250401211752649"></p><p>直接Win+R运行msiexec，就会弹出如下窗口，通过安装选项可以进行手动安装.msi文件.</p><p>直接在CMD窗口运行即可打开安装程序。</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">msiexec /package “D:\Product.msi”</span><br></pre></td></tr></table></figure><p><img src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/image-20250401211918706.png" alt="image-20250401211918706"></p><hr><p>以上方法可以完成运行.msi文件，但是这不是我想要的，也不能每次都按照以上方法运行吧，继续搜索帮助。</p><p>然后就发现了一个网站，专门针对Windows10的一个论坛，里面都是讨论Windows10的问题，</p><p>然后我就发现了这篇文章：<a href="https://www.tenforums.com/tutorials/8703-restore-default-file-type-associations-windows-10-a.html">https://www.tenforums.com/tutorials/8703-restore-default-file-type-associations-windows-10-a.html</a></p><p>里面讲到如何在 Windows 10 中恢复文件类型关联的默认应用程序，其实.msi也属于一种文件类型嘛</p><p>双击不能进行安装就说明找不到Windows找不到要打开.msi文件的默认程序嘛。</p><p>我就用到了里面的方案二，下载了一些注册表文件。</p><p><strong>直接下载压缩包：<a href="https://www.tenforums.com/attachments/tutorials/371781d1658760570-restore-default-file-type-associations-windows-10-a-windows_10_default_file_associations.zip">Windows 10 default file associations.zip</a></strong></p><p>解压压缩包后直接双击对应的格式就恢复了Windows默认的应用程序，正好符合我的需求。</p><p><img src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/image-20250401213052122.png" alt="image-20250401213052122"></p><p>添加到注册表后尝试双击.msi格式文件，正常启动了安装程序。问题解决</p><p><img src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/END_02.svg"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Windows10某一文件格式无法通过双击打开，解决.msi文件无法安装的问题 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Windows </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>PureRef 2.0.3 汉化版</title>
       <link href="/12795/"/>
       <url>/12795/</url>
@@ -301,9 +351,9 @@
       
         <tags>
             
-            <tag> Blender </tag>
-            
             <tag> 分享会 </tag>
+            
+            <tag> Blender </tag>
             
         </tags>
       
@@ -1712,8 +1762,8 @@
     
     <entry>
       <title>IDM下载器</title>
-      <link href="/25633/"/>
-      <url>/25633/</url>
+      <link href="/25635/"/>
+      <url>/25635/</url>
       
         <content type="html"><![CDATA[<h3 id="InternetDownloadManager"><a href="#InternetDownloadManager" class="headerlink" title="InternetDownloadManager"></a>InternetDownloadManager</h3><h3 id="官网："><a href="#官网：" class="headerlink" title="官网："></a>官网：</h3><p><a href="https://www.internetdownloadmanager.com/">https://www.internetdownloadmanager.com/</a></p><p><img src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/20230804231049.png" alt="image-20230804230037197"></p><p>记录一个IDM的便携版，不用繁琐的破解，直接点击绿化即可完成安装。</p><p><img src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/image-20230804230326104.png" alt="image-20230804230326104"></p><p>我使用360安全浏览器，配合浏览器<a href="https://ext.se.360.cn/webstore/search/idm">插件</a>使用。</p><p><img src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/image-20230804230813826.png" alt="image-20230804230813826"></p><h3 id="下载"><a href="#下载" class="headerlink" title="下载"></a>下载</h3><p>蓝奏云下载地址：<a href="https://zhangzhilong.lanzouj.com/iNQK70313peh">https://zhangzhilong.lanzouj.com/iNQK70313peh</a></p><p><img src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/END_02.svg"></p>]]></content>
       

@@ -1,0 +1,189 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>Windows 10文件类型关联的默认应用程序 | SansuidouEr Blog</title><meta name="author" content="三岁豆Er"><meta name="copyright" content="三岁豆Er"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta name="description" content="Windows10帮助论坛：Tenorumshttps:&#x2F;&#x2F;www.tenforums.com&#x2F;  起因是不知道为什么我的电脑.msi文件无法通过双击进行安装了，msi文件的安装包还挺常见的。所以这个问题需要解决一下。 啥是MSI？ 直接百度百科：https:&#x2F;&#x2F;baike.baidu.com&#x2F;item&#x2F;MSI&#x2F;10209 MSI（MSI &#x3D;microsoft installer）文件是">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Windows 10文件类型关联的默认应用程序">
+<meta property="og:url" content="https://sansuidouer.github.io/60176/">
+<meta property="og:site_name" content="SansuidouEr Blog">
+<meta property="og:description" content="Windows10帮助论坛：Tenorumshttps:&#x2F;&#x2F;www.tenforums.com&#x2F;  起因是不知道为什么我的电脑.msi文件无法通过双击进行安装了，msi文件的安装包还挺常见的。所以这个问题需要解决一下。 啥是MSI？ 直接百度百科：https:&#x2F;&#x2F;baike.baidu.com&#x2F;item&#x2F;MSI&#x2F;10209 MSI（MSI &#x3D;microsoft installer）文件是">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://s1.ax1x.com/2023/07/23/pCLKPzD.png">
+<meta property="article:published_time" content="2025-04-01T13:02:39.000Z">
+<meta property="article:modified_time" content="2025-04-01T13:36:47.971Z">
+<meta property="article:author" content="三岁豆Er">
+<meta property="article:tag" content="Windows">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://s1.ax1x.com/2023/07/23/pCLKPzD.png"><script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Windows 10文件类型关联的默认应用程序",
+  "url": "https://sansuidouer.github.io/60176/",
+  "image": "https://s1.ax1x.com/2023/07/23/pCLKPzD.png",
+  "datePublished": "2025-04-01T13:02:39.000Z",
+  "dateModified": "2025-04-01T13:36:47.971Z",
+  "author": [
+    {
+      "@type": "Person",
+      "name": "三岁豆Er",
+      "url": "https://sansuidouer.github.io/"
+    }
+  ]
+}</script><link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/favicon_v1.svg"><link rel="canonical" href="https://sansuidouer.github.io/60176/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>
+    (() => {
+      
+    const saveToLocal = {
+      set: (key, value, ttl) => {
+        if (!ttl) return
+        const expiry = Date.now() + ttl * 86400000
+        localStorage.setItem(key, JSON.stringify({ value, expiry }))
+      },
+      get: key => {
+        const itemStr = localStorage.getItem(key)
+        if (!itemStr) return undefined
+        const { value, expiry } = JSON.parse(itemStr)
+        if (Date.now() > expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return value
+      }
+    }
+
+    window.btf = {
+      saveToLocal,
+      getScript: (url, attr = {}) => new Promise((resolve, reject) => {
+        const script = document.createElement('script')
+        script.src = url
+        script.async = true
+        Object.entries(attr).forEach(([key, val]) => script.setAttribute(key, val))
+        script.onload = script.onreadystatechange = () => {
+          if (!script.readyState || /loaded|complete/.test(script.readyState)) resolve()
+        }
+        script.onerror = reject
+        document.head.appendChild(script)
+      }),
+      getCSS: (url, id) => new Promise((resolve, reject) => {
+        const link = document.createElement('link')
+        link.rel = 'stylesheet'
+        link.href = url
+        if (id) link.id = id
+        link.onload = link.onreadystatechange = () => {
+          if (!link.readyState || /loaded|complete/.test(link.readyState)) resolve()
+        }
+        link.onerror = reject
+        document.head.appendChild(link)
+      }),
+      addGlobalFn: (key, fn, name = false, parent = window) => {
+        if (!false && key.startsWith('pjax')) return
+        const globalFn = parent.globalFn || {}
+        globalFn[key] = globalFn[key] || {}
+        globalFn[key][name || Object.keys(globalFn[key]).length] = fn
+        parent.globalFn = globalFn
+      }
+    }
+  
+      
+      const activateDarkMode = () => {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      const activateLightMode = () => {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+
+      btf.activateDarkMode = activateDarkMode
+      btf.activateLightMode = activateLightMode
+
+      const theme = saveToLocal.get('theme')
+    
+          theme === 'dark' ? activateDarkMode() : theme === 'light' ? activateLightMode() : null
+        
+      
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        document.documentElement.classList.toggle('hide-aside', asideStatus === 'hide')
+      }
+    
+      
+    const detectApple = () => {
+      if (/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)) {
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+  
+    })()
+  </script><script>const GLOBAL_CONFIG = {
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"/search.xml","preload":false,"top_n_per_article":1,"unescape":false,"languages":{"hits_empty":"未找到符合您查询的内容：${query}","hits_stats":"共找到 ${hits} 篇文章"}},
+  translate: undefined,
+  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":200,"highlightFullpage":false,"highlightMacStyle":true},
+  copy: {
+    success: '复制成功',
+    error: '复制失败',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  dateSuffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  infinitegrid: {
+    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid/dist/infinitegrid.min.js',
+    buttonText: '加载更多'
+  },
+  isPhotoFigcaption: false,
+  islazyloadPlugin: true,
+  isAnchor: false,
+  percent: {
+    toc: true,
+    rightside: false,
+  },
+  autoDarkmode: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'Windows 10文件类型关联的默认应用程序',
+  isHighlightShrink: false,
+  isToc: true,
+  pageType: 'post'
+}</script><meta name="generator" content="Hexo 7.1.1"><link rel="alternate" href="/atom.xml" title="SansuidouEr Blog" type="application/atom+xml">
+</head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img text-center"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/L_v02.svg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data text-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">97</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">17</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">13</div></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/Links/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg fixed" id="page-header" style="background-image: url(https://s1.ax1x.com/2023/07/23/pCLKPzD.png);"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"><span class="site-name">SansuidouEr Blog</span></a><a class="nav-page-title" href="/"><span class="site-name">Windows 10文件类型关联的默认应用程序</span></a></span><div id="menus"><div id="search-button"><span class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></span></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/Links/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><div id="toggle-menu"><span class="site-page"><i class="fas fa-bars fa-fw"></i></span></div></div></nav><div id="post-info"><h1 class="post-title">Windows 10文件类型关联的默认应用程序</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2025-04-01T13:02:39.000Z" title="发表于 2025-04-01 21:02:39">2025-04-01</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2025-04-01T13:36:47.971Z" title="更新于 2025-04-01 21:36:47">2025-04-01</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/Windows10%E6%9F%90%E4%B8%80%E6%96%87%E4%BB%B6%E6%A0%BC%E5%BC%8F%E6%97%A0%E6%B3%95%E9%80%9A%E8%BF%87%E5%8F%8C%E5%87%BB%E6%89%93%E5%BC%80%EF%BC%8C%E8%A7%A3%E5%86%B3-msi%E6%96%87%E4%BB%B6%E6%97%A0%E6%B3%95%E5%AE%89%E8%A3%85%E7%9A%84%E9%97%AE%E9%A2%98/">Windows10某一文件格式无法通过双击打开，解决.msi文件无法安装的问题</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="post-meta-pv-cv" id="" data-flag-title=""><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">浏览量:</span><span id="busuanzi_value_page_pv"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="container post-content" id="article-container"><h2 id="Windows10帮助论坛：Tenorumshttps-www-tenforums-com"><a href="#Windows10帮助论坛：Tenorumshttps-www-tenforums-com" class="headerlink" title="Windows10帮助论坛：Tenorumshttps://www.tenforums.com/"></a>Windows10帮助论坛：Tenorums<a target="_blank" rel="noopener" href="https://www.tenforums.com/">https://www.tenforums.com/</a></h2><p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://www.tenforums.com/img/TenForumsLogo.png"></p>
+<hr>
+<p>起因是不知道为什么我的电脑.msi文件无法通过双击进行安装了，msi文件的安装包还挺常见的。所以这个问题需要解决一下。</p>
+<p>啥是MSI？ 直接百度百科：<a target="_blank" rel="noopener" href="https://baike.baidu.com/item/MSI/10209">https://baike.baidu.com/item/MSI/10209</a></p>
+<p>MSI（MSI &#x3D;microsoft installer）文件是Windows Installer的数据，它实际上是一个数据库，包含安装一种产品所需要的信息和在很多安装情形下安装（和卸载）程序所需的指令和数据。MSI文件将程序的组成文件与功能关联起来。此外，它还包含有关安装过程本身的信息：如安装序列、目标文件夹路径、系统依赖项、安装选项和控制安装过程的属性。</p>
+<p>通过搜索得知MSI文件是通过msiexec.exe进行安装的。</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/image-20250401211752649.png" alt="image-20250401211752649"></p>
+<p>直接Win+R运行msiexec，就会弹出如下窗口，通过安装选项可以进行手动安装.msi文件.</p>
+<p>直接在CMD窗口运行即可打开安装程序。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">msiexec /package “D:\Product.msi”</span><br></pre></td></tr></table></figure>
+
+
+
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/image-20250401211918706.png" alt="image-20250401211918706"></p>
+<hr>
+<p>以上方法可以完成运行.msi文件，但是这不是我想要的，也不能每次都按照以上方法运行吧，继续搜索帮助。</p>
+<p>然后就发现了一个网站，专门针对Windows10的一个论坛，里面都是讨论Windows10的问题，</p>
+<p>然后我就发现了这篇文章：<a target="_blank" rel="noopener" href="https://www.tenforums.com/tutorials/8703-restore-default-file-type-associations-windows-10-a.html">https://www.tenforums.com/tutorials/8703-restore-default-file-type-associations-windows-10-a.html</a></p>
+<p>里面讲到如何在 Windows 10 中恢复文件类型关联的默认应用程序，其实.msi也属于一种文件类型嘛</p>
+<p>双击不能进行安装就说明找不到Windows找不到要打开.msi文件的默认程序嘛。</p>
+<p>我就用到了里面的方案二，下载了一些注册表文件。</p>
+<p><strong>直接下载压缩包：<a target="_blank" rel="noopener" href="https://www.tenforums.com/attachments/tutorials/371781d1658760570-restore-default-file-type-associations-windows-10-a-windows_10_default_file_associations.zip">Windows 10 default file associations.zip</a></strong></p>
+<p>解压压缩包后直接双击对应的格式就恢复了Windows默认的应用程序，正好符合我的需求。</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/image-20250401213052122.png" alt="image-20250401213052122"></p>
+<p>添加到注册表后尝试双击.msi格式文件，正常启动了安装程序。问题解决</p>
+<p><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/END_02.svg"></p>
+</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>文章作者: </span><span class="post-copyright-info"><a href="https://sansuidouer.github.io">三岁豆Er</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>文章链接: </span><span class="post-copyright-info"><a href="https://sansuidouer.github.io/60176/">https://sansuidouer.github.io/60176/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来源 <a href="https://sansuidouer.github.io" target="_blank">SansuidouEr Blog</a>！</span></div></div><div class="tag_share"><div class="post-meta__tag-list"><a class="post-meta__tags" href="/tags/Windows/">Windows</a></div><div class="post-share"><div class="social-share" data-image="https://s1.ax1x.com/2023/07/23/pCLKPzD.png" data-sites="facebook,twitter,wechat,weibo,qq"></div><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/css/share.min.css" media="print" onload="this.media='all'"><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/sharejs/dist/js/social-share.min.js" defer></script></div></div><div class="post-reward"><div class="reward-button"><i class="fas fa-qrcode"></i>赞助</div><div class="reward-main"><ul class="reward-all"><li class="reward-item"><a href="https://s2.loli.net/2023/07/23/xMPYRhWV5JNFnAU.png" target="_blank"><img class="post-qr-code-img" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://s2.loli.net/2023/07/23/xMPYRhWV5JNFnAU.png" alt="微信"/></a><div class="post-qr-code-desc">微信</div></li><li class="reward-item"><a href="https://s2.loli.net/2023/07/23/aGLTW4jf8tV316o.png" target="_blank"><img class="post-qr-code-img" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://s2.loli.net/2023/07/23/aGLTW4jf8tV316o.png" alt="支付宝"/></a><div class="post-qr-code-desc">支付宝</div></li></ul></div></div><nav class="pagination-post" id="pagination"><a class="pagination-related" href="/12795/" title="PureRef 2.0.3 汉化版"><img class="cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/PureRef_Banner.png" onerror="onerror=null;src='/img/404.jpg'" alt="cover of previous post"><div class="info"><div class="info-1"><div class="info-item-1">上一篇</div><div class="info-item-2">PureRef 2.0.3 汉化版</div></div><div class="info-2"><div class="info-item-1">PureRef 2.0.3 汉化版软件分享</div></div></div></a><a class="pagination-related  no-desc" href="/25634/" title="IDM下载器新用法"><img class="cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/IDM_Banner.png" onerror="onerror=null;src='/img/404.jpg'" alt="cover of next post"><div class="info text-right"><div class="info-1"><div class="info-item-1">下一篇</div><div class="info-item-2">IDM下载器新用法</div></div></div></a></nav><div class="relatedPosts"><div class="headline"><i class="fas fa-thumbs-up fa-fw"></i><span>相关推荐</span></div><div class="relatedPosts-list"><a class="pagination-related no-desc" href="/578/" title="Windows快捷指令"><img class="cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://s1.ax1x.com/2023/07/23/pCLKPzD.png" alt="cover"><div class="info text-center"><div class="info-1"><div class="info-item-1"><i class="far fa-calendar-alt fa-fw"></i> 2023-07-08</div><div class="info-item-2">Windows快捷指令</div></div></div></a><a class="pagination-related" href="/26832/" title="Bat批处理"><img class="cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/BatBanner.png" alt="cover"><div class="info text-center"><div class="info-1"><div class="info-item-1"><i class="far fa-calendar-alt fa-fw"></i> 2023-07-27</div><div class="info-item-2">Bat批处理</div></div><div class="info-2"><div class="info-item-1">“记录一些基础的bat批处理命令，随缘更新！”</div></div></div></a><a class="pagination-related" href="/14562/" title="错误：Windws找不到文件360seURL错误"><img class="cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/360seURL.png" alt="cover"><div class="info text-center"><div class="info-1"><div class="info-item-1"><i class="far fa-calendar-alt fa-fw"></i> 2024-04-27</div><div class="info-item-2">错误：Windws找不到文件360seURL错误</div></div><div class="info-2"><div class="info-item-1">“ Windows找不到文件'360 seURL\shell\open\command'。请确定文件名是否正确后，再试一次。 ”</div></div></div></a><a class="pagination-related" href="/27081/" title="关于P2P打洞的一些记录"><img class="cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/P2P0_Banner.png" alt="cover"><div class="info text-center"><div class="info-1"><div class="info-item-1"><i class="far fa-calendar-alt fa-fw"></i> 2024-10-23</div><div class="info-item-2">关于P2P打洞的一些记录</div></div><div class="info-2"><div class="info-item-1">关于P2P打洞遇到的问题和解决方法</div></div></div></a><a class="pagination-related no-desc" href="/12623/" title="暂停Windows更新"><img class="cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/Windows1.png" alt="cover"><div class="info text-center"><div class="info-1"><div class="info-item-1"><i class="far fa-calendar-alt fa-fw"></i> 2023-09-16</div><div class="info-item-2">暂停Windows更新</div></div></div></a><a class="pagination-related" href="/32112/" title="你的电脑C盘都有些啥？"><img class="cover" src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/Windows_C.png" alt="cover"><div class="info text-center"><div class="info-1"><div class="info-item-1"><i class="far fa-calendar-alt fa-fw"></i> 2024-12-30</div><div class="info-item-2">你的电脑C盘都有些啥？</div></div><div class="info-2"><div class="info-item-1">你知道你每天使用的电脑C盘都有些啥吗？</div></div></div></a></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info text-center"><div class="avatar-img"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/L_v02.svg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info-name">三岁豆Er</div><div class="author-info-description">知足不辱，知止不殆</div><div class="site-data"><a href="/archives/"><div class="headline">文章</div><div class="length-num">97</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">17</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">13</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/SansuidouEr/"><i class="fab fa-github"></i><span>Follow Me</span></a><div class="card-info-social-icons"><a class="social-icon" href="https://github.com/SansuidouEr/" target="_blank" title="Github"><i class="fab fa-github" style="color: #24292e;"></i></a><a class="social-icon" href="mailto:2898865071@qq.com" target="_blank" title="Email"><i class="fas fa-envelope" style="color: #4a7dbe;"></i></a></div></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">欢迎来到我的博客<p>如遇问题请通过<a href="/about" style="color:#49b1f5">关于</a>联系我</p><p>因网络而异, 如访问本站较慢</p> <p>请使用科学上网访问本站</p> <br>感谢赞助：<br><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/ZhanZhu01.png" width="100%"></div></div><div class="sticky_layout"><div class="card-widget" id="card-toc"><div class="item-headline"><i class="fas fa-stream"></i><span>目录</span><span class="toc-percentage"></span></div><div class="toc-content"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Windows10%E5%B8%AE%E5%8A%A9%E8%AE%BA%E5%9D%9B%EF%BC%9ATenorumshttps-www-tenforums-com"><span class="toc-number">1.</span> <span class="toc-text">Windows10帮助论坛：Tenorumshttps:&#x2F;&#x2F;www.tenforums.com&#x2F;</span></a></li></ol></div></div><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/25634/" title="IDM下载器新用法"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/IDM_Banner.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="IDM下载器新用法"/></a><div class="content"><a class="title" href="/25634/" title="IDM下载器新用法">IDM下载器新用法</a><time datetime="2025-04-01T13:42:33.000Z" title="发表于 2025-04-01 21:42:33">2025-04-01</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/60176/" title="Windows 10文件类型关联的默认应用程序"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://s1.ax1x.com/2023/07/23/pCLKPzD.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Windows 10文件类型关联的默认应用程序"/></a><div class="content"><a class="title" href="/60176/" title="Windows 10文件类型关联的默认应用程序">Windows 10文件类型关联的默认应用程序</a><time datetime="2025-04-01T13:02:39.000Z" title="发表于 2025-04-01 21:02:39">2025-04-01</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/12795/" title="PureRef 2.0.3 汉化版"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/PureRef_Banner.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="PureRef 2.0.3 汉化版"/></a><div class="content"><a class="title" href="/12795/" title="PureRef 2.0.3 汉化版">PureRef 2.0.3 汉化版</a><time datetime="2025-03-29T13:03:29.000Z" title="发表于 2025-03-29 21:03:29">2025-03-29</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/7304/" title="体验NXrender渲染器"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/NXrender_Blender.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="体验NXrender渲染器"/></a><div class="content"><a class="title" href="/7304/" title="体验NXrender渲染器">体验NXrender渲染器</a><time datetime="2025-03-29T12:05:30.000Z" title="发表于 2025-03-29 20:05:30">2025-03-29</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/37851/" title="AI应用实战分享会"><img src= "data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" data-lazy-src="https://s21.ax1x.com/2025/02/19/pEQCYzn.png" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="AI应用实战分享会"/></a><div class="content"><a class="title" href="/37851/" title="AI应用实战分享会">AI应用实战分享会</a><time datetime="2025-02-19T13:40:39.000Z" title="发表于 2025-02-19 21:40:39">2025-02-19</time></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2023 - 2025 By 三岁豆Er</div><div class="footer_custom_text">欢迎来到我的博客！</div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="darkmode" type="button" title="日间和夜间模式切换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button class="close" id="mobile-toc-button" type="button" title="目录"><i class="fas fa-list-ul"></i></button><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.umd.min.js"></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.iife.min.js"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="text-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div id="local-search-results"></div><div id="local-search-stats-wrap"></div></div></div><div id="search-mask"></div><script src="/js/search/local-search.js"></script></div></div></body></html>

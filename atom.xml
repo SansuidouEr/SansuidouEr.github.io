@@ -6,7 +6,7 @@
   <link href="https://sansuidouer.github.io/atom.xml" rel="self"/>
   
   <link href="https://sansuidouer.github.io/"/>
-  <updated>2025-03-29T13:37:22.344Z</updated>
+  <updated>2025-04-01T14:05:51.126Z</updated>
   <id>https://sansuidouer.github.io/</id>
   
   <author>
@@ -17,11 +17,59 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>IDM下载器新用法</title>
+    <link href="https://sansuidouer.github.io/25634/"/>
+    <id>https://sansuidouer.github.io/25634/</id>
+    <published>2025-04-01T13:42:33.000Z</published>
+    <updated>2025-04-01T14:05:51.126Z</updated>
+    
+    <content type="html"><![CDATA[<h3 id="InternetDownloadManager"><a href="#InternetDownloadManager" class="headerlink" title="InternetDownloadManager"></a>InternetDownloadManager</h3><h3 id="官网："><a href="#官网：" class="headerlink" title="官网："></a>官网：</h3><p><a href="https://www.internetdownloadmanager.com/">https://www.internetdownloadmanager.com/</a></p><p><img src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/20230804231049.png" alt="image-20230804230037197"></p><p>直接使用官网下载的版本，通过脚本进行冻结激活</p><p>Github:<a href="https://github.com/cjhdevact/IDM-Activation-Script-Chinese?tab=readme-ov-file">https://github.com/cjhdevact/IDM-Activation-Script-Chinese?tab=readme-ov-file</a></p><p>直接下载：<a href="https://codeload.github.com/cjhdevact/IDM-Activation-Script-Chinese/zip/refs/heads/main">https://codeload.github.com/cjhdevact/IDM-Activation-Script-Chinese/zip/refs/heads/main</a></p><p>双击里面的.bat文件，根据需求进行激活即可。</p><p><img src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/image-20250401214130980.png" alt="image-20250401214130980"></p><p><img src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/END_02.svg"></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h3 id=&quot;InternetDownloadManager&quot;&gt;&lt;a href=&quot;#InternetDownloadManager&quot; class=&quot;headerlink&quot; title=&quot;InternetDownloadManager&quot;&gt;&lt;/a&gt;InternetDownloadM</summary>
+      
+    
+    
+    
+    <category term="软件" scheme="https://sansuidouer.github.io/categories/%E8%BD%AF%E4%BB%B6/"/>
+    
+    
+    <category term="软件分享" scheme="https://sansuidouer.github.io/tags/%E8%BD%AF%E4%BB%B6%E5%88%86%E4%BA%AB/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Windows 10文件类型关联的默认应用程序</title>
+    <link href="https://sansuidouer.github.io/60176/"/>
+    <id>https://sansuidouer.github.io/60176/</id>
+    <published>2025-04-01T13:02:39.000Z</published>
+    <updated>2025-04-01T13:36:47.971Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="Windows10帮助论坛：Tenorumshttps-www-tenforums-com"><a href="#Windows10帮助论坛：Tenorumshttps-www-tenforums-com" class="headerlink" title="Windows10帮助论坛：Tenorumshttps://www.tenforums.com/"></a>Windows10帮助论坛：Tenorums<a href="https://www.tenforums.com/">https://www.tenforums.com/</a></h2><p><img src="https://www.tenforums.com/img/TenForumsLogo.png"></p><hr><p>起因是不知道为什么我的电脑.msi文件无法通过双击进行安装了，msi文件的安装包还挺常见的。所以这个问题需要解决一下。</p><p>啥是MSI？ 直接百度百科：<a href="https://baike.baidu.com/item/MSI/10209">https://baike.baidu.com/item/MSI/10209</a></p><p>MSI（MSI &#x3D;microsoft installer）文件是Windows Installer的数据，它实际上是一个数据库，包含安装一种产品所需要的信息和在很多安装情形下安装（和卸载）程序所需的指令和数据。MSI文件将程序的组成文件与功能关联起来。此外，它还包含有关安装过程本身的信息：如安装序列、目标文件夹路径、系统依赖项、安装选项和控制安装过程的属性。</p><p>通过搜索得知MSI文件是通过msiexec.exe进行安装的。</p><p><img src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/image-20250401211752649.png" alt="image-20250401211752649"></p><p>直接Win+R运行msiexec，就会弹出如下窗口，通过安装选项可以进行手动安装.msi文件.</p><p>直接在CMD窗口运行即可打开安装程序。</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">msiexec /package “D:\Product.msi”</span><br></pre></td></tr></table></figure><p><img src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/image-20250401211918706.png" alt="image-20250401211918706"></p><hr><p>以上方法可以完成运行.msi文件，但是这不是我想要的，也不能每次都按照以上方法运行吧，继续搜索帮助。</p><p>然后就发现了一个网站，专门针对Windows10的一个论坛，里面都是讨论Windows10的问题，</p><p>然后我就发现了这篇文章：<a href="https://www.tenforums.com/tutorials/8703-restore-default-file-type-associations-windows-10-a.html">https://www.tenforums.com/tutorials/8703-restore-default-file-type-associations-windows-10-a.html</a></p><p>里面讲到如何在 Windows 10 中恢复文件类型关联的默认应用程序，其实.msi也属于一种文件类型嘛</p><p>双击不能进行安装就说明找不到Windows找不到要打开.msi文件的默认程序嘛。</p><p>我就用到了里面的方案二，下载了一些注册表文件。</p><p><strong>直接下载压缩包：<a href="https://www.tenforums.com/attachments/tutorials/371781d1658760570-restore-default-file-type-associations-windows-10-a-windows_10_default_file_associations.zip">Windows 10 default file associations.zip</a></strong></p><p>解压压缩包后直接双击对应的格式就恢复了Windows默认的应用程序，正好符合我的需求。</p><p><img src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/image-20250401213052122.png" alt="image-20250401213052122"></p><p>添加到注册表后尝试双击.msi格式文件，正常启动了安装程序。问题解决</p><p><img src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/END_02.svg"></p>]]></content>
+    
+    
+      
+      
+    <summary type="html">&lt;h2 id=&quot;Windows10帮助论坛：Tenorumshttps-www-tenforums-com&quot;&gt;&lt;a href=&quot;#Windows10帮助论坛：Tenorumshttps-www-tenforums-com&quot; class=&quot;headerlink&quot; title=&quot;Wi</summary>
+      
+    
+    
+    
+    <category term="Windows10某一文件格式无法通过双击打开，解决.msi文件无法安装的问题" scheme="https://sansuidouer.github.io/categories/Windows10%E6%9F%90%E4%B8%80%E6%96%87%E4%BB%B6%E6%A0%BC%E5%BC%8F%E6%97%A0%E6%B3%95%E9%80%9A%E8%BF%87%E5%8F%8C%E5%87%BB%E6%89%93%E5%BC%80%EF%BC%8C%E8%A7%A3%E5%86%B3-msi%E6%96%87%E4%BB%B6%E6%97%A0%E6%B3%95%E5%AE%89%E8%A3%85%E7%9A%84%E9%97%AE%E9%A2%98/"/>
+    
+    
+    <category term="Windows" scheme="https://sansuidouer.github.io/tags/Windows/"/>
+    
+  </entry>
+  
+  <entry>
     <title>PureRef 2.0.3 汉化版</title>
     <link href="https://sansuidouer.github.io/12795/"/>
     <id>https://sansuidouer.github.io/12795/</id>
     <published>2025-03-29T13:03:29.000Z</published>
-    <updated>2025-03-29T13:37:22.344Z</updated>
+    <updated>2025-03-29T13:37:44.375Z</updated>
     
     <content type="html"><![CDATA[<h1 id="PureRef-2-0-3-汉化版"><a href="#PureRef-2-0-3-汉化版" class="headerlink" title="PureRef  2.0.3 汉化版"></a>PureRef  2.0.3 汉化版</h1><h3 id="官网：https-www-pureref-com"><a href="#官网：https-www-pureref-com" class="headerlink" title="官网：https://www.pureref.com/"></a>官网：<a href="https://www.pureref.com/">https://www.pureref.com/</a></h3><p>汉化作者：<a href="https://space.bilibili.com/335155319">Mgentry</a></p><p>2.0更新内容：<a href="https://www.pureref.com/blog/pureref2/">https://www.pureref.com/blog/pureref2/</a></p><p>记录一下由Mgentry作者汉化的PureRef  2.0.3 感谢作者，已三连！</p><p>下载：<a href="https://zhangzhilong.lanzouw.com/iNSef2s25oob">蓝奏云</a></p><p><img src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/image-20250329213713944.png" alt="image-20250329213713944"></p><p><img src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/END_02.svg"></p>]]></content>
     
@@ -325,9 +373,9 @@
     
     
     
-    <category term="Blender" scheme="https://sansuidouer.github.io/tags/Blender/"/>
-    
     <category term="分享会" scheme="https://sansuidouer.github.io/tags/%E5%88%86%E4%BA%AB%E4%BC%9A/"/>
+    
+    <category term="Blender" scheme="https://sansuidouer.github.io/tags/Blender/"/>
     
   </entry>
   
@@ -368,50 +416,6 @@
     
     
     <category term="Blender" scheme="https://sansuidouer.github.io/tags/Blender/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>Blender批量取消模型平滑</title>
-    <link href="https://sansuidouer.github.io/40376/"/>
-    <id>https://sansuidouer.github.io/40376/</id>
-    <published>2024-10-27T11:16:30.000Z</published>
-    <updated>2024-10-27T13:57:12.848Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="目的"><a href="#目的" class="headerlink" title="目的"></a>目的</h2><p>脚本非常简单，旨在将整个场景中的模型表面细分（Catmull - Clark）去掉</p><p><img src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/image-20241027215410787.png" alt="image-20241027215410787"></p><h2 id="运行"><a href="#运行" class="headerlink" title="运行"></a>运行</h2><p>打开需要转化的场景，切换到脚本，将脚本粘贴进去，点击小箭头运行即可。</p><p>经过操作以后导出去的模型就不再是被细分后的模型。</p><p><img src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/image-20241027215307197.png" alt="image-20241027215307197"></p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">import bpy</span><br><span class="line"></span><br><span class="line">for obj in bpy.context.scene.objects:</span><br><span class="line">    for modifier in obj.modifiers:</span><br><span class="line">        if modifier.type == &#x27;SUBSURF&#x27;:</span><br><span class="line">            modifier.levels = 0</span><br><span class="line">            modifier.render_levels = 0</span><br></pre></td></tr></table></figure><p><img src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/END_02.svg"></p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;h2 id=&quot;目的&quot;&gt;&lt;a href=&quot;#目的&quot; class=&quot;headerlink&quot; title=&quot;目的&quot;&gt;&lt;/a&gt;目的&lt;/h2&gt;&lt;p&gt;脚本非常简单，旨在将整个场景中的模型表面细分（Catmull - Clark）去掉&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://cdn</summary>
-      
-    
-    
-    
-    <category term="Blender" scheme="https://sansuidouer.github.io/categories/Blender/"/>
-    
-    
-    <category term="Blender" scheme="https://sansuidouer.github.io/tags/Blender/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>关于P2P打洞的一些记录</title>
-    <link href="https://sansuidouer.github.io/27081/"/>
-    <id>https://sansuidouer.github.io/27081/</id>
-    <published>2024-10-23T09:43:06.000Z</published>
-    <updated>2024-10-31T14:47:29.110Z</updated>
-    
-    <content type="html"><![CDATA[<p><img src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/P2P0_Banner.png" alt="P2P0_Banner"></p><h3 id="什么是P2P？"><a href="#什么是P2P？" class="headerlink" title="什么是P2P？"></a>什么是P2P？</h3><p>P2P（点对点）连接是一种网络架构，其中各个节点（计算机或设备）可以直接相互通信和共享资源，而不需要依赖中心服务器。每个节点既可以是客户端，也可以是服务器，形成一个对等的网络。</p><h3 id="P2P的工作原理"><a href="#P2P的工作原理" class="headerlink" title="P2P的工作原理"></a>P2P的工作原理</h3><p>在P2P网络中，节点通过特定的协议直接连接，进行数据传输。常见的P2P应用包括文件共享（如BitTorrent）、即时通讯（如Skype）和区块链技术（如比特币）。</p><h3 id="P2P的优点"><a href="#P2P的优点" class="headerlink" title="P2P的优点"></a>P2P的优点</h3><ol><li><strong>去中心化</strong>：没有单一的控制点，减少了单点故障的风险，提高了网络的鲁棒性。</li><li><strong>资源共享</strong>：节点可以共享自己的计算能力、存储和带宽，增强了资源的利用率。</li><li><strong>成本效益</strong>：由于没有中央服务器，运营和维护成本通常较低，用户可以免费使用或以较低的费用享受服务。</li><li><strong>隐私保护</strong>：P2P网络中的用户通常可以在一定程度上保护自己的身份，增强了隐私性。</li><li><strong>扩展性</strong>：P2P网络能够轻松扩展，新增节点可以自然地融入网络，不会对现有结构造成显著影响。</li><li><strong>故障容忍性</strong>：即使某些节点下线，其他节点仍然可以继续保持网络的运作，提供更高的稳定性。</li><li><strong>快速传输</strong>：在文件分享和数据传输方面，P2P网络可以利用多个节点并行传输，往往比传统服务器更快。</li></ol><h3 id="通过P2P打洞前提："><a href="#通过P2P打洞前提：" class="headerlink" title="通过P2P打洞前提："></a>通过P2P打洞前提：</h3><p>首先你要知道什么是NAT</p><p>传送门：<a href="https://baike.baidu.com/item/nat/320024">NAT百度百科</a></p><p>其次非常非常重要的一点是要知道当前网络的NAT类型</p><table><thead><tr><th align="center">NAT</th><th align="center">类型</th><th align="center"></th></tr></thead><tbody><tr><td align="center">NAT1</td><td align="center">Full Cone</td><td align="center">完全锥形NAT</td></tr><tr><td align="center">NAT2</td><td align="center">Address-Restricted Cone</td><td align="center">地址限制锥形NAT</td></tr><tr><td align="center">NAT3</td><td align="center">Port-Restricted Cone</td><td align="center">端口限制锥形NAT</td></tr><tr><td align="center">NAT4</td><td align="center">Symmetric</td><td align="center">对称式NAT（动态NAT）</td></tr></tbody></table><p>可以简单理解为NAT1非常容易打洞，如果你的网络环境是NAT4则很难打洞。</p><p>如果需要打洞的两个网络环境都是<strong>Symmetric NAT</strong>则**100%**不可能打洞成功。</p><p>（其实也有例外，将你的内网某一机器暴露在公网环境下<strong>DMZ</strong>，不建议这么做！）</p><p>如果其中一个网络环境为<strong>Full Cone</strong>则有很大的概率打洞成功。</p><blockquote><p>1.双方中只要有一方是<strong>Full Cone</strong>，可以直连<br>2.双方都是<strong>Restricted Cone</strong>或<strong>Port Restricted Cone</strong>，这种情况可以打洞，通过N2N服务器握手以后，双方的数据不再经过服务端<br>3.一方为<strong>Restricted Cone</strong>，另一方为<strong>Symmetric NAT</strong>，可以打洞，通过N2N服务器握手以后，双方的数据不再经过服务端<br>4.一方为端口<strong>Port Restricted Cone</strong>，另一方为<strong>Symmetric NAT</strong>，这种情况无法打洞，数据要走N2N服务器中转<br>5.双方都为<strong>Symmetric NAT</strong>，这种情况也是无法打洞的，数据要走N2N服务器中转</p></blockquote><p>CSDN资料：<a href="">【网络】P2P打洞原理（简单描述）</a></p><table><thead><tr><th align="center">类型</th><th align="center">类型</th><th align="center">是否可以打通</th></tr></thead><tbody><tr><td align="center">全锥形（NAT1）</td><td align="center">全锥形（NAT1）</td><td align="center"><span style="font-size: 20px; color: green; font-weight: bold; display: inline-block;">Y</span></td></tr><tr><td align="center">全锥形（NAT1）</td><td align="center">受限锥形（NAT2）</td><td align="center"><span style="font-size: 20px; color: green; font-weight: bold; display: inline-block;">Y</span></td></tr><tr><td align="center">全锥形（NAT1）</td><td align="center">端口受限锥形（NAT3）</td><td align="center"><span style="font-size: 20px; color: green; font-weight: bold; display: inline-block;">Y</span></td></tr><tr><td align="center">全锥形（NAT1）</td><td align="center">对称性（NAT4）</td><td align="center"><span style="font-size: 20px; color: green; font-weight: bold; display: inline-block;">Y</span></td></tr><tr><td align="center">受限锥形（NAT2）</td><td align="center">受限锥形（NAT2）</td><td align="center"><span style="font-size: 20px; color: green; font-weight: bold; display: inline-block;">Y</span></td></tr><tr><td align="center">受限锥形（NAT2）</td><td align="center">端口受限锥形（NAT3）</td><td align="center"><span style="font-size: 20px; color: green; font-weight: bold; display: inline-block;">Y</span></td></tr><tr><td align="center">受限锥形（NAT2）</td><td align="center">对称性（NAT4）</td><td align="center"><span style="font-size: 20px; color: green; font-weight: bold; display: inline-block;">Y</span></td></tr><tr><td align="center">端口受限锥形（NAT3）</td><td align="center">端口受限型（NAT3）</td><td align="center"><span style="font-size: 20px; color: green; font-weight: bold; display: inline-block;">Y</span></td></tr><tr><td align="center">端口受限锥形（NAT3）</td><td align="center">对称性（NAT4）</td><td align="center"><span style="font-size: 20px; color: red; font-weight: bold; display: inline-block;">X</span></td></tr><tr><td align="center">对称性（NAT4）</td><td align="center">对称性（NAT4）</td><td align="center"><span style="font-size: 20px; color: red; font-weight: bold; display: inline-block;">X</span></td></tr></tbody></table><p>如何测试NAT类型？</p><p>NatTypeTester_NAT类型测试工具：<a href="https://zhangzhilong.lanzouw.com/icmLM2d9oyyh">https://zhangzhilong.lanzouw.com/icmLM2d9oyyh</a></p><p>打开测试工具</p><p>默认的服务器不能用了</p><p>输入stun.miwifi.com进行测试</p><figure class="highlight tex"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">stun.miwifi.com</span><br></pre></td></tr></table></figure><p><img src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/image-20241024205741456.png" alt="image-20241024205741456"></p><p>我第一次测试是对称性的NAT类型，我登录了猫盒，改了桥接模式，通过路由器进行拨号上网</p><p>光猫改桥接具体根据猫盒型号自行百度</p><p>在猫盒上设置打开UPnp</p><p><img src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/image-20241027171826141.png" alt="image-20241027171826141"></p><p>我的路由器是Padavan固件，将路由器防火墙的NAT类型修改为Full Cone NAT类型。</p><p><img src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/image-20241027171447359.png" alt="image-20241027171447359"></p><p>进行了以上设置以后我再次进行了检测，这时候已经是全锥形了。</p><p><img src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/image-20241027173628167.png" alt="image-20241027173628167"></p><p>根据以上总结，我现在已经是NAT1，我对任何外网电脑进行打洞基本就有很大成功率了！</p><h3 id="zerotier"><a href="#zerotier" class="headerlink" title="zerotier"></a>zerotier</h3><p>官网：<a href="https://www.zerotier.com/">https://www.zerotier.com/</a></p><p><img src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/image-20241031224429811.png"></p><p><img src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/END_02.svg"></p>]]></content>
-    
-    
-    <summary type="html">关于P2P打洞遇到的问题和解决方法</summary>
-    
-    
-    
-    
-    <category term="Windows" scheme="https://sansuidouer.github.io/tags/Windows/"/>
     
   </entry>
   
