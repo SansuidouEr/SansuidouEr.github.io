@@ -4,6 +4,44 @@
   
     
     <entry>
+      <title>如果从 Microsoft 下载官方Windows10 ISO文件</title>
+      <link href="/18756/"/>
+      <url>/18756/</url>
+      
+        <content type="html"><![CDATA[<h2 id="下载Windows10"><a href="#下载Windows10" class="headerlink" title="下载Windows10"></a>下载Windows10</h2><p>Windows10论坛教程：<a href="https://www.tenforums.com/tutorials/9230-download-windows-10-iso-file.html">https://www.tenforums.com/tutorials/9230-download-windows-10-iso-file.html</a></p><p>直达微软Windows10下载地址：<a href="https://www.microsoft.com/zh-cn/software-download/windows10">https://www.microsoft.com/zh-cn/software-download/windows10</a></p><p>我自己下载的Windows10 22H2简体中文 64位</p><p>123云盘：<a href="https://www.123684.com/s/bDdrVv-W3wpA">https://www.123684.com/s/bDdrVv-W3wpA</a></p><p>Win10_22H2_Chinese_ Simplified_x64v1.iso</p><h2 id="下载Windows11"><a href="#下载Windows11" class="headerlink" title="下载Windows11"></a>下载Windows11</h2><p>Windows11论坛教程：<a href="https://www.elevenforum.com/t/download-official-windows-11-iso-file-from-microsoft.1009/">https://www.elevenforum.com/t/download-official-windows-11-iso-file-from-microsoft.1009/</a></p><p><img src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/END_02.svg"></p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> Windows </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>在Maya中打开场景文件</title>
+      <link href="/6110/"/>
+      <url>/6110/</url>
+      
+        <content type="html"><![CDATA[<p>Maya2022关于打开文件的官方帮助：<br><a href="https://help.autodesk.com/view/MAYAUL/2022/CHS/?guid=GUID-9D1021A8-60A4-4B72-9A90-7C5070A9E037">https://help.autodesk.com/view/MAYAUL/2022/CHS/?guid=GUID-9D1021A8-60A4-4B72-9A90-7C5070A9E037</a></p><p>原作者文章地址：<a href="https://dcc-scripts.blogspot.com/2019/12/maya.html">https://dcc-scripts.blogspot.com/2019/12/maya.html</a></p><p>文章翻译：</p><p>在Maya中打开场景文件</p><p>在Maya中打开场景文件有几种方法，但不同的打开方式会让Maya执行不同的处理流程。因此，在排查问题时，如果不能从打开场景文件这一步开始展示操作步骤，解决问题时可能会多费不少周折。</p><p>首先，当我去其他同事的座位上让他们打开场景文件时，看到有人直接从资源管理器双击Maya文件打开，我真是大吃一惊。Windows操作系统会根据文件扩展名关联的.exe程序来执行打开操作。对于文档类文件来说，双击图标打开是常有的事，确实挺方便的功能。然而，用这种方式打开Maya文件时，maya.exe会以“裸启动”的状态运行。如果启动脚本中设置了环境变量或场景初始化，这些都不会被执行，因此容易出现各种问题。特别是在使用多个脚本联动的工具时，经常会听到有人抱怨“这个动不了啊～”。</p><p>接下来，另一种方法是先启动Maya，然后从资源管理器中将文件拖拽到Maya窗口打开。就像在Photoshop中批量打开大量图片时常用这种方法一样，Maya也支持这种操作。这时，Maya会将拖入的文件视为导入处理，因此会应用导入选项。具体处理方式会因环境设置而异，比如命名空间的处理或根节点的有无。如果是将文件拖入一个空的场景，影响还算小；但如果当时已经打开了一个场景再拖入文件，就会添加一些“垃圾数据”，清理起来很麻烦。</p><p>大部分人应该都是通过Maya主菜单的“文件(File) &gt; 打开场景(Open Scene)”或快捷键[Ctrl]+[o]来打开场景文件吧。但即便如此，这里也有些细微差别。尤其是很多人没有设置“项目(Set Project)”。如果不设置项目，各种文件的引用就会变成绝对路径，之后修改纹理或参考文件路径会变得很麻烦。这方面需要有人来把控方向。</p><p>最后，还有一种情况，虽然也是用“打开场景(Open Scene)”功能，但连续打开不同的场景文件。我观察周围的人，发现这种操作居然挺常见的，挺让我惊讶。这种做法有个问题：根据打开的场景文件内容，fileInfo或requirers可能会加载一些额外的插件。而且，这些加载的插件在打开另一个场景文件时不会自动卸载，反而会作为“必需插件”保存到新的场景文件中。这就相当棘手了。</p><p>如果是别人创建的场景文件，你根本不知道会加载哪些插件，所以为了安全起见，最好在打开场景文件前重启Maya。如果通过scriptJob监控sceneOpend事件，但插件已经创建了节点，那么卸载插件(unloadPlugin)也很费劲。可以用pluginInfo的-dependNode参数检查，但能不能顺利删除也没保证。</p><p>即使是用mayabatch批量处理大量场景文件时，也不要让一个Maya实例连续处理多个场景文件。最好是一个Maya实例只处理一个场景文件后就结束，否则你以为清理干净了，实际上可能会到处散播“垃圾数据”。这一点要特别注意。</p><p><img src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/END_02.svg"></p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> Maya </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>IDM下载器新用法</title>
       <link href="/25634/"/>
       <url>/25634/</url>
@@ -351,9 +389,9 @@
       
         <tags>
             
-            <tag> 分享会 </tag>
-            
             <tag> Blender </tag>
+            
+            <tag> 分享会 </tag>
             
         </tags>
       
