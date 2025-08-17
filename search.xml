@@ -4,6 +4,19 @@
   
     
     <entry>
+      <title>解决Clover被火绒不断弹窗恶意拦截的问题</title>
+      <link href="/38506/"/>
+      <url>/38506/</url>
+      
+        <content type="html"><![CDATA[<p>七月下旬左右，火绒不断弹出恶意网址拦截警告，网址<strong>down.shusw.com</strong> 貌似有流氓行为，我尝试访问<strong>shusw.com</strong>，访问到的内容为Clover的介绍页面，显然这不是Clover的官网，我也搞不明白为什么clover为什么会在启动的时候会尝试访问<strong>down.shusw.com</strong>，根据前缀感觉像是要尝试下载，当我关闭防火墙尝试访问的时候得到的页面为404，我向火绒申诉，得到的回复是该网址存在流氓行为，但是我并不想要放弃使用Clover资源管理器。恶意拦截弹窗还在不断弹出，我尝试通过火绒禁止Clover联网，但是还是会弹窗提醒，这就很烦人！</p><p><img src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/HuoRong_Interception.png"></p><p>其实Clover并不需要联网更新了，也已经很久没有更新了，所以果断屏蔽down.shusw.com，尝试修改host文件。</p><p>Host文件存放目录：<em>C:\Windows\System32\drivers\etc</em></p><p>如果你会编辑host文件就直接编辑，如果你不会建议使用火绒工具箱的修改HOST文件功能进行编辑修改,</p><p>再host文件的最后一行加上以下内容</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">0.0.0.0 down.shusw.com</span><br></pre></td></tr></table></figure><p>简单可以解释为将网址down.shusw.com直接绑定在0.0.0.0上面不能正常解析域名，从而达到拦截的目的，这样就在DNS解析层面拦截了这个网址，火绒就不会再弹窗拦截啦，也成功的从解析层面彻底断开了计算机访问down.shusw.com。</p><p><img src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/HuoRong_GongnNeng1.png"></p><p>亲测有效！这样就没有弹窗打扰啦，Clover资源管理器可以正常使用。</p><p><span style="padding:4px 8px;font:700 14px sans-serif;border:1px solid;border-radius:16px">#Clover 资源管理器</span></p><p><img src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/END_02.svg"></p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>分享会 Round 3</title>
       <link href="/45240/"/>
       <url>/45240/</url>

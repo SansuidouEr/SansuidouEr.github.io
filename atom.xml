@@ -6,7 +6,7 @@
   <link href="https://sansuidouer.github.io/atom.xml" rel="self"/>
   
   <link href="https://sansuidouer.github.io/"/>
-  <updated>2025-06-06T13:28:37.715Z</updated>
+  <updated>2025-08-17T11:11:31.322Z</updated>
   <id>https://sansuidouer.github.io/</id>
   
   <author>
@@ -15,6 +15,23 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>解决Clover被火绒不断弹窗恶意拦截的问题</title>
+    <link href="https://sansuidouer.github.io/38506/"/>
+    <id>https://sansuidouer.github.io/38506/</id>
+    <published>2025-08-17T09:46:36.000Z</published>
+    <updated>2025-08-17T11:11:31.322Z</updated>
+    
+    <content type="html"><![CDATA[<p>七月下旬左右，火绒不断弹出恶意网址拦截警告，网址<strong>down.shusw.com</strong> 貌似有流氓行为，我尝试访问<strong>shusw.com</strong>，访问到的内容为Clover的介绍页面，显然这不是Clover的官网，我也搞不明白为什么clover为什么会在启动的时候会尝试访问<strong>down.shusw.com</strong>，根据前缀感觉像是要尝试下载，当我关闭防火墙尝试访问的时候得到的页面为404，我向火绒申诉，得到的回复是该网址存在流氓行为，但是我并不想要放弃使用Clover资源管理器。恶意拦截弹窗还在不断弹出，我尝试通过火绒禁止Clover联网，但是还是会弹窗提醒，这就很烦人！</p><p><img src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/HuoRong_Interception.png"></p><p>其实Clover并不需要联网更新了，也已经很久没有更新了，所以果断屏蔽down.shusw.com，尝试修改host文件。</p><p>Host文件存放目录：<em>C:\Windows\System32\drivers\etc</em></p><p>如果你会编辑host文件就直接编辑，如果你不会建议使用火绒工具箱的修改HOST文件功能进行编辑修改,</p><p>再host文件的最后一行加上以下内容</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">0.0.0.0 down.shusw.com</span><br></pre></td></tr></table></figure><p>简单可以解释为将网址down.shusw.com直接绑定在0.0.0.0上面不能正常解析域名，从而达到拦截的目的，这样就在DNS解析层面拦截了这个网址，火绒就不会再弹窗拦截啦，也成功的从解析层面彻底断开了计算机访问down.shusw.com。</p><p><img src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/HuoRong_GongnNeng1.png"></p><p>亲测有效！这样就没有弹窗打扰啦，Clover资源管理器可以正常使用。</p><p><span style="padding:4px 8px;font:700 14px sans-serif;border:1px solid;border-radius:16px">#Clover 资源管理器</span></p><p><img src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/END_02.svg"></p>]]></content>
+    
+    
+    <summary type="html">Clover尝试访问恶意网站，从根源解决问题，不再弹窗提示。</summary>
+    
+    
+    
+    
+  </entry>
   
   <entry>
     <title>分享会 Round 3</title>
@@ -391,28 +408,6 @@
     
     
     <category term="Windows" scheme="https://sansuidouer.github.io/tags/Windows/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>袋熊</title>
-    <link href="https://sansuidouer.github.io/58783/"/>
-    <id>https://sansuidouer.github.io/58783/</id>
-    <published>2024-11-17T08:37:46.000Z</published>
-    <updated>2024-12-22T10:59:26.570Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="袋熊"><a href="#袋熊" class="headerlink" title="袋熊"></a>袋熊</h1><p><a href="https://zh.wikipedia.org/wiki/%E8%A2%8B%E7%86%8A">维基百科</a></p><p><strong>袋熊</strong>，即<strong>袋熊科</strong>（英语：Wombat，学名：<em>Phascolomidae</em>)</p><p>袋熊是澳洲动物。它们的脚短及肌肉发达，身长约有1米，尾巴亦很短。它们生活于澳洲东南部及塔斯马尼亚州的森林、山地及石楠地。</p><h2 id="生态及行为"><a href="#生态及行为" class="headerlink" title="生态及行为"></a>生态及行为</h2><p>袋熊的新陈代谢非常的慢，差不多要用14天的时间来完成消化，这有助于生活在干燥的环境。它们一般行动得很慢，但当遇上危害时，逃走速度可以达40km&#x2F;h，并维持达90秒。袋熊会保护由其巢穴为中心的疆界，对入侵者存有攻击性。塔斯马尼亚袋熊的疆界达23公顷、</p><p><img src="https://upload.wikimedia.org/wikipedia/commons/1/18/Vombatus_ursinus_-Maria_Island_National_Park.jpg"></p><p>▲作者：<a href="https://commons.wikimedia.org/wiki/User:JJ_Harrison">JJ Harrison</a></p><p><a href="https://commons.wikimedia.org/wiki/File:Vombatus_ursinus_-Maria_Island_National_Park_Edit_2.jpg">https://commons.wikimedia.org/wiki/File:Vombatus_ursinus_-Maria_Island_National_Park_Edit_2.jpg</a></p><hr><p><img src="https://upload.wikimedia.org/wikipedia/commons/7/73/Wombat_1.jpg"></p><p>▲作者： Stygiangloom</p><p><a href="https://commons.wikimedia.org/wiki/File:Wombat_1.jpg">https://commons.wikimedia.org/wiki/File:Wombat_1.jpg</a></p><hr><p><img src="https://upload.wikimedia.org/wikipedia/commons/c/c5/Southern_Hairy-nosed_Wombat.jpg"></p><p>▲作者：<a href="https://www.flickr.com/photos/84108876@N00">Jason Pratt</a></p><p><a href="https://commons.wikimedia.org/wiki/File:Southern_Hairy-nosed_Wombat.jpg">https://commons.wikimedia.org/wiki/File:Southern_Hairy-nosed_Wombat.jpg</a></p><hr><p><img src="https://upload.wikimedia.org/wikipedia/commons/1/1a/Wombat_at_Rest%2B_%28113999675%29.jpg"></p><p>▲作者： <a href="https://www.flickr.com/people/34534185@N00">Sheba_Also 43,000 photos</a><br><a href="https://commons.wikimedia.org/w/index.php?curid=73389749">https://commons.wikimedia.org/w/index.php?curid=73389749</a></p><hr><p><img src="https://upload.wikimedia.org/wikipedia/commons/5/59/Fauna_de_Tasmania11.JPG"></p><p>▲作者： <a href="https://commons.wikimedia.org/wiki/User:Poco_a_poco">Poco a poco</a></p><p><a href="https://commons.wikimedia.org/wiki/File:Fauna_de_Tasmania11.JPG">https://commons.wikimedia.org/wiki/File:Fauna_de_Tasmania11.JPG</a></p><hr><p><img src="https://cdn.jsdelivr.net/gh/SansuidouEr/images@main/img/END_02.svg"></p>]]></content>
-    
-    
-      
-      
-    <summary type="html">&lt;h1 id=&quot;袋熊&quot;&gt;&lt;a href=&quot;#袋熊&quot; class=&quot;headerlink&quot; title=&quot;袋熊&quot;&gt;&lt;/a&gt;袋熊&lt;/h1&gt;&lt;p&gt;&lt;a href=&quot;https://zh.wikipedia.org/wiki/%E8%A2%8B%E7%86%8A&quot;&gt;维基百科&lt;/a&gt;&lt;/p</summary>
-      
-    
-    
-    
-    
-    <category term="百科" scheme="https://sansuidouer.github.io/tags/%E7%99%BE%E7%A7%91/"/>
     
   </entry>
   
